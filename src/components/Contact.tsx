@@ -1,9 +1,8 @@
+import React from 'react';
 import { Facebook, Twitter, Instagram, Mail, Phone, MapPin } from 'lucide-react';
-import { Link } from 'react-router-dom';
 
-const Footer = () => {
-  return (
-    <footer className="bg-gray-900 text-white">
+export const Contact = () => {
+  return <section className="py-24 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="text-center text-2xl font-bold italic mb-8">
         THE BIG E RETAIL
@@ -66,13 +65,10 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
+        <div className="text-center text-gray-400 mt-12">
           <p>&copy; {new Date().getFullYear()} THE BIG E RETAIL. All rights reserved.</p>
-          <p className='mt-2 text-sm'>Website developed by <a href="https://mastical.com">MASTICAL</a></p>
+          <p className='mt-1 text-sm'>Website developed by <a className='hover:underline' href="https://mastical.com">MASTICAL</a></p>
         </div>
       </div>
-    </footer>
-  );
+    </section>;
 };
-
-export default Footer;

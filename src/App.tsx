@@ -1,28 +1,27 @@
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import Home from './pages/Home';
-import About from './pages/About';
-import Services from './pages/Services';
-import Contact from './pages/Contact';
-
-function App() {
-  return (
-    <Router>
-      <div className="flex flex-col min-h-screen">
-        <Navbar />
-        <main className="flex-grow">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-        </main>
-        <Footer />
+import { Nav } from './components/Nav';
+import { Hero } from './components/Hero';
+import { Story } from './components/Story';
+import { Collections } from './components/Collections';
+import { Contact } from './components/Contact';
+import Projects from './pages/Projects';
+import Products from './pages/Products';
+const Home = () => <>
+    <Hero />
+    <Story />
+    <Collections />
+    <Contact />
+  </>;
+export function App() {
+  return <Router>
+      <div className="w-full min-h-screen">
+        <Nav />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/products" element={<Products />} />
+        </Routes>
       </div>
-    </Router>
-  );
+    </Router>;
 }
-
-export default App;
