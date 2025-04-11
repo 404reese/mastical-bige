@@ -7,6 +7,8 @@ import { Collections } from './components/Collections';
 import { Contact } from './components/Contact';
 import Projects from './pages/Projects';
 import Products from './pages/Products';
+import Homeowners from './pages/Homeowners';
+
 const Home = () => <>
     <Hero />
     <Story />
@@ -21,6 +23,7 @@ export function App() {
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/products" element={<Products />} />
+          <Route path="/homeowners" element={<Homeowners />} />
         </Routes>
       </div>
     </Router>;
