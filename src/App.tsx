@@ -9,14 +9,13 @@ import Projects from './pages/Projects';
 import Products from './pages/Products';
 import Homeowners from './pages/Homeowners';
 import {HeroScroll} from './components/HeroScroll';
-import { PureScroll } from './components/PureScroll';
+
 
 const Home = () => <>
     <Hero />
     <HeroScroll />
     <Collections />
     <Story />
-    < PureScroll />
     <Contact />
   </>;
 export function App() {
