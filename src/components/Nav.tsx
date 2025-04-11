@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 export const Nav = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const [showProductsDropdown, setShowProductsDropdown] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -58,14 +59,55 @@ export const Nav = () => {
           >
             HOME
           </Link>
-          <a
-            href="products"
-            className={` ${
-              isScrolled ? 'text-[#e5e2e0]' : 'text-[#e5e2e0]'
-            } hover:text-gray-900`}
-          >
-            OUR PRODUCTS
-          </a>
+          <div className="relative">
+            <button
+              onClick={() => setShowProductsDropdown(!showProductsDropdown)}
+              className={`${
+                isScrolled ? 'text-[#e5e2e0]' : 'text-[#e5e2e0]'
+              } hover:text-gray-900 flex items-center gap-1 relative`}
+            >
+              OUR PRODUCTS
+              <svg
+                className={`w-4 h-4 transform transition-transform duration-200 ${
+                  showProductsDropdown ? 'rotate-180' : ''
+                }`}
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+            {showProductsDropdown && (
+              <div
+                className="absolute top-full left-0 mt-2 w-48 bg-[#292929]/95 rounded-md shadow-lg py-1"
+              >
+                <Link
+                  to="/products/category1"
+                  className="block px-4 py-2 text-sm text-[#e5e2e0] hover:bg-[#393939]"
+                >
+                  Category 1
+                </Link>
+                <Link
+                  to="/products/category2"
+                  className="block px-4 py-2 text-sm text-[#e5e2e0] hover:bg-[#393939]"
+                >
+                  Category 2
+                </Link>
+                <Link
+                  to="/products/category3"
+                  className="block px-4 py-2 text-sm text-[#e5e2e0] hover:bg-[#393939]"
+                >
+                  Category 3
+                </Link>
+              </div>
+            )}
+          </div>
           <Link
             to="/projects"
             className={` ${
@@ -73,6 +115,14 @@ export const Nav = () => {
             } hover:text-gray-900`}
           >
             OUR PROJECTS
+          </Link>
+          <Link
+            to="/homeowners"
+            className={` ${
+              isScrolled ? 'text-[#e5e2e0]' : 'text-[#e5e2e0]'
+            } hover:text-gray-900`}
+          >
+            HOME OWNERS
           </Link>
         </div>
       </div>
@@ -83,17 +133,62 @@ export const Nav = () => {
         >
           HOME
         </Link>
-        <a
-          href="products"
-          className="block py-2 px-4 text-sm hover:bg-gray-200 text-[#e5e2e0]"
-        >
-          OUR PRODUCTS
-        </a>
+        <div className="relative">
+          <button
+            onClick={() => setShowProductsDropdown(!showProductsDropdown)}
+            className="w-full flex items-center justify-between px-4 py-2 text-sm hover:bg-gray-200 text-[#e5e2e0]"
+          >
+            OUR PRODUCTS
+            <svg
+              className={`w-4 h-4 transform transition-transform duration-200 ${
+                showProductsDropdown ? 'rotate-180' : ''
+              }`}
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </button>
+          {showProductsDropdown && (
+            <div className="bg-[#393939]">
+              <Link
+                to="/products/category1"
+                className="block py-2 px-8 text-sm hover:bg-gray-200 text-[#e5e2e0]"
+              >
+                Category 1
+              </Link>
+              <Link
+                to="/products/category2"
+                className="block py-2 px-8 text-sm hover:bg-gray-200 text-[#e5e2e0]"
+              >
+                Category 2
+              </Link>
+              <Link
+                to="/products/category3"
+                className="block py-2 px-8 text-sm hover:bg-gray-200 text-[#e5e2e0]"
+              >
+                Category 3
+              </Link>
+            </div>
+          )}
+        </div>
         <Link
           to="/projects"
           className="block py-2 px-4 text-sm hover:bg-gray-200 text-[#e5e2e0]"
         >
           OUR PROJECTS
+        </Link>
+        <Link
+          to="/homeowners"
+          className="block py-2 px-4 text-sm hover:bg-gray-200 text-[#e5e2e0]"
+        >
+          HOME OWNERS
         </Link>
       </div>
     </nav>
