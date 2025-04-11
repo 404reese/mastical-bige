@@ -10,16 +10,21 @@
     "preview": "npx vite preview"
   },
   "dependencies": {
-    "clsx": "latest",
+    "@tabler/icons-react": "^3.31.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.6.5",
     "lucide-react": "^0.487.0",
+    "motion": "^12.6.5",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.26.2",
-    "tailwind-merge": "latest"
+    "tailwind-merge": "^3.2.0",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@types/node": "^20.11.18",
-    "@types/react": "^18.3.1",
+    "@types/react": "^18.3.20",
     "@types/react-dom": "^18.3.1",
     "@typescript-eslint/eslint-plugin": "^5.54.0",
     "@typescript-eslint/parser": "^5.54.0",
