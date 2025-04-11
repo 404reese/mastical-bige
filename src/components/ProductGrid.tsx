@@ -1,17 +1,31 @@
 import React from 'react';
 const products = [{
   title: 'Solid Wood Floors',
-  image: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+  image: '/pr1.png'
 }, {
   title: 'Engineered Wood Floors',
-  image: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+  image: '/pr2.png'
 }, {
   title: 'Customized Wooden Flooring',
-  image: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+  image: '/pr3.png'
 }, {
   title: 'Deck Flooring',
-  image: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-}];
+  image: '/pr4.png'
+}, {
+  title: 'Indoor and Outdoor Wall Cladding & Soffit',
+  image: '/pr5.png'
+}, {
+  title: 'Lumbers & Panels',
+  image: '/pr6.png'
+}, {
+  title: 'Laminate Wood Floors',
+  image: '/pr7.png'
+}, {
+  title: 'SPC Wood Floors',
+  image: '/pr8.png'
+},
+
+];
 export function ProductGrid() {
   return <section className="py-16 bg-white">
       <div className="container mx-auto">

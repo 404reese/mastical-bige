@@ -1,9 +1,9 @@
 import { Facebook, Twitter, Instagram, Mail, Phone, MapPin } from 'lucide-react';
-
+import { TextReveal } from "@/components/magicui/text-reveal2";
 
 export const Contact = () => {
   return <section className="py-24 bg-gray-50">
-
+     <TextReveal>Change the way you live with The Big E.</TextReveal>;
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="text-center text-2xl font-bold italic mb-8">
         THE BIG E RETAIL

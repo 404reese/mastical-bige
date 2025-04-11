@@ -1,10 +1,28 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 export const Nav = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [open, setOpen] = useState(false);
-  const [showProductsDropdown, setShowProductsDropdown] = useState(false);
+  const [showProduct, setShowProduct] = useState(false);
+
+  const location = useLocation();
+
+  const scrollToSection = (sectionId: string) => {
+    setShowProduct(false); // Close dropdown
+    
+    // If we're not on the products page, navigate there first
+    if (location.pathname !== '/products') {
+      // Navigate to products page with section info
+      window.localStorage.setItem('scrollTo', sectionId);
+      return;
+    }
+
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,6 +40,20 @@ export const Nav = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+  useEffect(() => {
+    // Check if we need to scroll to a section after navigation
+    const scrollTo = window.localStorage.getItem('scrollTo');
+    if (scrollTo && location.pathname === '/products') {
+      setTimeout(() => {
+        const element = document.getElementById(scrollTo);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+        window.localStorage.removeItem('scrollTo');
+      }, 100);
+    }
+  }, [location]);
 
   return (
     <nav
@@ -61,15 +93,14 @@ export const Nav = () => {
           </Link>
           <div className="relative">
             <button
-              onClick={() => setShowProductsDropdown(!showProductsDropdown)}
+              onClick={() => setShowProduct(!showProduct)}
               className={`${
                 isScrolled ? 'text-[#e5e2e0]' : 'text-[#e5e2e0]'
               } hover:text-gray-900 flex items-center gap-1 relative`}
             >
-              OUR PRODUCTS
-              <svg
+              OUR PRODUCT       <svg
                 className={`w-4 h-4 transform transition-transform duration-200 ${
-                  showProductsDropdown ? 'rotate-180' : ''
+                  showProduct ? 'rotate-180' : ''
                 }`}
                 fill="none"
                 stroke="currentColor"
@@ -83,28 +114,58 @@ export const Nav = () => {
                 />
               </svg>
             </button>
-            {showProductsDropdown && (
+            {showProduct && (
               <div
                 className="absolute top-full left-0 mt-2 w-48 bg-[#292929]/95 rounded-md shadow-lg py-1"
               >
-                <Link
-                  to="/products/category1"
-                  className="block px-4 py-2 text-sm text-[#e5e2e0] hover:bg-[#393939]"
+                <button
+                  onClick={() => scrollToSection('solid-wood-floors')}
+                  className="block w-full text-left px-4 py-2 text-sm text-[#e5e2e0] hover:bg-[#393939]"
                 >
-                  Category 1
-                </Link>
-                <Link
-                  to="/products/category2"
-                  className="block px-4 py-2 text-sm text-[#e5e2e0] hover:bg-[#393939]"
+                  Solid Wood Floors
+                </button>
+                <button
+                  onClick={() => scrollToSection('engineered-wood-floors')}
+                  className="block w-full text-left px-4 py-2 text-sm text-[#e5e2e0] hover:bg-[#393939]"
                 >
-                  Category 2
-                </Link>
-                <Link
-                  to="/products/category3"
-                  className="block px-4 py-2 text-sm text-[#e5e2e0] hover:bg-[#393939]"
+                  Engineered Wood Floors
+                </button>
+                <button
+                  onClick={() => scrollToSection('customized-wooden-flooring')}
+                  className="block w-full text-left px-4 py-2 text-sm text-[#e5e2e0] hover:bg-[#393939]"
                 >
-                  Category 3
-                </Link>
+                  Customized Wooden Flooring
+                </button>
+                <button
+                  onClick={() => scrollToSection('deck-flooring')}
+                  className="block w-full text-left px-4 py-2 text-sm text-[#e5e2e0] hover:bg-[#393939]"
+                >
+                  Deck Flooring
+                </button>
+                <button
+                  onClick={() => scrollToSection('indoor-outdoor-wall-cladding')}
+                  className="block w-full text-left px-4 py-2 text-sm text-[#e5e2e0] hover:bg-[#393939]"
+                >
+                  Indoor and Outdoor Wall Cladding & Soffit
+                </button>
+                <button
+                  onClick={() => scrollToSection('lumber-panels')}
+                  className="block w-full text-left px-4 py-2 text-sm text-[#e5e2e0] hover:bg-[#393939]"
+                >
+                  Lumber & Panels
+                </button>
+                <button
+                  onClick={() => scrollToSection('laminated-wood-floors')}
+                  className="block w-full text-left px-4 py-2 text-sm text-[#e5e2e0] hover:bg-[#393939]"
+                >
+                  Laminated Wood Floors
+                </button>
+                <button
+                  onClick={() => scrollToSection('spc-wood-floors')}
+                  className="block w-full text-left px-4 py-2 text-sm text-[#e5e2e0] hover:bg-[#393939]"
+                >
+                  SPC Wood Floors
+                </button>
               </div>
             )}
           </div>
@@ -135,13 +196,12 @@ export const Nav = () => {
         </Link>
         <div className="relative">
           <button
-            onClick={() => setShowProductsDropdown(!showProductsDropdown)}
+            onClick={() => setShowProduct(!showProduct)}
             className="w-full flex items-center justify-between px-4 py-2 text-sm hover:bg-gray-200 text-[#e5e2e0]"
           >
-            OUR PRODUCTS
-            <svg
+            OUR PRODUCT     <svg
               className={`w-4 h-4 transform transition-transform duration-200 ${
-                showProductsDropdown ? 'rotate-180' : ''
+                showProduct ? 'rotate-180' : ''
               }`}
               fill="none"
               stroke="currentColor"
@@ -155,22 +215,22 @@ export const Nav = () => {
               />
             </svg>
           </button>
-          {showProductsDropdown && (
+          {showProduct && (
             <div className="bg-[#393939]">
               <Link
-                to="/products/category1"
+                to="/producty1"
                 className="block py-2 px-8 text-sm hover:bg-gray-200 text-[#e5e2e0]"
               >
                 Category 1
               </Link>
               <Link
-                to="/products/category2"
+                to="/producty2"
                 className="block py-2 px-8 text-sm hover:bg-gray-200 text-[#e5e2e0]"
               >
                 Category 2
               </Link>
               <Link
-                to="/products/category3"
+                to="/producty3"
                 className="block py-2 px-8 text-sm hover:bg-gray-200 text-[#e5e2e0]"
               >
                 Category 3
