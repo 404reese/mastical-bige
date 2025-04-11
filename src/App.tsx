@@ -9,13 +9,14 @@ import Projects from './pages/Projects';
 import Products from './pages/Products';
 import Homeowners from './pages/Homeowners';
 import {HeroScroll} from './components/HeroScroll';
-
+import {Social} from './components/Social';
 
 const Home = () => <>
     <Hero />
     <HeroScroll />
     <Collections />
     <Story />
+    < Social />
     <Contact />
   </>;
 export function App() {

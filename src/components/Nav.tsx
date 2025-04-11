@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 export const Nav = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -7,20 +7,21 @@ export const Nav = () => {
   const [showProduct, setShowProduct] = useState(false);
 
   const location = useLocation();
+  const navigate = useNavigate();
 
   const scrollToSection = (sectionId: string) => {
     setShowProduct(false); // Close dropdown
     
-    // If we're not on the products page, navigate there first
     if (location.pathname !== '/products') {
-      // Navigate to products page with section info
+      // Navigate to products page and store section ID
       window.localStorage.setItem('scrollTo', sectionId);
-      return;
-    }
-
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      navigate('/products');
+    } else {
+      // Already on products page, just scroll
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
     }
   };
 
@@ -217,24 +218,54 @@ export const Nav = () => {
           </button>
           {showProduct && (
             <div className="bg-[#393939]">
-              <Link
-                to="/producty1"
-                className="block py-2 px-8 text-sm hover:bg-gray-200 text-[#e5e2e0]"
+              <button
+                onClick={() => scrollToSection('solid-wood-floors')}
+                className="block w-full text-left px-8 py-2 text-sm hover:bg-gray-200 text-[#e5e2e0]"
               >
-                Category 1
-              </Link>
-              <Link
-                to="/producty2"
-                className="block py-2 px-8 text-sm hover:bg-gray-200 text-[#e5e2e0]"
+                Solid Wood Floors
+              </button>
+              <button
+                onClick={() => scrollToSection('engineered-wood-floors')}
+                className="block w-full text-left px-8 py-2 text-sm hover:bg-gray-200 text-[#e5e2e0]"
               >
-                Category 2
-              </Link>
-              <Link
-                to="/producty3"
-                className="block py-2 px-8 text-sm hover:bg-gray-200 text-[#e5e2e0]"
+                Engineered Wood Floors
+              </button>
+              <button
+                onClick={() => scrollToSection('customized-wooden-flooring')}
+                className="block w-full text-left px-8 py-2 text-sm hover:bg-gray-200 text-[#e5e2e0]"
               >
-                Category 3
-              </Link>
+                Customized Wooden Flooring
+              </button>
+              <button
+                onClick={() => scrollToSection('deck-flooring')}
+                className="block w-full text-left px-8 py-2 text-sm hover:bg-gray-200 text-[#e5e2e0]"
+              >
+                Deck Flooring
+              </button>
+              <button
+                onClick={() => scrollToSection('indoor-outdoor-wall-cladding')}
+                className="block w-full text-left px-8 py-2 text-sm hover:bg-gray-200 text-[#e5e2e0]"
+              >
+                Indoor and Outdoor Wall Cladding & Soffit
+              </button>
+              <button
+                onClick={() => scrollToSection('lumber-panels')}
+                className="block w-full text-left px-8 py-2 text-sm hover:bg-gray-200 text-[#e5e2e0]"
+              >
+                Lumber & Panels
+              </button>
+              <button
+                onClick={() => scrollToSection('laminated-wood-floors')}
+                className="block w-full text-left px-8 py-2 text-sm hover:bg-gray-200 text-[#e5e2e0]"
+              >
+                Laminated Wood Floors
+              </button>
+              <button
+                onClick={() => scrollToSection('spc-wood-floors')}
+                className="block w-full text-left px-8 py-2 text-sm hover:bg-gray-200 text-[#e5e2e0]"
+              >
+                SPC Wood Floors
+              </button>
             </div>
           )}
         </div>
