@@ -1,8 +1,9 @@
-import React from 'react';
 import { Facebook, Twitter, Instagram, Mail, Phone, MapPin } from 'lucide-react';
+
 
 export const Contact = () => {
   return <section className="py-24 bg-gray-50">
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="text-center text-2xl font-bold italic mb-8">
         THE BIG E RETAIL
@@ -58,10 +59,14 @@ export const Contact = () => {
         <div className="text-center mt-8">
             <h4 className="text-lg font-semibold mb-2">Address</h4>
             <ul className="space-y-2">
+            <a href="https://maps.app.goo.gl/YiX6oKkGbp1Ev2C29" target="_blank" rel="noopener noreferrer" className="hover:underline">
               <li className="flex items-center justify-center text-gray-400">
+                
                 <MapPin className="h-5 w-5 mr-2" />
                 The Big E Retail, 33-34, Laxmi Woolen Mills, Shakti Mill Lane, Mahalaxmi (w), Mumbai, Maharashtra 400011
+                
               </li>
+              </a>
             </ul>
           </div>
         </div>
