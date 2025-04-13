@@ -1,4 +1,6 @@
 import React from 'react';
+import { motion } from 'framer-motion';
+
 const products = [{
   image: '/s1.png'
 }, {
@@ -8,15 +10,47 @@ const products = [{
 }, {
   image: '/s4.png'
 }];
+
 export function Social() {
-  return <section className="py-16 bg-white flex items-center justify-center">
+  return <motion.section 
+    initial="initial"
+    whileInView="animate"
+    viewport={{ once: true }}
+    className="py-16 bg-white flex items-center justify-center"
+  >
       <div className="container mx-auto px-4">
-        <h1 className="text-4xl font-serif font-bold mb-2 text-center">Social Media</h1>
-        <a href="https://www.instagram.com/thebigeretail/" target="_blank" className='hover:underline'><p className="text-lg mb-8 text-center">Join Us</p></a>
+        <motion.h1 
+          initial={{ y: 60, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="text-4xl font-serif font-bold mb-2 text-center"
+        >
+          Social Media
+        </motion.h1>
+        <motion.a 
+          initial={{ y: 30, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          viewport={{ once: true }}
+          href="https://www.instagram.com/thebigeretail/" 
+          target="_blank" 
+          className='hover:underline'
+        >
+          <p className="text-lg mb-8 text-center">Join Us</p>
+        </motion.a>
         
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-          {products.map(product => (
-            <a href="https://www.instagram.com/thebigeretail/" target="_blank" rel="noopener noreferrer">
+          {products.map((product, index) => (
+            <motion.a 
+              initial={{ scale: 0.8, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              viewport={{ once: true }}
+              href="https://www.instagram.com/thebigeretail/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
               <div className="group cursor-pointer">
                 <div className="aspect-square overflow-hidden rounded-lg mb-2 relative">
                   <img src={product.image} className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
@@ -29,10 +63,10 @@ export function Social() {
                   </div>
                 </div>
               </div>
-            </a>
+            </motion.a>
           ))}
         </div>
       </div>
-    </section>;
+    </motion.section>;
 }
 

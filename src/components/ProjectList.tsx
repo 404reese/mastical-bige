@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 interface Project {
   title: string;
@@ -95,7 +96,7 @@ const ProjectList = () => {
           '/p26.png',
         ],
         isDark: false,
-      },{
+      }, {
         title: 'Deck for a Private Villa in Alibagh',
         subtitle: '2500 sqft of C tech Deck',
         images: [
@@ -106,26 +107,45 @@ const ProjectList = () => {
       },
   ];
 
+  const fadeInUp = {
+    initial: { y: 60, opacity: 0 },
+    animate: { y: 0, opacity: 1 },
+    transition: { duration: 0.6, ease: "easeOut" }
+  };
+
   return (
     <>
       {projects.map((project, index) => (
-        <section
+        <motion.section
           key={index}
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true, margin: "-100px" }}
           className={`py-24 ${
             project.isDark ? 'bg-gray-900 text-[#e5e2e0]' : 'bg-gray-50'
           }`}
         >
           <div className="container mx-auto px-4">
-            <h2 className="text-4xl font-light text-center mb-4">
+            <motion.h2 
+              variants={fadeInUp}
+              className="text-4xl font-light text-center mb-4"
+            >
               {project.title}
-            </h2>
-            <p className="text-center mb-16 text-gray-500">
+            </motion.h2>
+            <motion.p 
+              variants={fadeInUp}
+              className="text-center mb-16 text-gray-500"
+            >
               {project.subtitle}
-            </p>
+            </motion.p>
             <div className="grid grid-cols-2 gap-4">
               {project.images.map((image, imgIndex) => (
-                <img
+                <motion.img
                   key={imgIndex}
+                  initial={{ scale: 0.8, opacity: 0 }}
+                  whileInView={{ scale: 1, opacity: 1 }}
+                  transition={{ duration: 0.5, delay: imgIndex * 0.2 }}
+                  viewport={{ once: true }}
                   src={image}
                   alt={`Project view ${imgIndex + 1}`}
                   className="w-full h-[300px] object-cover rounded-lg"
@@ -133,7 +153,7 @@ const ProjectList = () => {
               ))}
             </div>
           </div>
-        </section>
+        </motion.section>
       ))}
     </>
   );
