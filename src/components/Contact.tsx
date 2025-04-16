@@ -1,6 +1,7 @@
 import { Facebook, Twitter, Instagram, Mail, Phone, MapPin } from 'lucide-react';
 import { TextReveal } from "@/components/magicui/text-reveal2";
 import { motion } from 'framer-motion';
+import { ContactForm } from './ContactForm'; // Import the new form component
 
 export const Contact = () => {
   return <motion.section 
@@ -97,13 +98,25 @@ export const Contact = () => {
           </div>
         </motion.div>
       </div>
+
+      {/* Add the Contact Form */}
+      <motion.div
+        initial={{ y: 30, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.6, delay: 0.6 }} // Adjust delay if needed
+        viewport={{ once: true }}
+        className="max-w-xl mx-auto mt-12" // Added margin-top and max-width
+      >
+        <h3 className="text-2xl font-semibold text-center mb-6">Send us a Message</h3>
+        <ContactForm />
+      </motion.div>
       
       <motion.div 
         initial={{ y: 30, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.6, delay: 0.6 }}
+        transition={{ duration: 0.6, delay: 0.7 }} // Incremented delay
         viewport={{ once: true }}
-        className="text-center mt-8"
+        className="text-center mt-12" // Increased margin-top
       >
         <h4 className="text-lg font-semibold mb-2">Address</h4>
         <ul className="space-y-2">
@@ -119,7 +132,7 @@ export const Contact = () => {
       <motion.div 
         initial={{ y: 30, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.6, delay: 0.7 }}
+        transition={{ duration: 0.6, delay: 0.8 }} // Incremented delay
         viewport={{ once: true }}
         className="text-center text-gray-400 mt-12"
       >

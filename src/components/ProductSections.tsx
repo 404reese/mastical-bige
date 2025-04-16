@@ -176,8 +176,8 @@ export function ProductSections() {
         </div>
       </section>
 
-      {/* Customized Wooden Flooring Section */}
-      <section id="customized-wooden-flooring" className="py-16 bg-gray-50">
+      {/* Wooden Parquet Flooring Section */}
+      <section id="wooden-parquet-flooring" className="py-16 bg-gray-50">
         <div className="container mx-auto">
           <div className="flex flex-col lg:flex-row gap-12 items-center">
             <motion.div
@@ -188,22 +188,16 @@ export function ProductSections() {
               viewport={{ once: true, amount: 0.3 }}
             >
               <h2 className="text-3xl font-bold mb-8 text-center lg:text-left">
-                Customized Wooden Flooring
+                Wooden Parquet Flooring
               </h2>
               <p className="text-gray-700 mb-6 text-justify">
-                Solid Wood Flooring is a natural 100% wood product with each
-                board coming from just one piece of solid wood which is cut down
-                to the desired size. It creates a luxurious appeal to your home
-                & is very strong & durable. The Solid Wood flooring has a longer
-                life span than any other kind of flooring & is also available in
-                various species of wood like Oak, Walnut, Maple, Cherry,
-                Mahogany, Bamboo, etc.
+                Wooden parquet flooring offers intricate patterns and timeless elegance. Made from small blocks or strips of wood arranged geometrically, it adds a sophisticated touch to any interior. Parquet is known for its durability and unique aesthetic appeal.
               </p>
               <ul className="list-disc list-inside text-gray-700 space-y-2">
-                <li>100% natural solid wood</li>
-                <li>Long-lasting durability</li>
-                <li>Available in multiple wood species</li>
-                <li>Creates luxurious appeal</li>
+                <li>Intricate geometric patterns</li>
+                <li>Highly durable and long-lasting</li>
+                <li>Adds unique character to rooms</li>
+                <li>Available in various wood types</li>
               </ul>
             </motion.div>
 
@@ -212,6 +206,41 @@ export function ProductSections() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.6, ease: "easeOut" }}
+              viewport={{ once: true, amount: 0.3 }}
+            >
+              <Slider {...settings}>
+                <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
+                  <img
+                    src="/parquet1.png" // Placeholder image
+                    alt="Wooden parquet floor view 1"
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
+                  <img
+                    src="/parquet2.png" // Placeholder image
+                    alt="Wooden parquet floor view 2"
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                </div>
+              </Slider>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Customized Wooden Flooring Section */}
+      <section id="customized-wooden-flooring" className="py-16"> {/* Removed bg-gray-50 */}
+        <div className="container mx-auto">
+          <div className="flex flex-col lg:flex-row gap-12 items-center">
+            {/* Swapped Image and Text */}
+            <motion.div
+              className="lg:w-1/2 w-full px-4 lg:px-0"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.3, ease: "easeOut" }} // Adjusted delay
               viewport={{ once: true, amount: 0.3 }}
             >
               <Slider {...settings}>
@@ -249,19 +278,76 @@ export function ProductSections() {
                 </div>
               </Slider>
             </motion.div>
+
+            <motion.div
+              className="lg:w-1/2"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.6, ease: "easeOut" }} // Adjusted delay
+              viewport={{ once: true, amount: 0.3 }}
+            >
+              <h2 className="text-3xl font-bold mb-8 text-center lg:text-left">
+                Customized Wooden Flooring
+              </h2>
+              <p className="text-gray-700 mb-6 text-justify">
+                Solid Wood Flooring is a natural 100% wood product with each
+                board coming from just one piece of solid wood which is cut down
+                to the desired size. It creates a luxurious appeal to your home
+                & is very strong & durable. The Solid Wood flooring has a longer
+                life span than any other kind of flooring & is also available in
+                various species of wood like Oak, Walnut, Maple, Cherry,
+                Mahogany, Bamboo, etc.
+              </p>
+              <ul className="list-disc list-inside text-gray-700 space-y-2">
+                <li>100% natural solid wood</li>
+                <li>Long-lasting durability</li>
+                <li>Available in multiple wood species</li>
+                <li>Creates luxurious appeal</li>
+              </ul>
+            </motion.div>
           </div>
         </div>
       </section>
 
       {/* Deck Flooring Section */}
-      <section id="deck-flooring" className="py-16">
+      <section id="deck-flooring" className="py-16 bg-gray-50"> {/* Added bg-gray-50 */}
         <div className="container mx-auto">
           <div className="flex flex-col lg:flex-row gap-12 items-center">
+            {/* Swapped Text and Image */}
+            <motion.div
+              className="lg:w-1/2"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.3, ease: "easeOut" }} // Adjusted delay
+              viewport={{ once: true, amount: 0.3 }}
+            >
+              <h2 className="text-3xl font-bold mb-8 text-center lg:text-left">
+                Deck Flooring
+              </h2>
+              <p className="text-gray-700 mb-6 text-justify">
+                Engineered Wood Floors combine the natural beauty of wood with
+                advanced technology for exceptional strength and durability.
+                Unlike solid wood, engineered wood consists of multiple layers,
+                making it more resistant to moisture and temperature changes.
+                Available in a variety of wood species such as Oak, Walnut,
+                Maple, and Cherry, these floors offer a stylish and sustainable
+                option for modern living spaces, providing both luxury and
+                practicality.
+              </p>
+
+              <ul className="list-disc list-inside text-gray-700 space-y-2">
+                <li>100% natural solid wood</li>
+                <li>Long-lasting durability</li>
+                <li>Available in multiple wood species</li>
+                <li>Creates luxurious appeal</li>
+              </ul>
+            </motion.div>
+
             <motion.div
               className="lg:w-1/2 w-full px-4 lg:px-0"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
+              transition={{ duration: 1, delay: 0.6, ease: "easeOut" }} // Adjusted delay
               viewport={{ once: true, amount: 0.3 }}
             >
               <Slider {...settings}>
@@ -299,48 +385,37 @@ export function ProductSections() {
                 </div>
               </Slider>
             </motion.div>
-
-            <motion.div
-              className="lg:w-1/2"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: 0.6, ease: "easeOut" }}
-              viewport={{ once: true, amount: 0.3 }}
-            >
-              <h2 className="text-3xl font-bold mb-8 text-center lg:text-left">
-                Deck Flooring
-              </h2>
-              <p className="text-gray-700 mb-6 text-justify">
-                Engineered Wood Floors combine the natural beauty of wood with
-                advanced technology for exceptional strength and durability.
-                Unlike solid wood, engineered wood consists of multiple layers,
-                making it more resistant to moisture and temperature changes.
-                Available in a variety of wood species such as Oak, Walnut,
-                Maple, and Cherry, these floors offer a stylish and sustainable
-                option for modern living spaces, providing both luxury and
-                practicality.
-              </p>
-
-              <ul className="list-disc list-inside text-gray-700 space-y-2">
-                <li>100% natural solid wood</li>
-                <li>Long-lasting durability</li>
-                <li>Available in multiple wood species</li>
-                <li>Creates luxurious appeal</li>
-              </ul>
-            </motion.div>
           </div>
         </div>
       </section>
 
       {/* Indoor and Outdoor Wall Cladding & Soffit Section */}
-      <section id="wall-cladding" className="py-16 bg-gray-50">
+      <section id="wall-cladding" className="py-16"> {/* Removed bg-gray-50 */}
         <div className="container mx-auto">
           <div className="flex flex-col lg:flex-row gap-12 items-center">
+            {/* Swapped Image and Text */}
+            <motion.div
+              className="lg:w-1/2 w-full px-4 lg:px-0"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.3, ease: "easeOut" }} // Adjusted delay
+              viewport={{ once: true, amount: 0.3 }}
+            >
+              <Slider {...settings}>
+                <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
+                  <img src="/wc1.png" alt="Wall cladding example 1" className="w-full h-full object-cover" loading="lazy" />
+                </div>
+                <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
+                  <img src="/wc2.png" alt="Wall cladding example 2" className="w-full h-full object-cover" loading="lazy" />
+                </div>
+              </Slider>
+            </motion.div>
+
             <motion.div
               className="lg:w-1/2"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
+              transition={{ duration: 1, delay: 0.6, ease: "easeOut" }} // Adjusted delay
               viewport={{ once: true, amount: 0.3 }}
             >
               <h2 className="text-3xl font-bold mb-8 text-center lg:text-left">
@@ -356,53 +431,20 @@ export function ProductSections() {
                 <li>Excellent thermal insulation</li>
               </ul>
             </motion.div>
-
-            <motion.div
-              className="lg:w-1/2 w-full px-4 lg:px-0"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: 0.6, ease: "easeOut" }}
-              viewport={{ once: true, amount: 0.3 }}
-            >
-              <Slider {...settings}>
-                <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
-                  <img src="/wc1.png" alt="Wall cladding example 1" className="w-full h-full object-cover" loading="lazy" />
-                </div>
-                <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
-                  <img src="/wc2.png" alt="Wall cladding example 2" className="w-full h-full object-cover" loading="lazy" />
-                </div>
-              </Slider>
-            </motion.div>
           </div>
         </div>
       </section>
 
       {/* Lumbers & Panels Section */}
-      <section id="lumbers-panels" className="py-16">
+      <section id="lumbers-panels" className="py-16 bg-gray-50"> {/* Added bg-gray-50 */}
         <div className="container mx-auto">
           <div className="flex flex-col lg:flex-row gap-12 items-center">
-            <motion.div 
-              className="lg:w-1/2 w-full px-4 lg:px-0"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
-              viewport={{ once: true, amount: 0.3 }}
-            >
-              <Slider {...settings}>
-                <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
-                  <img src="/lp1.png" alt="Lumber and panels example 1" className="w-full h-full object-cover" loading="lazy" />
-                </div>
-                <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
-                  <img src="/lp2.png" alt="Lumber and panels example 2" className="w-full h-full object-cover" loading="lazy" />
-                </div>
-              </Slider>
-            </motion.div>
-
-            <motion.div 
+            {/* Swapped Text and Image */}
+            <motion.div
               className="lg:w-1/2"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: 0.6, ease: "easeOut" }}
+              transition={{ duration: 1, delay: 0.3, ease: "easeOut" }} // Adjusted delay
               viewport={{ once: true, amount: 0.3 }}
             >
               <h2 className="text-3xl font-bold mb-8 text-center lg:text-left">
@@ -418,19 +460,54 @@ export function ProductSections() {
                 <li>Sustainably sourced materials</li>
               </ul>
             </motion.div>
+
+            <motion.div
+              className="lg:w-1/2 w-full px-4 lg:px-0"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.6, ease: "easeOut" }} // Adjusted delay
+              viewport={{ once: true, amount: 0.3 }}
+            >
+              <Slider {...settings}>
+                <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
+                  <img src="/lp1.png" alt="Lumber and panels example 1" className="w-full h-full object-cover" loading="lazy" />
+                </div>
+                <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
+                  <img src="/lp2.png" alt="Lumber and panels example 2" className="w-full h-full object-cover" loading="lazy" />
+                </div>
+              </Slider>
+            </motion.div>
           </div>
         </div>
       </section>
 
       {/* Laminate Wood Floors Section */}
-      <section id="laminate-floors" className="py-16 bg-gray-50">
+      <section id="laminate-floors" className="py-16"> {/* Removed bg-gray-50 */}
         <div className="container mx-auto">
           <div className="flex flex-col lg:flex-row gap-12 items-center">
+            {/* Swapped Image and Text */}
+            <motion.div
+              className="lg:w-1/2 w-full px-4 lg:px-0"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.3, ease: "easeOut" }} // Adjusted delay
+              viewport={{ once: true, amount: 0.3 }}
+            >
+              <Slider {...settings}>
+                <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
+                  <img src="/lf1.png" alt="Laminate floor example 1" className="w-full h-full object-cover" loading="lazy" />
+                </div>
+                <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
+                  <img src="/lf2.png" alt="Laminate floor example 2" className="w-full h-full object-cover" loading="lazy" />
+                </div>
+              </Slider>
+            </motion.div>
+
             <motion.div
               className="lg:w-1/2"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
+              transition={{ duration: 1, delay: 0.6, ease: "easeOut" }} // Adjusted delay
               viewport={{ once: true, amount: 0.3 }}
             >
               <h2 className="text-3xl font-bold mb-8 text-center lg:text-left">
@@ -446,53 +523,20 @@ export function ProductSections() {
                 <li>Budget-friendly option</li>
               </ul>
             </motion.div>
-
-            <motion.div
-              className="lg:w-1/2 w-full px-4 lg:px-0"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: 0.6, ease: "easeOut" }}
-              viewport={{ once: true, amount: 0.3 }}
-            >
-              <Slider {...settings}>
-                <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
-                  <img src="/lf1.png" alt="Laminate floor example 1" className="w-full h-full object-cover" loading="lazy" />
-                </div>
-                <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
-                  <img src="/lf2.png" alt="Laminate floor example 2" className="w-full h-full object-cover" loading="lazy" />
-                </div>
-              </Slider>
-            </motion.div>
           </div>
         </div>
       </section>
 
       {/* SPC Wood Floors Section */}
-      <section id="spc-floors" className="py-16">
+      <section id="spc-floors" className="py-16 bg-gray-50"> {/* Added bg-gray-50 */}
         <div className="container mx-auto">
           <div className="flex flex-col lg:flex-row gap-12 items-center">
-            <motion.div
-              className="lg:w-1/2 w-full px-4 lg:px-0"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
-              viewport={{ once: true, amount: 0.3 }}
-            >
-              <Slider {...settings}>
-                <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
-                  <img src="/spc1.png" alt="SPC floor example 1" className="w-full h-full object-cover" loading="lazy" />
-                </div>
-                <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
-                  <img src="/spc2.png" alt="SPC floor example 2" className="w-full h-full object-cover" loading="lazy" />
-                </div>
-              </Slider>
-            </motion.div>
-
+            {/* Swapped Text and Image */}
             <motion.div
               className="lg:w-1/2"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: 0.6, ease: "easeOut" }}
+              transition={{ duration: 1, delay: 0.3, ease: "easeOut" }} // Adjusted delay
               viewport={{ once: true, amount: 0.3 }}
             >
               <h2 className="text-3xl font-bold mb-8 text-center lg:text-left">
@@ -507,6 +551,23 @@ export function ProductSections() {
                 <li>Excellent sound insulation</li>
                 <li>Suitable for underfloor heating</li>
               </ul>
+            </motion.div>
+
+            <motion.div
+              className="lg:w-1/2 w-full px-4 lg:px-0"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.6, ease: "easeOut" }} // Adjusted delay
+              viewport={{ once: true, amount: 0.3 }}
+            >
+              <Slider {...settings}>
+                <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
+                  <img src="/spc1.png" alt="SPC floor example 1" className="w-full h-full object-cover" loading="lazy" />
+                </div>
+                <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
+                  <img src="/spc2.png" alt="SPC floor example 2" className="w-full h-full object-cover" loading="lazy" />
+                </div>
+              </Slider>
             </motion.div>
           </div>
         </div>

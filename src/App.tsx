@@ -28,6 +28,7 @@ export function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/products" element={<Products />} />
           <Route path="/homeowners" element={<Homeowners />} />
+          <Route path="/contact" element={<Contact />} /> {/* Added contact route */}
         </Routes>
       </div>
     </Router>;
