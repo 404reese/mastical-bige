@@ -14,6 +14,7 @@ const products = [{
 
 export function Sample() {
   return <motion.section 
+    id="sample"
     initial="initial"
     whileInView="animate"
     viewport={{ once: true }}
@@ -36,9 +37,13 @@ export function Sample() {
           viewport={{ once: true }}
           className="flex items-center justify-center mb-8"
         >
-          <button className="bg-[#D4B88C] text-#000 px-6 py-2 rounded">
+          <motion.button 
+          onClick={() => {
+            document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+          }}
+          className="bg-[#D4B88C] text-#fff px-6 py-2 rounded">
             Yes I want !
-          </button>
+          </motion.button>
         </motion.div>
         
         <div className="grid grid-cols-2 md:grid-cols-3 gap-8">

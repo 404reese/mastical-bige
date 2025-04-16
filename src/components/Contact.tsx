@@ -5,12 +5,13 @@ import { ContactForm } from './ContactForm'; // Import the new form component
 
 export const Contact = () => {
   return <motion.section 
+    id="contact"
     initial="initial"
     whileInView="animate"
     viewport={{ once: true }}
     className="py-24 bg-gray-50"
   >
-    <TextReveal>Change the way you live with The Big E.</TextReveal>
+    {/* <TextReveal>Change the way you live with The Big E.</TextReveal> */}
     <motion.div 
       initial={{ y: 30, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}

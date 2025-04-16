@@ -30,6 +30,9 @@ export function HomeHero() {
         >
           {/* Animated button */}
           <motion.button
+          onClick={() => {
+            document.getElementById('sample')?.scrollIntoView({ behavior: 'smooth' });
+          }}
             className="bg-[#D4B88C] text-white px-6 py-2 rounded"
             initial={{ opacity: 0, scale: 0.8 }}  // Start with opacity 0 and small scale
             animate={{ opacity: 1, scale: 1 }}    // Animate to full opacity and normal scale
@@ -40,6 +43,9 @@ export function HomeHero() {
 
           {/* Animated button */}
           <motion.button
+          onClick={() => {
+            document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+          }}
             className="border border-white text-white px-6 py-2 rounded"
             initial={{ opacity: 0, scale: 0.8 }}  // Start with opacity 0 and small scale
             animate={{ opacity: 1, scale: 1 }}    // Animate to full opacity and normal scale

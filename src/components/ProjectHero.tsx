@@ -47,6 +47,9 @@ export const ProjectHero = () => {
             FEEL GOOD
           </h1> */}
           <motion.button
+            onClick={() => {
+              document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+            }}
             className="text-[#e5e2e0] border border-[#e5e2e0] px-8 py-3 hover:bg-[#e5e2e0] hover:text-black transition-colors mt-16"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
