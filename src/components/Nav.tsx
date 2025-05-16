@@ -119,12 +119,13 @@ export const Nav = () => {
               <div
                 className="absolute top-full left-0 mt-2 w-48 bg-[#292929]/95 rounded-md shadow-lg py-1"
               >
-                <button
-                  onClick={() => scrollToSection('solid-wood-floors')}
+                <Link
+                  to="/products/solid-wood-floors"
                   className="block w-full text-left px-4 py-2 text-sm text-[#e5e2e0] hover:bg-[#393939]"
+                  onClick={() => setShowProduct(false)}
                 >
                   Solid Wood Floors
-                </button>
+                </Link>
                 <button
                   onClick={() => scrollToSection('engineered-wood-floors')}
                   className="block w-full text-left px-4 py-2 text-sm text-[#e5e2e0] hover:bg-[#393939]"
@@ -218,12 +219,13 @@ export const Nav = () => {
           </button>
           {showProduct && (
             <div className="bg-[#393939]">
-              <button
-                onClick={() => scrollToSection('solid-wood-floors')}
+              <Link
+                to="/products/solid-wood-floors"
                 className="block w-full text-left px-8 py-2 text-sm hover:bg-gray-200 text-[#e5e2e0]"
+                onClick={() => setShowProduct(false)}
               >
                 Solid Wood Floors
-              </button>
+              </Link>
               <button
                 onClick={() => scrollToSection('engineered-wood-floors')}
                 className="block w-full text-left px-8 py-2 text-sm hover:bg-gray-200 text-[#e5e2e0]"
