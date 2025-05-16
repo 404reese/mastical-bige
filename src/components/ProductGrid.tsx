@@ -1,30 +1,39 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const products = [{
   title: 'Solid Wood Floors',
-  image: '/pr1.png'
+  image: '/pr1.png',
+  link: '/products/solid-wood-floors'
 }, {
   title: 'Engineered Wood Floors',
-  image: '/pr2.png'
+  image: '/pr2.png',
+  link: '/products/engineered-wood-floors'
 }, {
   title: 'Customized Wooden Flooring',
-  image: '/pr3.png'
+  image: '/pr3.png',
+  link: '/products/customized-wooden-flooring'
 }, {
   title: 'Deck Flooring',
-  image: '/pr4.png'
+  image: '/pr4.png',
+  link: '/products/deck-flooring'
 }, {
   title: 'Indoor and Outdoor Wall Cladding & Soffit',
-  image: '/pr5.png'
+  image: '/pr5.png',
+  link: '/products/wall-cladding-soffit'
 }, {
   title: 'Lumbers & Panels',
-  image: '/pr6.png'
+  image: '/pr6.png',
+  link: '/products/lumbers-panels'
 }, {
   title: 'Laminate Wood Floors',
-  image: '/pr7.png'
+  image: '/pr7.png',
+  link: '/products/laminate-wood-floors'
 }, {
   title: 'SPC Wood Floors',
-  image: '/pr8.png'
+  image: '/pr8.png',
+  link: '/products/spc-wood-floors'
 }];
 
 export function ProductGrid() {
@@ -54,10 +63,12 @@ export function ProductGrid() {
               key={product.title} 
               className="group cursor-pointer"
             >
-              <div className="aspect-square overflow-hidden rounded-lg mb-2">
-                <img src={product.image} alt={product.title} className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
-              </div>
-              <h3 className="text-lg font-medium">{product.title}</h3>
+              <Link to={product.link}>
+                <div className="aspect-square overflow-hidden rounded-lg mb-2">
+                  <img src={product.image} alt={product.title} className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+                </div>
+                <h3 className="text-lg font-medium">{product.title}</h3>
+              </Link>
             </motion.div>
           ))}
         </div>
