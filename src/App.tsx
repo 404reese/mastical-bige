@@ -10,6 +10,7 @@ import Products from './pages/Products';
 import Homeowners from './pages/Homeowners';
 import {HeroScroll} from './components/HeroScroll';
 import {Social} from './components/Social';
+import SolidWoodFloors from './pages/SolidWoodFloors';
 
 const Home = () => <>
     <Hero />
@@ -29,6 +30,7 @@ export function App() {
           <Route path="/products" element={<Products />} />
           <Route path="/homeowners" element={<Homeowners />} />
           <Route path="/contact" element={<Contact />} /> {/* Added contact route */}
+          <Route path="/products/solid-wood-floors" element={<SolidWoodFloors />} />
         </Routes>
       </div>
     </Router>;
