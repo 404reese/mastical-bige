@@ -16,8 +16,7 @@ export const products = [
       ],
       images: [
         { src: 'https://images.unsplash.com/photo-1541123356219-284ebe98ae3b?ixlib=rb-4.0.3', alt: 'Elegant solid wood flooring in a room' },
-        { src: 'https://images.unsplash.com/photo-1600121848594-d8644e57abab?ixlib=rb-4.0.3', alt: 'Close-up of solid wood floor texture' },
-        { src: 'https://images.unsplash.com/photo-1585435465945-59e59358487a?ixlib=rb-4.0.3', alt: 'Another view of installed solid wood flooring' },
+        { src: 'https://images.unsplash.com/photo-1600121848594-d8644e57abab?ixlib=rb-4.0.3', alt: 'Close-up of solid wood floor texture' }
       ],
       imagePosition: 'right', // Image on the right
       aspectRatio: 'aspect-square',
