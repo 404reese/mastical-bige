@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Slider from "react-slick";
 import "/node_modules/slick-carousel/slick/slick.css";
 import "/node_modules/slick-carousel/slick/slick-theme.css";
-import { products } from "../data/productData";
+import { products } from "@/data/productData";
 
 export function SolidWoodFloors() {
   // Find the solid wood product data
@@ -55,13 +55,29 @@ export function SolidWoodFloors() {
     }
   ];
 
+  // Wood Species data
+  const woodSpecies = [
+    { name: "OAK NATURAL", image: "/products/swfp1.png" },
+    { name: "OAK EUROPEAN GREY", image: "/products/swfp2.png" },
+    { name: "OAK CARAMEL", image: "/products/swfp3.png" },
+    { name: "OAK ANTIQUE", image: "/products/swfp4.png" },
+    { name: "OAK ALMOND", image: "/products/swfp5.png" },
+    { name: "MERBAU", image: "/products/swfp6.png" },
+    { name: "KAYA KUKU", image: "/products/swfp7.png" },
+    { name: "BURMA TEAK", image: "/products/swfp8.png" },
+    { name: "BALI TEAK", image: "/products/swfp9.png" },
+    { name: "ASIAN WALNUT", image: "/products/swfp10.png" },
+    { name: "AMERICAN WALNUT", image: "/products/swfp11.png" },
+    { name: "AFRICAN TEAK", image: "/products/swfp12.png" },
+  ];
+
   return (
-    <div className="pt-20">
+    <div className="">
       {/* Hero Section */}
-      <section className="relative h-96 bg-gray-900">
+      <section className="relative h-[80vh] bg-gray-900">
         <div className="absolute inset-0 overflow-hidden">
           <img 
-            src="/swf-hero.png" 
+            src="/swf1.png" 
             alt="Solid Wood Flooring"
             className="w-full h-full object-cover opacity-60"
           />
@@ -83,7 +99,7 @@ export function SolidWoodFloors() {
             <h2 className="text-3xl font-bold mb-6 text-center">The Epitome of Natural Elegance</h2>
             
             <div className="prose prose-lg mx-auto">
-              {solidWoodData?.descriptionParagraphs.map((paragraph, index) => (
+              {solidWoodData?.descriptionParagraphs.map((paragraph: string, index: number) => (
                 <p key={index} className="mb-4 text-gray-700">{paragraph}</p>
               ))}
               
@@ -118,7 +134,7 @@ export function SolidWoodFloors() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              {solidWoodData?.images.map((image, index) => (
+              {solidWoodData?.images.map((image: { src: string; alt: string }, index: number) => (
                 <div key={index} className="h-[500px] rounded-lg overflow-hidden bg-gray-200">
                   <img
                     src={image.src}
@@ -170,16 +186,7 @@ export function SolidWoodFloors() {
             >
               <div className="text-xl font-semibold mb-2">Can Be Refinished Multiple Times</div>
             </motion.div>
-            
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.6 }}
-              viewport={{ once: true }}
-              className="bg-gray-50 p-6 rounded-lg shadow-sm"
-            >
-              <div className="text-xl font-semibold mb-2">Excellent Thermal Insulation</div>
-            </motion.div>
+          
           </div>
         </div>
       </section>
@@ -190,61 +197,14 @@ export function SolidWoodFloors() {
           <h2 className="text-3xl font-bold mb-10 text-center">Available Wood Species</h2>
           
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-5xl mx-auto">
-            <div className="text-center">
-              <div className="h-40 rounded-lg overflow-hidden bg-gray-200 mb-3">
-                <img src="/species-oak.png" alt="Oak Wood" className="w-full h-full object-cover" />
+            {woodSpecies.map((species, index) => (
+              <div key={index} className="text-center">
+                <div className="h-40 rounded-lg overflow-hidden bg-gray-200 mb-3">
+                  <img src={species.image} alt={species.name} className="w-full h-full object-cover" />
+                </div>
+                <h3 className="font-semibold">{species.name}</h3>
               </div>
-              <h3 className="font-semibold">Oak</h3>
-            </div>
-            
-            <div className="text-center">
-              <div className="h-40 rounded-lg overflow-hidden bg-gray-200 mb-3">
-                <img src="/species-walnut.png" alt="Walnut Wood" className="w-full h-full object-cover" />
-              </div>
-              <h3 className="font-semibold">Walnut</h3>
-            </div>
-            
-            <div className="text-center">
-              <div className="h-40 rounded-lg overflow-hidden bg-gray-200 mb-3">
-                <img src="/species-maple.png" alt="Maple Wood" className="w-full h-full object-cover" />
-              </div>
-              <h3 className="font-semibold">Maple</h3>
-            </div>
-            
-            <div className="text-center">
-              <div className="h-40 rounded-lg overflow-hidden bg-gray-200 mb-3">
-                <img src="/species-cherry.png" alt="Cherry Wood" className="w-full h-full object-cover" />
-              </div>
-              <h3 className="font-semibold">Cherry</h3>
-            </div>
-            
-            <div className="text-center">
-              <div className="h-40 rounded-lg overflow-hidden bg-gray-200 mb-3">
-                <img src="/species-mahogany.png" alt="Mahogany Wood" className="w-full h-full object-cover" />
-              </div>
-              <h3 className="font-semibold">Mahogany</h3>
-            </div>
-            
-            <div className="text-center">
-              <div className="h-40 rounded-lg overflow-hidden bg-gray-200 mb-3">
-                <img src="/species-teak.png" alt="Teak Wood" className="w-full h-full object-cover" />
-              </div>
-              <h3 className="font-semibold">Teak</h3>
-            </div>
-            
-            <div className="text-center">
-              <div className="h-40 rounded-lg overflow-hidden bg-gray-200 mb-3">
-                <img src="/species-merbau.png" alt="Merbau Wood" className="w-full h-full object-cover" />
-              </div>
-              <h3 className="font-semibold">Merbau</h3>
-            </div>
-            
-            <div className="text-center">
-              <div className="h-40 rounded-lg overflow-hidden bg-gray-200 mb-3">
-                <img src="/species-bamboo.png" alt="Bamboo" className="w-full h-full object-cover" />
-              </div>
-              <h3 className="font-semibold">Bamboo</h3>
-            </div>
+            ))}
           </div>
         </div>
       </section>
