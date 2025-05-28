@@ -275,7 +275,10 @@ export function ParquetFlooring() {
             
             <div className="mt-12 text-center">
               <p className="mb-6">Our skilled craftsmen specialize in intricate parquet patterns, ensuring flawless execution.</p>
-              <button className="bg-gray-900 text-white px-8 py-3 rounded-lg hover:bg-gray-800 transition">
+              <button
+                className="bg-gray-900 text-white px-8 py-3 rounded-lg hover:bg-gray-800 transition"
+                onClick={() => window.location.href = '/contact-us'}
+              >
                 Schedule a Consultation
               </button>
             </div>
@@ -307,7 +310,7 @@ export function ParquetFlooring() {
             Contact us today to discover our exquisite parquet flooring options and receive expert guidance on the perfect pattern for your space.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-gray-900 px-8 py-3 rounded-lg hover:bg-gray-100 transition">
+            <button onClick={() => window.location.href = '/contact-us'} className="bg-white text-gray-900 px-8 py-3 rounded-lg hover:bg-gray-100 transition">
               Request a Quote
             </button>
             <button className="border border-white px-8 py-3 rounded-lg hover:bg-white hover:text-gray-900 transition">
