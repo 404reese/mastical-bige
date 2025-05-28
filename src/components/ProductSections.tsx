@@ -231,7 +231,7 @@ export function ProductSections() {
         </div>
       </section>
 
-      {/* Customized Wooden Flooring Section */}
+      {/* Parquet Wooden Flooring Section */}
       <section id="customized-wooden-flooring" className="py-16"> {/* Removed bg-gray-50 */}
         <div className="container mx-auto">
           <div className="flex flex-col lg:flex-row gap-12 items-center">
@@ -287,7 +287,7 @@ export function ProductSections() {
               viewport={{ once: true, amount: 0.3 }}
             >
               <h2 className="text-3xl font-bold mb-8 text-center lg:text-left">
-                Customized Wooden Flooring
+                Parquet Wooden Flooring
               </h2>
               <p className="text-gray-700 mb-6 text-justify">
                 Solid Wood Flooring is a natural 100% wood product with each

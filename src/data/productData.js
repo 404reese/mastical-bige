@@ -44,9 +44,9 @@ export const products = [
     },
     {
       id: 'customized-wood',
-      title: 'Customized Wooden Flooring',
+      title: 'Parquet Wooden Flooring',
       descriptionParagraphs: [
-        'Our customized wooden flooring solutions allow you to create unique patterns and designs that perfectly match your interior vision.',
+        'Our Parquet wooden flooring solutions allow you to create unique patterns and designs that perfectly match your interior vision.',
         'From intricate inlays to custom color treatments, we can help you achieve the exact look you desire.',
       ],
       features: [

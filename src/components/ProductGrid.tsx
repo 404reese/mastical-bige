@@ -11,7 +11,7 @@ const products = [{
   image: '/pr2.png',
   link: '/products/engineered-wood-floors'
 }, {
-  title: 'Customized Wooden Flooring',
+  title: 'Parquet Wooden Flooring',
   image: '/pr3.png',
   link: '/products/customized-wooden-flooring'
 }, {
