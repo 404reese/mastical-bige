@@ -12,6 +12,7 @@ import {HeroScroll} from './components/HeroScroll';
 import {Social} from './components/Social';
 import SolidWoodFloors from './pages/SolidWoodFloors';
 import { ParquetFlooring } from './pages/ParquetFlooring';
+import EngineeredWoodFloors from './pages/EngineeredWoodFloors';
 import ContactUs from './pages/ContactUs';
 
 const Home = () => <>
@@ -31,8 +32,9 @@ export function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/products" element={<Products />} />
           <Route path="/homeowners" element={<Homeowners />} />
-          <Route path="/contact" element={<Contact />} /> {/* Added contact route */}
+          <Route path="/contact" element={<Contact />} />
           <Route path="/products/solid-wood-floors" element={<SolidWoodFloors />} />
+          <Route path="/products/engineered-wood-floors" element={<EngineeredWoodFloors />} />
           <Route path="/parquet-flooring" element={<ParquetFlooring />} />
           <Route path="/contact-us" element={<ContactUs />} />
         </Routes>

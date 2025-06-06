@@ -36,7 +36,7 @@ export const products = [
         'Wide range of finishes',
       ],
       images: [
-        { src: 'https://images.unsplash.com/photo-1594940210012-a73ab1bc0c4b?ixlib=rb-4.0.3', alt: 'Modern living room with engineered wood flooring' }
+        { src: '/swf1.png', alt: 'Modern living room with engineered wood flooring' }
         // Add more images here if you want a carousel for this section
       ],
       imagePosition: 'left', // Image on the left

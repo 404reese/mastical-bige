@@ -133,12 +133,13 @@ export const Nav = () => {
                 >
                   Solid Wood Floors
                 </Link>
-                <button
-                  onClick={() => scrollToSection('engineered-wood-floors')}
+                <Link
+                  to="/products/engineered-wood-floors"
                   className="block w-full text-left px-4 py-2 text-sm text-[#e5e2e0] hover:bg-[#393939]"
+                  onClick={() => setShowProduct(false)}
                 >
                   Engineered Wood Floors
-                </button>
+                </Link>
                 <Link
                   to="/parquet-flooring"
                   className="block w-full text-left px-4 py-2 text-sm text-[#e5e2e0] hover:bg-[#393939]"
@@ -242,12 +243,13 @@ export const Nav = () => {
               >
                 Solid Wood Floors
               </Link>
-              <button
-                onClick={() => scrollToSection('engineered-wood-floors')}
+              <Link
+                to="/products/engineered-wood-floors"
                 className="block w-full text-left px-8 py-2 text-sm hover:bg-gray-200 text-[#e5e2e0]"
+                onClick={() => setShowProduct(false)}
               >
                 Engineered Wood Floors
-              </button>
+              </Link>
               <Link
                 to="/parquet-flooring"
                 className="block w-full text-left px-8 py-2 text-sm hover:bg-gray-200 text-[#e5e2e0]"
