@@ -1,4 +1,3 @@
-import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Nav } from './components/Nav';
 import { Hero } from './components/Hero';
@@ -14,6 +13,15 @@ import SolidWoodFloors from './pages/SolidWoodFloors';
 import { ParquetFlooring } from './pages/ParquetFlooring';
 import EngineeredWoodFloors from './pages/EngineeredWoodFloors';
 import ContactUs from './pages/ContactUs';
+import EngineeredSlimChevron from './pages/EngineeredSlimChevron';
+import EnggPlank from './pages/EnggPlank';
+import ParquetTiles from './pages/ParquetTiles';
+import Herringbone from './pages/Herringbone';
+import Designer from './pages/Designer';
+import Chevron from './pages/Chevron';
+import EngineeredSlim from './pages/EngineeredSlim';
+import EngineeredHerringbone from './pages/EngineeredHerringbone';
+import { Workwalk } from './pages/Workwalk';
 
 const Home = () => <>
     <Hero />
@@ -37,6 +45,15 @@ export function App() {
           <Route path="/products/engineered-wood-floors" element={<EngineeredWoodFloors />} />
           <Route path="/parquet-flooring" element={<ParquetFlooring />} />
           <Route path="/contact-us" element={<ContactUs />} />
+          <Route path="/engineered-slim-chevron" element={<EngineeredSlimChevron />} />
+          <Route path="/engg-plank" element={<EnggPlank />} />
+          <Route path="/parquet-tiles" element={<ParquetTiles />} />
+          <Route path="/herringbone" element={<Herringbone />} />
+          <Route path="/designer" element={<Designer />} />
+          <Route path="/chevron" element={<Chevron />} />
+          <Route path="/engineered-slim" element={<EngineeredSlim />} />
+          <Route path="/engineered-herringbone" element={<EngineeredHerringbone />} />
+          <Route path="/workwalk" element={<Workwalk />} />
         </Routes>
       </div>
     </Router>;

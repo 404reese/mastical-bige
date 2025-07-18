@@ -57,14 +57,16 @@ export function EngineeredWoodFloors() {
 
   // Wood Species data for engineered floors
   const woodSpecies = [
-    { name: "Engineered Slim Chevron", image: "/engg/engg1.jpg" },
-    { name: "Engg Plank", image: "/engg/engg2.jpg" },
-    { name: "Parquet Tiles", image: "/engg/engg3.jpg" },
-    { name: "Herringbone", image: "/engg/engg4.jpg" },
-    { name: "Designer", image: "/engg/engg5.jpg" },
-    { name: "Chevron", image: "/engg/engg6.jpg" },
-    { name: "Engineered Slim", image: "/engg/engg7.jpg" },
-    { name: "Engineered Herringbone", image: "/engg/engg8.png" },
+    { name: "Herringbone", image: "/engg/engg1.jpg", link: "/engineered-slim-chevron" },
+    { name: "Engg Plank", image: "/engg/engg2.jpg", link: "/engg-plank" },
+    { name: "Parquet Tiles", image: "/engg/engg3.jpg", link: "/parquet-tiles" },
+    { name: "Herringbone", image: "/engg/engg4.jpg", link: "/herringbone" },
+    { name: "Designer", image: "/engg/engg5.jpg", link: "/designer" },
+    { name: "Chevron", image: "/engg/engg6.jpg", link: "/chevron" },
+    { name: "Engineered Slim", image: "/engg/engg7.jpg", link: "/engineered-slim" },
+    { name: "Engineered Herringbone", image: "/engg/engg8.png", link: "/engineered-herringbone" },
+    { name: "Wordwalk", image: "/engg/engg8.png", link: "/wordwalk" },
+    
   ];
 
   return (
@@ -217,12 +219,27 @@ export function EngineeredWoodFloors() {
           
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-5xl mx-auto">
             {woodSpecies.map((species, index) => (
-              <div key={index} className="text-center">
-                <div className="h-40 rounded-lg overflow-hidden bg-gray-200 mb-3">
-                  <img src={species.image} alt={species.name} className="w-full h-full object-cover" />
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                className="text-center cursor-pointer group"
+                onClick={() => window.location.href = species.link}
+              >
+                <div className="h-40 rounded-lg overflow-hidden bg-gray-200 mb-3 group-hover:shadow-lg transition-shadow duration-300">
+                  <img 
+                    src={species.image} 
+                    alt={species.name} 
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" 
+                  />
                 </div>
-                <h3 className="font-semibold">{species.name}</h3>
-              </div>
+                <h3 className="font-semibold group-hover:text-gray-600 transition-colors duration-300">{species.name}</h3>
+                <p className="text-sm text-gray-500 mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  Click to view gallery
+                </p>
+              </motion.div>
             ))}
           </div>
         </div>
