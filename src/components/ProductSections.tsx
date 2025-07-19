@@ -65,6 +65,13 @@ export function ProductSections() {
                   <li>African Teak</li>
                 </div>
               </div>
+              
+              <button 
+                onClick={() => window.location.href = '/products/solid-wood-floors'}
+                className="bg-gray-900 text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors duration-300 mt-6"
+              >
+                See More
+              </button>
             </motion.div>
 
             <motion.div
@@ -77,7 +84,7 @@ export function ProductSections() {
               <Slider {...settings}>
                 <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
                   <img
-                    src="/swf1.png"
+                    src="/p1.png"
                     alt="Solid wood floor view 1"
                     className="w-full h-full object-cover"
                     loading="lazy"
@@ -85,8 +92,16 @@ export function ProductSections() {
                 </div>
                 <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
                   <img
-                    src="/swf2.png"
+                    src="/p2.png"
                     alt="Solid wood floor view 2"
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
+                  <img
+                    src="/p3.png"
+                    alt="Solid wood floor view 3"
                     className="w-full h-full object-cover"
                     loading="lazy"
                   />
@@ -111,7 +126,7 @@ export function ProductSections() {
               <Slider {...settings}>
                 <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
                   <img
-                    src="/ewf1.png"
+                    src="/engg/engg1.jpg"
                     alt="Engineered wood floor view 1"
                     className="w-full h-full object-cover"
                     loading="lazy"
@@ -119,7 +134,7 @@ export function ProductSections() {
                 </div>
                 <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
                   <img
-                    src="/ewf2.png"
+                    src="/engg/engg2.jpg"
                     alt="Engineered wood floor view 2"
                     className="w-full h-full object-cover"
                     loading="lazy"
@@ -127,7 +142,7 @@ export function ProductSections() {
                 </div>
                 <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
                   <img
-                    src="/ewf3.png"
+                    src="/engg/engg3.jpg"
                     alt="Engineered wood floor view 3"
                     className="w-full h-full object-cover"
                     loading="lazy"
@@ -135,7 +150,7 @@ export function ProductSections() {
                 </div>
                 <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
                   <img
-                    src="/ewf4.png"
+                    src="/engg/engg4.jpg"
                     alt="Engineered wood floor view 4"
                     className="w-full h-full object-cover"
                     loading="lazy"
@@ -171,6 +186,13 @@ export function ProductSections() {
                 <li>Available in multiple wood species</li>
                 <li>Creates luxurious appeal</li>
               </ul>
+              
+              <button 
+                onClick={() => window.location.href = '/products/engineered-wood-floors'}
+                className="bg-gray-900 text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors duration-300 mt-6"
+              >
+                See More
+              </button>
             </motion.div>
           </div>
         </div>
@@ -199,6 +221,13 @@ export function ProductSections() {
                 <li>Adds unique character to rooms</li>
                 <li>Available in various wood types</li>
               </ul>
+              
+              <button 
+                onClick={() => window.location.href = '/parquet-flooring'}
+                className="bg-gray-900 text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors duration-300 mt-6"
+              >
+                See More
+              </button>
             </motion.div>
 
             <motion.div
@@ -211,7 +240,7 @@ export function ProductSections() {
               <Slider {...settings}>
                 <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
                   <img
-                    src="/parquet1.png" // Placeholder image
+                    src="/parquet/parp-1.png"
                     alt="Wooden parquet floor view 1"
                     className="w-full h-full object-cover"
                     loading="lazy"
@@ -219,166 +248,16 @@ export function ProductSections() {
                 </div>
                 <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
                   <img
-                    src="/parquet2.png" // Placeholder image
+                    src="/parquet/parp-2.png"
                     alt="Wooden parquet floor view 2"
                     className="w-full h-full object-cover"
                     loading="lazy"
                   />
                 </div>
-              </Slider>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* Parquet Wooden Flooring Section */}
-      <section id="customized-wooden-flooring" className="py-16"> {/* Removed bg-gray-50 */}
-        <div className="container mx-auto">
-          <div className="flex flex-col lg:flex-row gap-12 items-center">
-            {/* Swapped Image and Text */}
-            <motion.div
-              className="lg:w-1/2 w-full px-4 lg:px-0"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: 0.3, ease: "easeOut" }} // Adjusted delay
-              viewport={{ once: true, amount: 0.3 }}
-            >
-              <Slider {...settings}>
                 <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
                   <img
-                    src="/cwf1.png"
-                    alt="Customized wooden floor view 1"
-                    className="w-full h-full object-cover"
-                    loading="lazy"
-                  />
-                </div>
-                <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
-                  <img
-                    src="/cwf2.png"
-                    alt="Customized wooden floor view 2"
-                    className="w-full h-full object-cover"
-                    loading="lazy"
-                  />
-                </div>
-                <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
-                  <img
-                    src="/cwf3.png"
-                    alt="Customized wooden floor view 3"
-                    className="w-full h-full object-cover"
-                    loading="lazy"
-                  />
-                </div>
-                <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
-                  <img
-                    src="/cwf4.png"
-                    alt="Customized wooden floor view 4"
-                    className="w-full h-full object-cover"
-                    loading="lazy"
-                  />
-                </div>
-              </Slider>
-            </motion.div>
-
-            <motion.div
-              className="lg:w-1/2"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: 0.6, ease: "easeOut" }} // Adjusted delay
-              viewport={{ once: true, amount: 0.3 }}
-            >
-              <h2 className="text-3xl font-bold mb-8 text-center lg:text-left">
-                Parquet Wooden Flooring
-              </h2>
-              <p className="text-gray-700 mb-6 text-justify">
-                Solid Wood Flooring is a natural 100% wood product with each
-                board coming from just one piece of solid wood which is cut down
-                to the desired size. It creates a luxurious appeal to your home
-                & is very strong & durable. The Solid Wood flooring has a longer
-                life span than any other kind of flooring & is also available in
-                various species of wood like Oak, Walnut, Maple, Cherry,
-                Mahogany, Bamboo, etc.
-              </p>
-              <ul className="list-disc list-inside text-gray-700 space-y-2">
-                <li>100% natural solid wood</li>
-                <li>Long-lasting durability</li>
-                <li>Available in multiple wood species</li>
-                <li>Creates luxurious appeal</li>
-              </ul>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* Deck Flooring Section */}
-      <section id="deck-flooring" className="py-16 bg-gray-50"> {/* Added bg-gray-50 */}
-        <div className="container mx-auto">
-          <div className="flex flex-col lg:flex-row gap-12 items-center">
-            {/* Swapped Text and Image */}
-            <motion.div
-              className="lg:w-1/2"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: 0.3, ease: "easeOut" }} // Adjusted delay
-              viewport={{ once: true, amount: 0.3 }}
-            >
-              <h2 className="text-3xl font-bold mb-8 text-center lg:text-left">
-                Deck Flooring
-              </h2>
-              <p className="text-gray-700 mb-6 text-justify">
-                Engineered Wood Floors combine the natural beauty of wood with
-                advanced technology for exceptional strength and durability.
-                Unlike solid wood, engineered wood consists of multiple layers,
-                making it more resistant to moisture and temperature changes.
-                Available in a variety of wood species such as Oak, Walnut,
-                Maple, and Cherry, these floors offer a stylish and sustainable
-                option for modern living spaces, providing both luxury and
-                practicality.
-              </p>
-
-              <ul className="list-disc list-inside text-gray-700 space-y-2">
-                <li>100% natural solid wood</li>
-                <li>Long-lasting durability</li>
-                <li>Available in multiple wood species</li>
-                <li>Creates luxurious appeal</li>
-              </ul>
-            </motion.div>
-
-            <motion.div
-              className="lg:w-1/2 w-full px-4 lg:px-0"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: 0.6, ease: "easeOut" }} // Adjusted delay
-              viewport={{ once: true, amount: 0.3 }}
-            >
-              <Slider {...settings}>
-                <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
-                  <img
-                    src="/df1.png"
-                    alt="Deck floor view 1"
-                    className="w-full h-full object-cover"
-                    loading="lazy"
-                  />
-                </div>
-                <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
-                  <img
-                    src="/df2.png"
-                    alt="Deck floor view 2"
-                    className="w-full h-full object-cover"
-                    loading="lazy"
-                  />
-                </div>
-                <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
-                  <img
-                    src="/df3.png"
-                    alt="Deck floor view 3"
-                    className="w-full h-full object-cover"
-                    loading="lazy"
-                  />
-                </div>
-                <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
-                  <img
-                    src="/df4.png"
-                    alt="Deck floor view 4"
+                    src="/products/parquet1.png"
+                    alt="Parquet pattern example"
                     className="w-full h-full object-cover"
                     loading="lazy"
                   />
@@ -388,9 +267,11 @@ export function ProductSections() {
           </div>
         </div>
       </section>
+
+      
 
       {/* Indoor and Outdoor Wall Cladding & Soffit Section */}
-      <section id="wall-cladding" className="py-16"> {/* Removed bg-gray-50 */}
+      <section id="indoor-outdoor-wall-cladding" className="py-16"> {/* Removed bg-gray-50 */}
         <div className="container mx-auto">
           <div className="flex flex-col lg:flex-row gap-12 items-center">
             {/* Swapped Image and Text */}
@@ -403,10 +284,13 @@ export function ProductSections() {
             >
               <Slider {...settings}>
                 <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
-                  <img src="/wc1.png" alt="Wall cladding example 1" className="w-full h-full object-cover" loading="lazy" />
+                  <img src="/Wall Clading/dassoCTECH Cladding/20190926100942908.jpg" alt="Wall cladding example 1" className="w-full h-full object-cover" loading="lazy" />
                 </div>
                 <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
-                  <img src="/wc2.png" alt="Wall cladding example 2" className="w-full h-full object-cover" loading="lazy" />
+                  <img src="/Wall Clading/dassoCTECH Cladding/1567607955174803.png" alt="Wall cladding example 2" className="w-full h-full object-cover" loading="lazy" />
+                </div>
+                <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
+                  <img src="/Wall Clading/dassoCTECH Cladding/1567607951173044.png" alt="Wall cladding example 3" className="w-full h-full object-cover" loading="lazy" />
                 </div>
               </Slider>
             </motion.div>
@@ -430,13 +314,20 @@ export function ProductSections() {
                 <li>Multiple design options</li>
                 <li>Excellent thermal insulation</li>
               </ul>
+              
+              <button 
+                onClick={() => window.location.href = '/wall-cladding-soffit'}
+                className="bg-gray-900 text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors duration-300 mt-6"
+              >
+                See More
+              </button>
             </motion.div>
           </div>
         </div>
       </section>
 
       {/* Lumbers & Panels Section */}
-      <section id="lumbers-panels" className="py-16 bg-gray-50"> {/* Added bg-gray-50 */}
+      <section id="lumber-panels" className="py-16 bg-gray-50"> {/* Added bg-gray-50 */}
         <div className="container mx-auto">
           <div className="flex flex-col lg:flex-row gap-12 items-center">
             {/* Swapped Text and Image */}
@@ -459,6 +350,13 @@ export function ProductSections() {
                 <li>Custom sizing available</li>
                 <li>Sustainably sourced materials</li>
               </ul>
+              
+              <button 
+                onClick={() => window.location.href = '/lumber-panels'}
+                className="bg-gray-900 text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors duration-300 mt-6"
+              >
+                See More
+              </button>
             </motion.div>
 
             <motion.div
@@ -470,10 +368,13 @@ export function ProductSections() {
             >
               <Slider {...settings}>
                 <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
-                  <img src="/lp1.png" alt="Lumber and panels example 1" className="w-full h-full object-cover" loading="lazy" />
+                  <img src="/Lumber Panels/dassoCTECH Lumber & Panel/1582766898125843.jpeg" alt="Lumber and panels example 1" className="w-full h-full object-cover" loading="lazy" />
                 </div>
                 <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
-                  <img src="/lp2.png" alt="Lumber and panels example 2" className="w-full h-full object-cover" loading="lazy" />
+                  <img src="/Lumber Panels/dassoCTECH Lumber & Panel/1582766899199977.jpeg" alt="Lumber and panels example 2" className="w-full h-full object-cover" loading="lazy" />
+                </div>
+                <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
+                  <img src="/Lumber Panels/dassoCTECH Lumber & Panel/1582766899537701.png" alt="Lumber and panels example 3" className="w-full h-full object-cover" loading="lazy" />
                 </div>
               </Slider>
             </motion.div>
@@ -482,7 +383,7 @@ export function ProductSections() {
       </section>
 
       {/* Laminate Wood Floors Section */}
-      <section id="laminate-floors" className="py-16"> {/* Removed bg-gray-50 */}
+      <section id="laminated-wood-floors" className="py-16"> {/* Removed bg-gray-50 */}
         <div className="container mx-auto">
           <div className="flex flex-col lg:flex-row gap-12 items-center">
             {/* Swapped Image and Text */}
@@ -495,10 +396,13 @@ export function ProductSections() {
             >
               <Slider {...settings}>
                 <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
-                  <img src="/lf1.png" alt="Laminate floor example 1" className="w-full h-full object-cover" loading="lazy" />
+                  <img src="/Laminate/MVR_0860 (Elite Atlanta Walnut 1801-2 ).JPG" alt="Laminate floor example 1" className="w-full h-full object-cover" loading="lazy" />
                 </div>
                 <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
-                  <img src="/lf2.png" alt="Laminate floor example 2" className="w-full h-full object-cover" loading="lazy" />
+                  <img src="/Laminate/Elite Herringbone Collection/Copy of MVR_0699 (Color  328 )-Mount Everest.JPG" alt="Laminate floor example 2" className="w-full h-full object-cover" loading="lazy" />
+                </div>
+                <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
+                  <img src="/Laminate/Enchant Premium Collection/Copy of MVR_1337 ( Caramel Oak ).JPG" alt="Laminate floor example 3" className="w-full h-full object-cover" loading="lazy" />
                 </div>
               </Slider>
             </motion.div>
@@ -522,13 +426,20 @@ export function ProductSections() {
                 <li>Wide range of wood designs</li>
                 <li>Budget-friendly option</li>
               </ul>
+              
+              <button 
+                onClick={() => window.location.href = '/laminate-flooring'}
+                className="bg-gray-900 text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors duration-300 mt-6"
+              >
+                See More
+              </button>
             </motion.div>
           </div>
         </div>
       </section>
 
       {/* SPC Wood Floors Section */}
-      <section id="spc-floors" className="py-16 bg-gray-50"> {/* Added bg-gray-50 */}
+      <section id="spc-wood-floors" className="py-16 bg-gray-50"> {/* Added bg-gray-50 */}
         <div className="container mx-auto">
           <div className="flex flex-col lg:flex-row gap-12 items-center">
             {/* Swapped Text and Image */}
@@ -551,6 +462,13 @@ export function ProductSections() {
                 <li>Excellent sound insulation</li>
                 <li>Suitable for underfloor heating</li>
               </ul>
+              
+              <button 
+                onClick={() => window.location.href = '/spc-flooring'}
+                className="bg-gray-900 text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors duration-300 mt-6"
+              >
+                See More
+              </button>
             </motion.div>
 
             <motion.div
@@ -562,10 +480,96 @@ export function ProductSections() {
             >
               <Slider {...settings}>
                 <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
-                  <img src="/spc1.png" alt="SPC floor example 1" className="w-full h-full object-cover" loading="lazy" />
+                  <img src="/SPC/SPC Herringbone/3395-H1111.jpg" alt="SPC floor example 1" className="w-full h-full object-cover" loading="lazy" />
                 </div>
                 <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
-                  <img src="/spc2.png" alt="SPC floor example 2" className="w-full h-full object-cover" loading="lazy" />
+                  <img src="/SPC/SPC Plank/3383_P2299.jpg" alt="SPC floor example 2" className="w-full h-full object-cover" loading="lazy" />
+                </div>
+                <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
+                  <img src="/SPC/SPC Tile/3178_T4411.jpg" alt="SPC floor example 3" className="w-full h-full object-cover" loading="lazy" />
+                </div>
+              </Slider>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+      {/* Deck Flooring Section */}
+      <section id="deck-flooring" className="py-16 bg-gray-50"> {/* Added bg-gray-50 */}
+        <div className="container mx-auto">
+          <div className="flex flex-col lg:flex-row gap-12 items-center">
+            {/* Swapped Text and Image */}
+            <motion.div
+              className="lg:w-1/2"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.3, ease: "easeOut" }} // Adjusted delay
+              viewport={{ once: true, amount: 0.3 }}
+            >
+              <h2 className="text-3xl font-bold mb-8 text-center lg:text-left">
+                Deck Flooring
+              </h2>
+              <p className="text-gray-700 mb-6 text-justify">
+                Our premium deck flooring combines durability and style for outdoor living spaces. 
+                Made from high-quality composite materials and bamboo, these decking solutions 
+                offer exceptional weather resistance, UV protection, and low maintenance. 
+                Perfect for patios, balconies, poolside areas, and outdoor entertainment spaces, 
+                providing long-lasting beauty and performance.
+              </p>
+
+              <ul className="list-disc list-inside text-gray-700 space-y-2">
+                <li>Weather-resistant and UV protected</li>
+                <li>Low maintenance requirements</li>
+                <li>Slip-resistant surface</li>
+                <li>Eco-friendly materials</li>
+              </ul>
+              
+              <button 
+                onClick={() => window.location.href = '/deck-flooring'}
+                className="bg-gray-900 text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors duration-300 mt-6"
+              >
+                See More
+              </button>
+            </motion.div>
+
+            <motion.div
+              className="lg:w-1/2 w-full px-4 lg:px-0"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.6, ease: "easeOut" }} // Adjusted delay
+              viewport={{ once: true, amount: 0.3 }}
+            >
+              <Slider {...settings}>
+                <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
+                  <img
+                    src="/deck.jpg"
+                    alt="Deck floor view 1"
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
+                  <img
+                    src="/deck/SYLVANIX-DECKING/elite-collection/summit-grey.jpg"
+                    alt="Deck floor view 2"
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
+                  <img
+                    src="/deck/EGO Enrich Plank Decking/Pool-Side.jpg"
+                    alt="Deck floor view 3"
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
+                  <img
+                    src="/deck/dassoXTR DECKING/dassoXTR DECKING (1).jpg"
+                    alt="Deck floor view 4"
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
                 </div>
               </Slider>
             </motion.div>

@@ -1,29 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export const Nav = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const [showProduct, setShowProduct] = useState(false);
-
-  const location = useLocation();
-  const navigate = useNavigate();
-
-  const scrollToSection = (sectionId: string) => {
-    setShowProduct(false); // Close dropdown
-    
-    if (location.pathname !== '/products') {
-      // Navigate to products page and store section ID
-      window.localStorage.setItem('scrollTo', sectionId);
-      navigate('/products');
-    } else {
-      // Already on products page, just scroll
-      const element = document.getElementById(sectionId);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
-    }
-  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -41,20 +22,6 @@ export const Nav = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-
-  useEffect(() => {
-    // Check if we need to scroll to a section after navigation
-    const scrollTo = window.localStorage.getItem('scrollTo');
-    if (scrollTo && location.pathname === '/products') {
-      setTimeout(() => {
-        const element = document.getElementById(scrollTo);
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });
-        }
-        window.localStorage.removeItem('scrollTo');
-      }, 100);
-    }
-  }, [location]);
 
   return (
     <nav
@@ -148,36 +115,41 @@ export const Nav = () => {
                   Parquet Wooden Flooring
                 </Link>
                 
-                <button
-                  onClick={() => scrollToSection('deck-flooring')}
+                <Link
+                  to="/deck-flooring"
                   className="block w-full text-left px-4 py-2 text-sm text-[#e5e2e0] hover:bg-[#393939]"
+                  onClick={() => setShowProduct(false)}
                 >
                   Deck Flooring
-                </button>
-                <button
-                  onClick={() => scrollToSection('indoor-outdoor-wall-cladding')}
+                </Link>
+                <Link
+                  to="/wall-cladding-soffit"
                   className="block w-full text-left px-4 py-2 text-sm text-[#e5e2e0] hover:bg-[#393939]"
+                  onClick={() => setShowProduct(false)}
                 >
                   Indoor and Outdoor Wall Cladding & Soffit
-                </button>
-                <button
-                  onClick={() => scrollToSection('lumber-panels')}
+                </Link>
+                <Link
+                  to="/lumber-panels"
                   className="block w-full text-left px-4 py-2 text-sm text-[#e5e2e0] hover:bg-[#393939]"
+                  onClick={() => setShowProduct(false)}
                 >
                   Lumber & Panels
-                </button>
-                <button
-                  onClick={() => scrollToSection('laminated-wood-floors')}
+                </Link>
+                <Link
+                  to="/laminate-flooring"
                   className="block w-full text-left px-4 py-2 text-sm text-[#e5e2e0] hover:bg-[#393939]"
+                  onClick={() => setShowProduct(false)}
                 >
-                  Laminated Wood Floors
-                </button>
-                <button
-                  onClick={() => scrollToSection('spc-wood-floors')}
+                  Laminate Flooring
+                </Link>
+                <Link
+                  to="/spc-flooring"
                   className="block w-full text-left px-4 py-2 text-sm text-[#e5e2e0] hover:bg-[#393939]"
+                  onClick={() => setShowProduct(false)}
                 >
-                  SPC Wood Floors
-                </button>
+                  SPC Flooring
+                </Link>
               </div>
             )}
           </div>
@@ -257,42 +229,41 @@ export const Nav = () => {
               >
                 Parquet Wooden Flooring
               </Link>
-              <button
-                onClick={() => scrollToSection('customized-wooden-flooring')}
+              <Link
+                to="/deck-flooring"
                 className="block w-full text-left px-8 py-2 text-sm hover:bg-gray-200 text-[#e5e2e0]"
-              >
-                Parquet Wooden Flooring
-              </button>
-              <button
-                onClick={() => scrollToSection('deck-flooring')}
-                className="block w-full text-left px-8 py-2 text-sm hover:bg-gray-200 text-[#e5e2e0]"
+                onClick={() => setShowProduct(false)}
               >
                 Deck Flooring
-              </button>
-              <button
-                onClick={() => scrollToSection('indoor-outdoor-wall-cladding')}
+              </Link>
+              <Link
+                to="/wall-cladding-soffit"
                 className="block w-full text-left px-8 py-2 text-sm hover:bg-gray-200 text-[#e5e2e0]"
+                onClick={() => setShowProduct(false)}
               >
                 Indoor and Outdoor Wall Cladding & Soffit
-              </button>
-              <button
-                onClick={() => scrollToSection('lumber-panels')}
+              </Link>
+              <Link
+                to="/lumber-panels"
                 className="block w-full text-left px-8 py-2 text-sm hover:bg-gray-200 text-[#e5e2e0]"
+                onClick={() => setShowProduct(false)}
               >
                 Lumber & Panels
-              </button>
-              <button
-                onClick={() => scrollToSection('laminated-wood-floors')}
+              </Link>
+              <Link
+                to="/laminate-flooring"
                 className="block w-full text-left px-8 py-2 text-sm hover:bg-gray-200 text-[#e5e2e0]"
+                onClick={() => setShowProduct(false)}
               >
-                Laminated Wood Floors
-              </button>
-              <button
-                onClick={() => scrollToSection('spc-wood-floors')}
+                Laminate Flooring
+              </Link>
+              <Link
+                to="/spc-flooring"
                 className="block w-full text-left px-8 py-2 text-sm hover:bg-gray-200 text-[#e5e2e0]"
+                onClick={() => setShowProduct(false)}
               >
-                SPC Wood Floors
-              </button>
+                SPC Flooring
+              </Link>
             </div>
           )}
         </div>
