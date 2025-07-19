@@ -51,6 +51,11 @@ import SPCFlooring from './pages/SPCFlooring';
 import SPCPlank from './pages/SPCPlank';
 import SPCTile from './pages/SPCTile';
 import SPCHerringbone from './pages/SPCHerringbone';
+import LaminateFlooring from './pages/LaminateFlooring';
+import EliteHerringboneCollection from './pages/EliteHerringboneCollection';
+import EliteHerringbonePrimeCollection from './pages/EliteHerringbonePrimeCollection';
+import EnchantPremiumCollection from './pages/EnchantPremiumCollection';
+import EnchantRusticCollection from './pages/EnchantRusticCollection';
 
 const Home = () => <>
     <Hero />
@@ -116,6 +121,13 @@ export function App() {
           <Route path="/spc-flooring/spc-plank" element={<SPCPlank />} />
           <Route path="/spc-flooring/spc-tile" element={<SPCTile />} />
           <Route path="/spc-flooring/spc-herringbone" element={<SPCHerringbone />} />
+          
+          {/* Laminate Flooring Routes */}
+          <Route path="/laminate-flooring" element={<LaminateFlooring />} />
+          <Route path="/laminate-flooring/elite-herringbone-collection" element={<EliteHerringboneCollection />} />
+          <Route path="/laminate-flooring/elite-herringbone-prime-collection" element={<EliteHerringbonePrimeCollection />} />
+          <Route path="/laminate-flooring/enchant-premium-collection" element={<EnchantPremiumCollection />} />
+          <Route path="/laminate-flooring/enchant-rustic-collection" element={<EnchantRusticCollection />} />
         </Routes>
       </div>
     </Router>;
