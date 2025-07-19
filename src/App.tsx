@@ -35,7 +35,7 @@ import DestinationsDecking from './pages/DestinationsDecking';
 import ElementsDecking from './pages/ElementsDecking';
 import EGOEnrichWPCDecktile from './pages/EGOEnrichWPCDecktile';
 import DassoCTECHDecking from './pages/dassoCTECHDecking';
-import DassoXTR from './pages/DassoXTR';
+import DassoXTR from './pages/dassoXTR';
 import WallCladdingSoffit from './pages/WallCladdingSoffit';
 import SylvanixCladding from './pages/SylvanixCladding';
 import DassoCTECHCladding from './pages/DassoCTECHCladding';
@@ -44,6 +44,13 @@ import DassoCTECHSoffit from './pages/DassoCTECHSoffit';
 import DassoXTRSoffit from './pages/DassoXTRSoffit';
 import DesignerCollection from './pages/DesignerCollection';
 import SoarSignature from './pages/SoarSignature';
+import LumberPanels from './pages/LumberPanels';
+import DassoCTECHLumberPanel from './pages/DassoCTECHLumberPanel';
+import DassoXTRLumberPanel from './pages/DassoXTRLumberPanel';
+import SPCFlooring from './pages/SPCFlooring';
+import SPCPlank from './pages/SPCPlank';
+import SPCTile from './pages/SPCTile';
+import SPCHerringbone from './pages/SPCHerringbone';
 
 const Home = () => <>
     <Hero />
@@ -90,8 +97,6 @@ export function App() {
           <Route path="/deck-flooring/ego-enrich-wpc-decktile" element={<EGOEnrichWPCDecktile />} />
           <Route path="/deck-flooring/dassoCTECH" element={<DassoCTECHDecking />} />
           <Route path="/deck-flooring/dassoXTR" element={<DassoXTR />} />
-          
-          {/* Wall Cladding & Soffit Routes */}
           <Route path="/wall-cladding-soffit" element={<WallCladdingSoffit />} />
           <Route path="/wall-cladding-soffit/sylvanix-cladding" element={<SylvanixCladding />} />
           <Route path="/wall-cladding-soffit/dassoCTECH-cladding" element={<DassoCTECHCladding />} />
@@ -100,6 +105,17 @@ export function App() {
           <Route path="/wall-cladding-soffit/dassoXTR-soffit" element={<DassoXTRSoffit />} />
           <Route path="/wall-cladding-soffit/sylvanix-cladding/designer-collection" element={<DesignerCollection />} />
           <Route path="/wall-cladding-soffit/sylvanix-cladding/soar-signature" element={<SoarSignature />} />
+          
+          {/* Lumber Panels Routes */}
+          <Route path="/lumber-panels" element={<LumberPanels />} />
+          <Route path="/lumber-panels/dassoCTECH-lumber-panel" element={<DassoCTECHLumberPanel />} />
+          <Route path="/lumber-panels/dassoXTR-lumber-panel" element={<DassoXTRLumberPanel />} />
+          
+          {/* SPC Flooring Routes */}
+          <Route path="/spc-flooring" element={<SPCFlooring />} />
+          <Route path="/spc-flooring/spc-plank" element={<SPCPlank />} />
+          <Route path="/spc-flooring/spc-tile" element={<SPCTile />} />
+          <Route path="/spc-flooring/spc-herringbone" element={<SPCHerringbone />} />
         </Routes>
       </div>
     </Router>;
