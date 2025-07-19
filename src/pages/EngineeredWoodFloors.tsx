@@ -57,7 +57,7 @@ export function EngineeredWoodFloors() {
 
   // Wood Species data for engineered floors
   const woodSpecies = [
-    { name: "Herringbone", image: "/engg/engg1.jpg", link: "/engineered-slim-chevron" },
+    { name: "Engineered Slim Chevron", image: "/engg/engg1.jpg", link: "/engineered-slim-chevron" },
     { name: "Engg Plank", image: "/engg/engg2.jpg", link: "/engg-plank" },
     { name: "Parquet Tiles", image: "/engg/engg3.jpg", link: "/parquet-tiles" },
     { name: "Herringbone", image: "/engg/engg4.jpg", link: "/herringbone" },
@@ -65,7 +65,7 @@ export function EngineeredWoodFloors() {
     { name: "Chevron", image: "/engg/engg6.jpg", link: "/chevron" },
     { name: "Engineered Slim", image: "/engg/engg7.jpg", link: "/engineered-slim" },
     { name: "Engineered Herringbone", image: "/engg/engg8.png", link: "/engineered-herringbone" },
-    { name: "Wordwalk", image: "/engg/engg8.png", link: "/wordwalk" },
+    { name: "Woodwalk", image: "/engg/engg8.png", link: "/woodwalk" },
     
   ];
 
@@ -113,49 +113,6 @@ export function EngineeredWoodFloors() {
                 of real wood while providing enhanced performance and versatility.
               </p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Gallery Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-10 text-center">Gallery</h2>
-          
-          <div className="max-w-4xl mx-auto">
-            <Slider {...settings}>
-              <div className="h-[500px] rounded-lg overflow-hidden bg-gray-200">
-                <img
-                  src="/swf1.png"
-                  alt="Engineered wood floor in living room"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="h-[500px] rounded-lg overflow-hidden bg-gray-200">
-                <img
-                  src="/swf2.png"
-                  alt="Engineered wood floor detail"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              {/* <div className="h-[500px] rounded-lg overflow-hidden bg-gray-200">
-                <img
-                  src="/swf3.png"
-                  alt="Engineered wood floor in kitchen"
-                  className="w-full h-full object-cover"
-                />
-              </div> */}
-             
-              {engineeredWoodData?.images.map((image: { src: string; alt: string }, index: number) => (
-                <div key={index} className="h-[500px] rounded-lg overflow-hidden bg-gray-200">
-                  <img
-                    src={image.src}
-                    alt={image.alt}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              ))}
-            </Slider>
           </div>
         </div>
       </section>
@@ -245,66 +202,7 @@ export function EngineeredWoodFloors() {
         </div>
       </section>
 
-      {/* Technical Specifications */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-10 text-center">Technical Specifications</h2>
-          
-          <div className="max-w-3xl mx-auto overflow-hidden rounded-lg border border-gray-200">
-            <div className="divide-y divide-gray-200">
-              {specifications.map((spec, index) => (
-                <div key={index} className="flex">
-                  <div className="bg-gray-50 py-4 px-6 font-medium w-1/3">{spec.name}</div>
-                  <div className="py-4 px-6 w-2/3">{spec.value}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Installation Process */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-10 text-center">Installation Process</h2>
-          
-          <div className="max-w-4xl mx-auto">
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="text-center">
-                <div className="bg-white rounded-full p-6 inline-flex mb-4">
-                  <span className="text-2xl font-bold">1</span>
-                </div>
-                <h3 className="text-xl font-semibold mb-2">Subfloor Preparation</h3>
-                <p className="text-gray-600">Subfloor assessment, leveling, and moisture barrier installation.</p>
-              </div>
-              
-              <div className="text-center">
-                <div className="bg-white rounded-full p-6 inline-flex mb-4">
-                  <span className="text-2xl font-bold">2</span>
-                </div>
-                <h3 className="text-xl font-semibold mb-2">Expert Installation</h3>
-                <p className="text-gray-600">Professional click-lock or glue-down installation with precision alignment.</p>
-              </div>
-              
-              <div className="text-center">
-                <div className="bg-white rounded-full p-6 inline-flex mb-4">
-                  <span className="text-2xl font-bold">3</span>
-                </div>
-                <h3 className="text-xl font-semibold mb-2">Final Touches</h3>
-                <p className="text-gray-600">Trim installation, final inspection, and care instructions.</p>
-              </div>
-            </div>
-            
-            <div className="mt-12 text-center">
-              <p className="mb-6">Our certified installers ensure proper installation for optimal performance and longevity.</p>
-              <button onClick={() => window.location.href = '/contact-us'} className="bg-gray-900 text-white px-8 py-3 rounded-lg hover:bg-gray-800 transition">
-                Schedule a Consultation
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-
+     
       {/* FAQ Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
@@ -332,9 +230,7 @@ export function EngineeredWoodFloors() {
             <button onClick={() => window.location.href = '/contact-us'} className="bg-white text-gray-900 px-8 py-3 rounded-lg hover:bg-gray-100 transition">
               Request a Quote
             </button>
-            <button className="border border-white px-8 py-3 rounded-lg hover:bg-white hover:text-gray-900 transition">
-              View Samples
-            </button>
+            
           </div>
         </div>
       </section>
@@ -343,3 +239,4 @@ export function EngineeredWoodFloors() {
 }
 
 export default EngineeredWoodFloors;
+           

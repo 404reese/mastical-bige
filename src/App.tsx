@@ -21,7 +21,7 @@ import Designer from './pages/Designer';
 import Chevron from './pages/Chevron';
 import EngineeredSlim from './pages/EngineeredSlim';
 import EngineeredHerringbone from './pages/EngineeredHerringbone';
-import { Workwalk } from './pages/Workwalk';
+import { Woodwalk } from './pages/woodwalk.tsx';
 import DeckFlooring from './pages/DeckFlooring';
 import SylvanixDecking from './pages/SylvanixDecking';
 import EgoEnrichPlankDecking from './pages/EgoEnrichPlankDecking';
@@ -87,7 +87,7 @@ export function App() {
           <Route path="/chevron" element={<Chevron />} />
           <Route path="/engineered-slim" element={<EngineeredSlim />} />
           <Route path="/engineered-herringbone" element={<EngineeredHerringbone />} />
-          <Route path="/workwalk" element={<Workwalk />} />
+          <Route path="/woodwalk" element={<Woodwalk />} />
           <Route path="/deck-flooring" element={<DeckFlooring />} />
           <Route path="/deck-flooring/sylvanix-decking" element={<SylvanixDecking />} />
           <Route path="/deck-flooring/ego-enrich-plank-decking" element={<EgoEnrichPlankDecking />} />

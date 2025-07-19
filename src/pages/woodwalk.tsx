@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
-export function Workwalk() {
-  // Gallery images for Workwalk
+export function Woodwalk() {
+  // Gallery images for woodwalk
   const galleryImages = [
     "/engg/woodwalk/woodwalk1.jpg",
     "/engg/woodwalk/woodwalk2.jpg"
@@ -14,13 +14,13 @@ export function Workwalk() {
         <div className="absolute inset-0 overflow-hidden">
           <img 
             src="/engg/engg4.jpg" 
-            alt="Workwalk"
+            alt="woodwalk"
             className="w-full h-full object-cover opacity-60"
           />
         </div>
         <div className="absolute inset-0 flex flex-col justify-center items-center text-center p-4">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Workwalk
+            woodwalk
           </h1>
           <p className="text-xl text-white max-w-2xl">
             Premium wood flooring with exceptional durability and style
@@ -45,7 +45,7 @@ export function Workwalk() {
               >
                 <img
                   src={image}
-                  alt={`Workwalk ${index + 1}`}
+                  alt={`woodwalk ${index + 1}`}
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
               </motion.div>
@@ -57,4 +57,4 @@ export function Workwalk() {
   );
 }
 
-export default Workwalk;
+export default Woodwalk;

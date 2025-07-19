@@ -144,9 +144,9 @@ export function SylvanixDecking() {
       {/* Product Collections Section */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">SYLVANIX-DECKING Collections</h2>
+          <h2 className="text-3xl font-bold mb-10 text-center">SYLVANIX-DECKING Collections</h2>
           
-          <div className="grid lg:grid-cols-2 gap-12 max-w-7xl mx-auto">
+          <div className="grid grid-cols-3 gap-8 max-w-5xl mx-auto">
             {sylvanixSubcategories.map((subcategory, index) => (
               <motion.div
                 key={index}
@@ -154,49 +154,29 @@ export function SylvanixDecking() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+                className="text-center cursor-pointer group"
+                onClick={() => {
+                  const pageMap: { [key: string]: string } = {
+                    "Elite Collection": "/deck-flooring/elite-collection",
+                    "Elite Essential": "/deck-flooring/elite-essential",
+                    "Skyline Series": "/deck-flooring/skyline",
+                    "Destinations Decking": "/deck-flooring/destinations-decking",
+                    "Elements Decking": "/deck-flooring/elements-decking"
+                  };
+                  window.location.href = pageMap[subcategory.name];
+                }}
               >
-                <div className="h-80 overflow-hidden">
+                <div className="h-40 rounded-lg overflow-hidden bg-gray-200 mb-3 group-hover:shadow-lg transition-shadow duration-300">
                   <img 
                     src={subcategory.image} 
                     alt={subcategory.name}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
-                
-                <div className="p-8">
-                  <h3 className="text-2xl font-bold mb-4">{subcategory.name}</h3>
-                  <p className="text-gray-600 mb-6 text-lg">{subcategory.description}</p>
-                  
-                  <div className="mb-6">
-                    <h4 className="text-lg font-semibold mb-3">Available Colors:</h4>
-                    <div className="flex flex-wrap gap-2">
-                      {subcategory.colors.map((color, colorIndex) => (
-                        <span key={colorIndex} className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">
-                          {color}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                  
-                  <div className="mt-6">
-                    <button 
-                      onClick={() => {
-                        const pageMap: { [key: string]: string } = {
-                          "Elite Collection": "/deck-flooring/elite-collection",
-                          "Elite Essential": "/deck-flooring/elite-essential",
-                          "Skyline Series": "/deck-flooring/skyline",
-                          "Destinations Decking": "/deck-flooring/destinations-decking",
-                          "Elements Decking": "/deck-flooring/elements-decking"
-                        };
-                        window.location.href = pageMap[subcategory.name];
-                      }}
-                      className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200"
-                    >
-                      Learn More
-                    </button>
-                  </div>
-                </div>
+                <h3 className="font-semibold group-hover:text-gray-600 transition-colors duration-300">{subcategory.name}</h3>
+                <p className="text-sm text-gray-500 mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  Click to explore
+                </p>
               </motion.div>
             ))}
           </div>
@@ -204,7 +184,7 @@ export function SylvanixDecking() {
       </section>
 
       {/* Gallery Section */}
-      <section className="py-16 bg-white">
+      {/* <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center">SYLVANIX-DECKING Gallery</h2>
           
@@ -222,7 +202,7 @@ export function SylvanixDecking() {
             </Slider>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Features Section */}
       <section className="py-16 bg-gray-50">
@@ -300,7 +280,7 @@ export function SylvanixDecking() {
       </section>
 
       {/* Technical Specifications */}
-      <section className="py-16 bg-white">
+      {/* <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center">Technical Specifications</h2>
           
@@ -315,7 +295,7 @@ export function SylvanixDecking() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* FAQ Section */}
       <section className="py-16 bg-gray-50">
@@ -347,12 +327,7 @@ export function SylvanixDecking() {
             >
               Request Quote
             </button>
-            <button 
-              onClick={() => window.location.href = '/deck-flooring'} 
-              className="border border-white px-8 py-3 rounded-lg hover:bg-white hover:text-gray-900 transition"
-            >
-              Back to Deck Flooring
-            </button>
+            
           </div>
         </div>
       </section>
@@ -362,3 +337,4 @@ export function SylvanixDecking() {
 
 
 export default SylvanixDecking;
+       

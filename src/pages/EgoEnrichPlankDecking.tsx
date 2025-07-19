@@ -263,7 +263,7 @@ export function EgoEnrichPlankDecking() {
       </section>
 
       {/* Gallery Section */}
-      <section className="py-16 bg-gray-50">
+      {/* <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center">EGO Enrich Plank Gallery</h2>
           
@@ -281,7 +281,7 @@ export function EgoEnrichPlankDecking() {
             </Slider>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Features Section */}
       <section className="py-16 bg-white">
@@ -359,7 +359,7 @@ export function EgoEnrichPlankDecking() {
       </section>
 
       {/* Technical Specifications */}
-      <section className="py-16 bg-gray-50">
+      {/* <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center">Technical Specifications</h2>
           
@@ -374,7 +374,7 @@ export function EgoEnrichPlankDecking() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* FAQ Section */}
       <section className="py-16 bg-white">

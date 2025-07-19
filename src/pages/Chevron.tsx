@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 export function Chevron() {
   // Gallery images for Chevron
   const galleryImages = [
-    "/engg/slim/chevron1.jpg",
+    "/engg/chevron/chevron1.jpg",
     "/engg/chevron/chevron2.jpg",
     "/engg/chevron/chevron3.jpg",
     "/engg/chevron/chevron4.jpg",
@@ -34,7 +34,7 @@ export function Chevron() {
       </section>
 
       {/* Image Gallery */}
-      <section className="py-16 bg-white">
+      {/* <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-10 text-center">Gallery</h2>
           
@@ -57,7 +57,7 @@ export function Chevron() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

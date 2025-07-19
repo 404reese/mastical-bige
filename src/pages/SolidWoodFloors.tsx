@@ -1,8 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Slider from "react-slick";
-import "/node_modules/slick-carousel/slick/slick.css";
-import "/node_modules/slick-carousel/slick/slick-theme.css";
 import { products } from "@/data/productData";
 
 export function SolidWoodFloors() {
@@ -22,9 +19,12 @@ export function SolidWoodFloors() {
 
   // Additional technical specifications
   const specifications = [
-    { name: "Thickness", value: "18mm to 22mm" },
-    { name: "Width", value: "90mm to 190mm" },
-    { name: "Length", value: "300mm to 2400mm" },
+    { name: "Thickness", value: "18mm" },
+    { name: "Width", value: "120mm - 125mm (varies by wood species)" },
+    { name: "Length", value: "400mm - 1200mm" },
+    { name: "Material", value: "100% natural solid wood" },
+    { name: "Durability", value: "Durable and long-lasting" },
+    { name: "Appearance", value: "Warm and inviting with natural color and grain variations" },
     { name: "Finish Options", value: "UV Oil, Hardwax Oil, Lacquered" },
     { name: "Installation", value: "Tongue and Groove, Click-Lock" },
     { name: "Suitable for", value: "Living rooms, Bedrooms, Dining areas, Offices" },
@@ -113,41 +113,6 @@ export function SolidWoodFloors() {
         </div>
       </section>
 
-      {/* Gallery Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-10 text-center">Gallery</h2>
-          
-          <div className="max-w-4xl mx-auto">
-            <Slider {...settings}>
-              <div className="h-[500px] rounded-lg overflow-hidden bg-gray-200">
-                <img
-                  src="/swf1.png"
-                  alt="Solid wood floor in living room"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="h-[500px] rounded-lg overflow-hidden bg-gray-200">
-                <img
-                  src="/swf2.png"
-                  alt="Solid wood floor detail"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              {solidWoodData?.images.map((image: { src: string; alt: string }, index: number) => (
-                <div key={index} className="h-[500px] rounded-lg overflow-hidden bg-gray-200">
-                  <img
-                    src={image.src}
-                    alt={image.alt}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              ))}
-            </Slider>
-          </div>
-        </div>
-      </section>
-
       {/* Features Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
@@ -196,7 +161,7 @@ export function SolidWoodFloors() {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-10 text-center">Available Wood Species</h2>
           
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-5xl mx-auto">
+          <div className="grid grid-cols-3 gap-8 max-w-5xl mx-auto">
             {woodSpecies.map((species, index) => (
               <div key={index} className="text-center">
                 <div className="h-40 rounded-lg overflow-hidden bg-gray-200 mb-3">
@@ -222,48 +187,6 @@ export function SolidWoodFloors() {
                   <div className="py-4 px-6 w-2/3">{spec.value}</div>
                 </div>
               ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Installation Process */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-10 text-center">Installation Process</h2>
-          
-          <div className="max-w-4xl mx-auto">
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="text-center">
-                <div className="bg-white rounded-full p-6 inline-flex mb-4">
-                  <span className="text-2xl font-bold">1</span>
-                </div>
-                <h3 className="text-xl font-semibold mb-2">Preparation</h3>
-                <p className="text-gray-600">Subfloor assessment, acclimation of wood, and moisture testing.</p>
-              </div>
-              
-              <div className="text-center">
-                <div className="bg-white rounded-full p-6 inline-flex mb-4">
-                  <span className="text-2xl font-bold">2</span>
-                </div>
-                <h3 className="text-xl font-semibold mb-2">Installation</h3>
-                <p className="text-gray-600">Professional installation with precision cutting and secure fastening.</p>
-              </div>
-              
-              <div className="text-center">
-                <div className="bg-white rounded-full p-6 inline-flex mb-4">
-                  <span className="text-2xl font-bold">3</span>
-                </div>
-                <h3 className="text-xl font-semibold mb-2">Finishing</h3>
-                <p className="text-gray-600">Sanding, staining if desired, and application of protective finish.</p>
-              </div>
-            </div>
-            
-            <div className="mt-12 text-center">
-              <p className="mb-6">Our professional installation team ensures a flawless result that will last for decades.</p>
-              <button onClick={() => window.location.href = '/contact-us'} className="bg-gray-900 text-white px-8 py-3 rounded-lg hover:bg-gray-800 transition">
-                Schedule a Consultation
-              </button>
             </div>
           </div>
         </div>
@@ -296,9 +219,7 @@ export function SolidWoodFloors() {
             <button onClick={() => window.location.href = '/contact-us'} className="bg-white text-gray-900 px-8 py-3 rounded-lg hover:bg-gray-100 transition">
               Request a Quote
             </button>
-            <button className="border border-white px-8 py-3 rounded-lg hover:bg-white hover:text-gray-900 transition">
-              View Samples
-            </button>
+            
           </div>
         </div>
       </section>

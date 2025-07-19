@@ -127,7 +127,7 @@ export function ParquetFlooring() {
       </section>
 
       {/* Gallery Section */}
-      <section className="py-16 bg-gray-50">
+      {/* <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-10 text-center">Gallery</h2>
           
@@ -159,10 +159,10 @@ export function ParquetFlooring() {
             </Slider>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Features Section */}
-      <section className="py-16 bg-white">
+      {/* <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-10 text-center">Features & Benefits</h2>
           
@@ -201,7 +201,7 @@ export function ParquetFlooring() {
             </motion.div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Pattern Types Section */}
       <section className="py-16 bg-gray-50">
@@ -242,7 +242,7 @@ export function ParquetFlooring() {
       </section>
 
       {/* Installation Process */}
-      <section className="py-16 bg-gray-50">
+      {/* <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-10 text-center">Installation Process</h2>
           
@@ -284,7 +284,7 @@ export function ParquetFlooring() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* FAQ Section */}
       <section className="py-16 bg-white">
@@ -313,9 +313,7 @@ export function ParquetFlooring() {
             <button onClick={() => window.location.href = '/contact-us'} className="bg-white text-gray-900 px-8 py-3 rounded-lg hover:bg-gray-100 transition">
               Request a Quote
             </button>
-            <button className="border border-white px-8 py-3 rounded-lg hover:bg-white hover:text-gray-900 transition">
-              View Pattern Samples
-            </button>
+           
           </div>
         </div>
       </section>

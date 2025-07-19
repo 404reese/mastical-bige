@@ -61,7 +61,7 @@ export function WallCladdingSoffit() {
     {
       name: "SYLVANIX CLADDING",
       description: "Premium composite cladding solutions with designer collections and signature series",
-      image: "/Wall Clading/SYLVANIX CLADDING/DESIGNER COLLECTION/CHOCOLATE/Designer-chocolateD-removebg-preview.jpg",
+      image: "/Wall Clading/SYLVANIX CLADDING/DESIGNER COLLECTION/HARVEST BROWN/Designer+Collection+Cladding-Harvest+Brown+2.jpg",
       link: "/wall-cladding-soffit/sylvanix-cladding",
       collections: ["Designer Collection", "Soar Signature"]
     },
@@ -145,49 +145,32 @@ export function WallCladdingSoffit() {
       </section>
 
       {/* Main Categories Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Premium Wall Cladding & Soffit Categories</h2>
+          <h2 className="text-3xl font-bold mb-10 text-center">Premium Wall Cladding & Soffit Categories</h2>
           
-          <div className="grid lg:grid-cols-2 gap-12 max-w-7xl mx-auto">
+          <div className="grid grid-cols-3 gap-8 max-w-5xl mx-auto">
             {wallCladdingMainCategories.map((category, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.2 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="bg-gray-50 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+                className="text-center cursor-pointer group"
                 onClick={() => window.location.href = category.link}
               >
-                <div className="h-80 overflow-hidden">
+                <div className="h-40 rounded-lg overflow-hidden bg-gray-200 mb-3 group-hover:shadow-lg transition-shadow duration-300">
                   <img 
                     src={category.image} 
                     alt={category.name}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
-                <div className="p-8">
-                  <h3 className="text-2xl font-bold mb-4">{category.name}</h3>
-                  <p className="text-gray-600 mb-6 text-lg">{category.description}</p>
-                  
-                  <div className="mb-6">
-                    <h4 className="text-lg font-semibold mb-3">Collections:</h4>
-                    <div className="flex flex-wrap gap-2">
-                      {category.collections.map((collection, collectionIndex) => (
-                        <span key={collectionIndex} className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">
-                          {collection}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                  
-                  <div className="mt-6">
-                    <button className="w-full bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition text-lg font-semibold">
-                      Explore {category.name}
-                    </button>
-                  </div>
-                </div>
+                <h3 className="font-semibold group-hover:text-gray-600 transition-colors duration-300">{category.name}</h3>
+                <p className="text-sm text-gray-500 mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  Click to explore
+                </p>
               </motion.div>
             ))}
           </div>
@@ -195,7 +178,7 @@ export function WallCladdingSoffit() {
       </section>
 
       {/* Gallery Section */}
-      <section className="py-16 bg-gray-50">
+      {/* <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-10 text-center">Product Gallery</h2>
           
@@ -239,10 +222,10 @@ export function WallCladdingSoffit() {
             </Slider>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Technical Specifications */}
-      <section className="py-16 bg-white">
+      {/* <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-10 text-center">Technical Specifications</h2>
           
@@ -257,10 +240,10 @@ export function WallCladdingSoffit() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Installation Process */}
-      <section className="py-16 bg-gray-50">
+      {/* <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-10 text-center">Professional Installation Process</h2>
           
@@ -310,7 +293,7 @@ export function WallCladdingSoffit() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* FAQ Section */}
       <section className="py-16 bg-white">
@@ -342,9 +325,7 @@ export function WallCladdingSoffit() {
             >
               Get Free Quote
             </button>
-            <button className="border border-white px-8 py-3 rounded-lg hover:bg-white hover:text-gray-900 transition">
-              View Sample Gallery
-            </button>
+            
           </div>
         </div>
       </section>
@@ -353,3 +334,4 @@ export function WallCladdingSoffit() {
 }
 
 export default WallCladdingSoffit;
+           
