@@ -185,16 +185,6 @@ export function SPCHerringbone() {
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-3">{design.name}</h3>
-                  <p className="text-gray-600 mb-4">{design.description}</p>
-                  
-                  <div className="space-y-2">
-                    {design.characteristics.map((characteristic, charIndex) => (
-                      <div key={charIndex} className="flex items-center text-sm text-gray-500">
-                        <div className="w-2 h-2 bg-purple-500 rounded-full mr-2"></div>
-                        {characteristic}
-                      </div>
-                    ))}
-                  </div>
                 </div>
               </motion.div>
             ))}
@@ -217,7 +207,7 @@ export function SPCHerringbone() {
                 viewport={{ once: true }}
                 className="bg-gray-50 rounded-lg p-6 text-center"
               >
-                <div className="text-4xl mb-4">{feature.icon}</div>
+               
                 <h3 className="text-xl font-bold mb-3">{feature.title}</h3>
                 <p className="text-gray-600">{feature.description}</p>
               </motion.div>
@@ -227,7 +217,7 @@ export function SPCHerringbone() {
       </section>
 
       {/* Gallery Section */}
-      <section className="py-16 bg-gray-50">
+      {/* <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-10 text-center">Herringbone Gallery</h2>
           
@@ -271,10 +261,10 @@ export function SPCHerringbone() {
             </Slider>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Design Advantages */}
-      <section className="py-16 bg-white">
+      {/* <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-10 text-center">Design Advantages</h2>
           
@@ -296,10 +286,10 @@ export function SPCHerringbone() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Installation Benefits */}
-      <section className="py-16 bg-gray-50">
+      {/* <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-10 text-center">Installation Benefits</h2>
           
@@ -321,7 +311,7 @@ export function SPCHerringbone() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Technical Specifications */}
       <section className="py-16 bg-white">
@@ -342,7 +332,7 @@ export function SPCHerringbone() {
       </section>
 
       {/* Applications Section */}
-      <section className="py-16 bg-gray-50">
+      {/* <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-10 text-center">Perfect Applications</h2>
           
@@ -374,7 +364,7 @@ export function SPCHerringbone() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="py-16 bg-gray-900 text-white">

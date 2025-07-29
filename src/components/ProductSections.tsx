@@ -201,7 +201,7 @@ export function ProductSections() {
               
                 <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
                   <img
-                    src="/parquet/parp-2.png"
+                    src="/parquet/oak champani.jpg"
                     alt="Wooden parquet floor view 2"
                     className="w-full h-full object-cover"
                     loading="lazy"
@@ -415,28 +415,37 @@ export function ProductSections() {
         </div>
       </section>
       {/* Deck Flooring Section */}
-      <section id="deck-flooring" className="py-16 bg-gray-50"> {/* Added bg-gray-50 */}
+      <section id="deck-flooring" className="py-16"> {/* Removed bg-gray-50 */}
         <div className="container mx-auto">
           <div className="flex flex-col lg:flex-row gap-12 items-center">
-            {/* Swapped Text and Image */}
+            {/* Swapped Image and Text */}
+            <motion.div
+              className="lg:w-1/2 w-full px-4 lg:px-0"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.3, ease: "easeOut" }} // Adjusted delay
+              viewport={{ once: true, amount: 0.3 }}
+            >
+                <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
+                  <img src="/Laminate/MVR_0860 (Elite Atlanta Walnut 1801-2 ).JPG" alt="Laminate floor example 1" className="w-full h-full object-cover" loading="lazy" />
+                </div>
+                
+             
+            </motion.div>
+
             <motion.div
               className="lg:w-1/2"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: 0.3, ease: "easeOut" }} // Adjusted delay
+              transition={{ duration: 1, delay: 0.6, ease: "easeOut" }} // Adjusted delay
               viewport={{ once: true, amount: 0.3 }}
             >
               <h2 className="text-3xl font-bold mb-8 text-center lg:text-left">
                 Deck Flooring
               </h2>
               <p className="text-gray-700 mb-6 text-justify">
-                Our premium deck flooring combines durability and style for outdoor living spaces. 
-                Made from high-quality composite materials and bamboo, these decking solutions 
-                offer exceptional weather resistance, UV protection, and low maintenance. 
-                Perfect for patios, balconies, poolside areas, and outdoor entertainment spaces, 
-                providing long-lasting beauty and performance.
+                Our premium deck flooring combines durability and style for outdoor living spaces. Made from high-quality composite materials and bamboo, these decking solutions offer exceptional weather resistance, UV protection, and low maintenance. Perfect for patios, balconies, poolside areas, and outdoor entertainment spaces, providing long-lasting beauty and performance.
               </p>
-
               <ul className="list-disc list-inside text-gray-700 space-y-2">
                 <li>Weather-resistant and UV protected</li>
                 <li>Low maintenance requirements</li>
@@ -451,28 +460,10 @@ export function ProductSections() {
                 See More
               </button>
             </motion.div>
-
-            <motion.div
-              className="lg:w-1/2 w-full px-4 lg:px-0"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: 0.6, ease: "easeOut" }} // Adjusted delay
-              viewport={{ once: true, amount: 0.3 }}
-            >
-              
-                <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
-                  <img
-                    src="/deck.jpg"
-                    alt="Deck floor view 1"
-                    className="w-full h-full object-cover"
-                    loading="lazy"
-                  />
-                </div>
-               
-            </motion.div>
           </div>
         </div>
       </section>
+      
     </div>
   );
 }
