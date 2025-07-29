@@ -94,12 +94,6 @@ export function EliteHerringbonePrimeCollection() {
       description: "Flowing patterns inspired by the cave known for its unique wind phenomena",
       image: "/Laminate/Elite Herringbone Prime Collection/Copy of wind cave revise 2.png",
       characteristics: ["Flowing Patterns", "Wind Phenomena", "Unique Movement", "Natural Flow"]
-    },
-    {
-      name: "Silmanite",
-      description: "Mineral-inspired textures reflecting rare underground crystal formations",
-      image: "/Laminate/Elite Herringbone Prime Collection/3025_slimanite.tif",
-      characteristics: ["Mineral Inspired", "Crystal Formation", "Rare Beauty", "Geological Wonder"]
     }
   ];
 
