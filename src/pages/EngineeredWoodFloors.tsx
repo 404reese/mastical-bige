@@ -59,13 +59,13 @@ export function EngineeredWoodFloors() {
   const woodSpecies = [
     { name: "Engineered Slim Chevron", image: "/engg/engg1.jpg", link: "/engineered-slim-chevron" },
     { name: "Engg Plank", image: "/engg/engg2.jpg", link: "/engg-plank" },
-    { name: "Parquet Tiles", image: "/engg/engg3.jpg", link: "/parquet-tiles" },
+    // { name: "Parquet Tiles", image: "/engg/engg3.jpg", link: "/parquet-tiles" },
     { name: "Herringbone", image: "/engg/engg4.jpg", link: "/herringbone" },
     { name: "Designer", image: "/engg/engg5.jpg", link: "/designer" },
     { name: "Chevron", image: "/engg/engg6.jpg", link: "/chevron" },
     { name: "Engineered Slim", image: "/engg/engg7.jpg", link: "/engineered-slim" },
     { name: "Engineered Herringbone", image: "/engg/engg8.png", link: "/engineered-herringbone" },
-    { name: "Woodwalk", image: "/engg/engg8.png", link: "/woodwalk" },
+    // { name: "Woodwalk", image: "/engg/engg8.png", link: "/woodwalk" },
     
   ];
 
@@ -75,7 +75,7 @@ export function EngineeredWoodFloors() {
       <section className="relative h-[80vh] bg-gray-900">
         <div className="absolute inset-0 overflow-hidden">
           <img 
-            src="/pr2.png" 
+            src="/engwf.avif" 
             alt="Engineered Wood Flooring"
             className="w-full h-full object-cover opacity-60"
           />
@@ -155,16 +155,7 @@ export function EngineeredWoodFloors() {
             >
               <div className="text-xl font-semibold mb-2">Moisture Resistant</div>
             </motion.div>
-            
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.6 }}
-              viewport={{ once: true }}
-              className="bg-gray-50 p-6 rounded-lg shadow-sm"
-            >
-              <div className="text-xl font-semibold mb-2">Versatile Installation</div>
-            </motion.div>
+          
           </div>
         </div>
       </section>
@@ -174,29 +165,22 @@ export function EngineeredWoodFloors() {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-10 text-center">Available Wood Species</h2>
           
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-5xl mx-auto">
+          <div className="grid grid-cols-3 gap-8 max-w-5xl mx-auto">
             {woodSpecies.map((species, index) => (
-              <motion.div
+              <div
                 key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                viewport={{ once: true }}
                 className="text-center cursor-pointer group"
                 onClick={() => window.location.href = species.link}
               >
-                <div className="h-40 rounded-lg overflow-hidden bg-gray-200 mb-3 group-hover:shadow-lg transition-shadow duration-300">
+                <div className="h-52 rounded-lg overflow-hidden bg-gray-200 mb-4 group-hover:shadow-lg transition-shadow duration-300">
                   <img 
                     src={species.image} 
                     alt={species.name} 
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" 
                   />
                 </div>
-                <h3 className="font-semibold group-hover:text-gray-600 transition-colors duration-300">{species.name}</h3>
-                <p className="text-sm text-gray-500 mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  Click to view gallery
-                </p>
-              </motion.div>
+                <h3 className="font-semibold text-lg group-hover:text-gray-600 transition-colors duration-300">{species.name}</h3>
+              </div>
             ))}
           </div>
         </div>

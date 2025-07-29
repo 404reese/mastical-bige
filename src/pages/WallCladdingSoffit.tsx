@@ -61,38 +61,38 @@ export function WallCladdingSoffit() {
     {
       name: "SYLVANIX CLADDING",
       description: "Premium composite cladding solutions with designer collections and signature series",
-      image: "/Wall Clading/SYLVANIX CLADDING/DESIGNER COLLECTION/HARVEST BROWN/Designer+Collection+Cladding-Harvest+Brown+2.jpg",
+      image: "/Wall Clading/soarsignature+Obsidian.png",
       link: "/wall-cladding-soffit/sylvanix-cladding",
       collections: ["Designer Collection", "Soar Signature"]
     },
-    {
-      name: "dassoCTECH Cladding",
-      description: "Premium bamboo composite cladding with superior durability and natural aesthetics",
-      image: "/Wall Clading/dassoCTECH Cladding/1567607951173044.png",
-      link: "/wall-cladding-soffit/dassoCTECH-cladding",
-      collections: ["Natural Bamboo", "Composite Series"]
-    },
-    {
-      name: "dassoXTR Cladding",
-      description: "High-performance bamboo composite cladding with excellent weather resistance",
-      image: "/Wall Clading/dassoXTR Cladding/1582769044428157.png",
-      link: "/wall-cladding-soffit/dassoXTR-cladding",
-      collections: ["XTR Performance", "Weather Shield"]
-    },
-    {
-      name: "dassoCTECH Soffit",
-      description: "Premium bamboo composite soffit solutions for roof overhangs and eaves",
-      image: "/Wall Clading/dassoCTECH Soffit/1567147241452338.png",
-      link: "/wall-cladding-soffit/dassoCTECH-soffit",
-      collections: ["Ventilated Soffit", "Solid Soffit"]
-    },
-    {
-      name: "dassoXTR Soffit",
-      description: "High-quality bamboo composite soffit with superior ventilation properties",
-      image: "/Wall Clading/dassoXTR Soffit/1622077960185491.png",
-      link: "/wall-cladding-soffit/dassoXTR-soffit",
-      collections: ["Perforated Soffit", "Solid Panel"]
-    }
+    // {
+    //   name: "dassoCTECH Cladding",
+    //   description: "Premium bamboo composite cladding with superior durability and natural aesthetics",
+    //   image: "/Wall Clading/dassoCTECH Cladding/1567607951173044.png",
+    //   link: "/wall-cladding-soffit/dassoCTECH-cladding",
+    //   collections: ["Natural Bamboo", "Composite Series"]
+    // },
+    // {
+    //   name: "dassoXTR Cladding",
+    //   description: "High-performance bamboo composite cladding with excellent weather resistance",
+    //   image: "/Wall Clading/dassoXTR Cladding/1582769044428157.png",
+    //   link: "/wall-cladding-soffit/dassoXTR-cladding",
+    //   collections: ["XTR Performance", "Weather Shield"]
+    // },
+    // {
+    //   name: "dassoCTECH Soffit",
+    //   description: "Premium bamboo composite soffit solutions for roof overhangs and eaves",
+    //   image: "/Wall Clading/dassoCTECH Soffit/1567147241452338.png",
+    //   link: "/wall-cladding-soffit/dassoCTECH-soffit",
+    //   collections: ["Ventilated Soffit", "Solid Soffit"]
+    // },
+    // {
+    //   name: "dassoXTR Soffit",
+    //   description: "High-quality bamboo composite soffit with superior ventilation properties",
+    //   image: "/Wall Clading/dassoXTR Soffit/1622077960185491.png",
+    //   link: "/wall-cladding-soffit/dassoXTR-soffit",
+    //   collections: ["Perforated Soffit", "Solid Panel"]
+    // }
   ];
 
   return (
@@ -101,7 +101,7 @@ export function WallCladdingSoffit() {
       <section className="relative h-[80vh] bg-gray-900">
         <div className="absolute inset-0 overflow-hidden">
           <img 
-            src="/Wall Clading/SYLVANIX CLADDING/SOAR SIGNATURE/IMG_0125+-+Large.jpg" 
+            src="/Wall Clading/wall-cladding.jpg" 
             alt="Premium Wall Cladding & Soffit"
             className="w-full h-full object-cover opacity-60"
           />

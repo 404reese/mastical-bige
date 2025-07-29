@@ -81,15 +81,8 @@ export function ProductSections() {
               transition={{ duration: 1, delay: 0.6, ease: "easeOut" }}
               viewport={{ once: true, amount: 0.3 }}
             >
-              <Slider {...settings}>
-                <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
-                  <img
-                    src="/p1.png"
-                    alt="Solid wood floor view 1"
-                    className="w-full h-full object-cover"
-                    loading="lazy"
-                  />
-                </div>
+              
+                
                 <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
                   <img
                     src="/p2.png"
@@ -98,15 +91,7 @@ export function ProductSections() {
                     loading="lazy"
                   />
                 </div>
-                <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
-                  <img
-                    src="/p3.png"
-                    alt="Solid wood floor view 3"
-                    className="w-full h-full object-cover"
-                    loading="lazy"
-                  />
-                </div>
-              </Slider>
+              
             </motion.div>
           </div>
         </div>
@@ -123,7 +108,7 @@ export function ProductSections() {
               transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
               viewport={{ once: true, amount: 0.3 }}
             >
-              <Slider {...settings}>
+              
                 <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
                   <img
                     src="/engg/engg1.jpg"
@@ -132,31 +117,7 @@ export function ProductSections() {
                     loading="lazy"
                   />
                 </div>
-                <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
-                  <img
-                    src="/engg/engg2.jpg"
-                    alt="Engineered wood floor view 2"
-                    className="w-full h-full object-cover"
-                    loading="lazy"
-                  />
-                </div>
-                <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
-                  <img
-                    src="/engg/engg3.jpg"
-                    alt="Engineered wood floor view 3"
-                    className="w-full h-full object-cover"
-                    loading="lazy"
-                  />
-                </div>
-                <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
-                  <img
-                    src="/engg/engg4.jpg"
-                    alt="Engineered wood floor view 4"
-                    className="w-full h-full object-cover"
-                    loading="lazy"
-                  />
-                </div>
-              </Slider>
+                
             </motion.div>
 
             <motion.div
@@ -237,15 +198,7 @@ export function ProductSections() {
               transition={{ duration: 1, delay: 0.6, ease: "easeOut" }}
               viewport={{ once: true, amount: 0.3 }}
             >
-              <Slider {...settings}>
-                <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
-                  <img
-                    src="/parquet/parp-1.png"
-                    alt="Wooden parquet floor view 1"
-                    className="w-full h-full object-cover"
-                    loading="lazy"
-                  />
-                </div>
+              
                 <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
                   <img
                     src="/parquet/parp-2.png"
@@ -254,15 +207,7 @@ export function ProductSections() {
                     loading="lazy"
                   />
                 </div>
-                <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
-                  <img
-                    src="/products/parquet1.png"
-                    alt="Parquet pattern example"
-                    className="w-full h-full object-cover"
-                    loading="lazy"
-                  />
-                </div>
-              </Slider>
+                
             </motion.div>
           </div>
         </div>
@@ -282,17 +227,11 @@ export function ProductSections() {
               transition={{ duration: 1, delay: 0.3, ease: "easeOut" }} // Adjusted delay
               viewport={{ once: true, amount: 0.3 }}
             >
-              <Slider {...settings}>
-                <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
-                  <img src="/Wall Clading/dassoCTECH Cladding/20190926100942908.jpg" alt="Wall cladding example 1" className="w-full h-full object-cover" loading="lazy" />
-                </div>
+             
                 <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
                   <img src="/Wall Clading/dassoCTECH Cladding/1567607955174803.png" alt="Wall cladding example 2" className="w-full h-full object-cover" loading="lazy" />
                 </div>
-                <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
-                  <img src="/Wall Clading/dassoCTECH Cladding/1567607951173044.png" alt="Wall cladding example 3" className="w-full h-full object-cover" loading="lazy" />
-                </div>
-              </Slider>
+                
             </motion.div>
 
             <motion.div
@@ -366,17 +305,11 @@ export function ProductSections() {
               transition={{ duration: 1, delay: 0.6, ease: "easeOut" }} // Adjusted delay
               viewport={{ once: true, amount: 0.3 }}
             >
-              <Slider {...settings}>
-                <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
-                  <img src="/Lumber Panels/dassoCTECH Lumber & Panel/1582766898125843.jpeg" alt="Lumber and panels example 1" className="w-full h-full object-cover" loading="lazy" />
-                </div>
+              
                 <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
                   <img src="/Lumber Panels/dassoCTECH Lumber & Panel/1582766899199977.jpeg" alt="Lumber and panels example 2" className="w-full h-full object-cover" loading="lazy" />
                 </div>
-                <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
-                  <img src="/Lumber Panels/dassoCTECH Lumber & Panel/1582766899537701.png" alt="Lumber and panels example 3" className="w-full h-full object-cover" loading="lazy" />
-                </div>
-              </Slider>
+                
             </motion.div>
           </div>
         </div>
@@ -394,17 +327,11 @@ export function ProductSections() {
               transition={{ duration: 1, delay: 0.3, ease: "easeOut" }} // Adjusted delay
               viewport={{ once: true, amount: 0.3 }}
             >
-              <Slider {...settings}>
                 <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
                   <img src="/Laminate/MVR_0860 (Elite Atlanta Walnut 1801-2 ).JPG" alt="Laminate floor example 1" className="w-full h-full object-cover" loading="lazy" />
                 </div>
-                <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
-                  <img src="/Laminate/Elite Herringbone Collection/Copy of MVR_0699 (Color  328 )-Mount Everest.JPG" alt="Laminate floor example 2" className="w-full h-full object-cover" loading="lazy" />
-                </div>
-                <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
-                  <img src="/Laminate/Enchant Premium Collection/Copy of MVR_1337 ( Caramel Oak ).JPG" alt="Laminate floor example 3" className="w-full h-full object-cover" loading="lazy" />
-                </div>
-              </Slider>
+                
+             
             </motion.div>
 
             <motion.div
@@ -478,17 +405,11 @@ export function ProductSections() {
               transition={{ duration: 1, delay: 0.6, ease: "easeOut" }} // Adjusted delay
               viewport={{ once: true, amount: 0.3 }}
             >
-              <Slider {...settings}>
+              
                 <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
                   <img src="/SPC/SPC Herringbone/3395-H1111.jpg" alt="SPC floor example 1" className="w-full h-full object-cover" loading="lazy" />
                 </div>
-                <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
-                  <img src="/SPC/SPC Plank/3383_P2299.jpg" alt="SPC floor example 2" className="w-full h-full object-cover" loading="lazy" />
-                </div>
-                <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
-                  <img src="/SPC/SPC Tile/3178_T4411.jpg" alt="SPC floor example 3" className="w-full h-full object-cover" loading="lazy" />
-                </div>
-              </Slider>
+                
             </motion.div>
           </div>
         </div>
@@ -538,7 +459,7 @@ export function ProductSections() {
               transition={{ duration: 1, delay: 0.6, ease: "easeOut" }} // Adjusted delay
               viewport={{ once: true, amount: 0.3 }}
             >
-              <Slider {...settings}>
+              
                 <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
                   <img
                     src="/deck.jpg"
@@ -547,31 +468,7 @@ export function ProductSections() {
                     loading="lazy"
                   />
                 </div>
-                <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
-                  <img
-                    src="/deck/SYLVANIX-DECKING/elite-collection/summit-grey.jpg"
-                    alt="Deck floor view 2"
-                    className="w-full h-full object-cover"
-                    loading="lazy"
-                  />
-                </div>
-                <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
-                  <img
-                    src="/deck/EGO Enrich Plank Decking/Pool-Side.jpg"
-                    alt="Deck floor view 3"
-                    className="w-full h-full object-cover"
-                    loading="lazy"
-                  />
-                </div>
-                <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
-                  <img
-                    src="/deck/dassoXTR DECKING/dassoXTR DECKING (1).jpg"
-                    alt="Deck floor view 4"
-                    className="w-full h-full object-cover"
-                    loading="lazy"
-                  />
-                </div>
-              </Slider>
+               
             </motion.div>
           </div>
         </div>

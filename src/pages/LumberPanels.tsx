@@ -145,73 +145,10 @@ export function LumberPanels() {
                 <div className="p-8">
                   <h3 className="text-2xl font-bold mb-4">{category.name}</h3>
                   <p className="text-gray-600 mb-6 text-lg">{category.description}</p>
-                  
-                  <div className="mb-6">
-                    <h4 className="text-lg font-semibold mb-3">Applications:</h4>
-                    <div className="flex flex-wrap gap-2">
-                      {category.applications.map((application, appIndex) => (
-                        <span key={appIndex} className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">
-                          {application}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                  
-                  <div className="mt-6">
-                    <button className="w-full bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition text-lg font-semibold">
-                      Explore {category.name}
-                    </button>
-                  </div>
+          
                 </div>
               </motion.div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Gallery Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-10 text-center">Product Gallery</h2>
-          
-          <div className="max-w-4xl mx-auto">
-            <Slider {...settings}>
-              <div className="h-[500px] rounded-lg overflow-hidden bg-gray-200">
-                <img
-                  src="/Lumber Panels/dassoCTECH Lumber & Panel/20191008093824569.jpg"
-                  alt="dassoCTECH Lumber Applications"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="h-[500px] rounded-lg overflow-hidden bg-gray-200">
-                <img
-                  src="/Lumber Panels/dassoXTR Lumber & Panel/20190926102641145.jpg"
-                  alt="dassoXTR Panel Systems"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="h-[500px] rounded-lg overflow-hidden bg-gray-200">
-                <img
-                  src="/Lumber Panels/dassoCTECH Lumber & Panel/20191008093825905.jpg"
-                  alt="Architectural Applications"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="h-[500px] rounded-lg overflow-hidden bg-gray-200">
-                <img
-                  src="/Lumber Panels/dassoXTR Lumber & Panel/20190926102648307.jpg"
-                  alt="Structural Components"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="h-[500px] rounded-lg overflow-hidden bg-gray-200">
-                <img
-                  src="/Lumber Panels/dassoCTECH Lumber & Panel/1582766899199977.jpeg"
-                  alt="Manufacturing Process"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </Slider>
           </div>
         </div>
       </section>
@@ -234,59 +171,7 @@ export function LumberPanels() {
         </div>
       </section>
 
-      {/* Applications Process */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-10 text-center">Application Areas</h2>
-          
-          <div className="max-w-5xl mx-auto">
-            <div className="grid md:grid-cols-4 gap-6">
-              <div className="text-center">
-                <div className="bg-white rounded-full p-6 inline-flex mb-4">
-                  <span className="text-2xl">🏗️</span>
-                </div>
-                <h3 className="text-lg font-semibold mb-2">Structural Lumber</h3>
-                <p className="text-gray-600 text-sm">Beams, posts, and structural components for buildings</p>
-              </div>
-              
-              <div className="text-center">
-                <div className="bg-white rounded-full p-6 inline-flex mb-4">
-                  <span className="text-2xl">🪑</span>
-                </div>
-                <h3 className="text-lg font-semibold mb-2">Furniture Making</h3>
-                <p className="text-gray-600 text-sm">Tables, chairs, cabinets, and custom furniture pieces</p>
-              </div>
-              
-              <div className="text-center">
-                <div className="bg-white rounded-full p-6 inline-flex mb-4">
-                  <span className="text-2xl">🏛️</span>
-                </div>
-                <h3 className="text-lg font-semibold mb-2">Architectural Millwork</h3>
-                <p className="text-gray-600 text-sm">Custom millwork, trim, and architectural details</p>
-              </div>
-              
-              <div className="text-center">
-                <div className="bg-white rounded-full p-6 inline-flex mb-4">
-                  <span className="text-2xl">⚙️</span>
-                </div>
-                <h3 className="text-lg font-semibold mb-2">Industrial Applications</h3>
-                <p className="text-gray-600 text-sm">Marine construction, heavy-duty projects, and specialized uses</p>
-              </div>
-            </div>
-            
-            <div className="mt-12 text-center">
-              <p className="mb-6 text-gray-700">Our lumber and panels provide sustainable alternatives for traditional wood applications.</p>
-              <button 
-                onClick={() => window.location.href = '/contact-us'} 
-                className="bg-gray-900 text-white px-8 py-3 rounded-lg hover:bg-gray-800 transition"
-              >
-                Discuss Your Project Requirements
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      
       {/* FAQ Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">

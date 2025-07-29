@@ -136,29 +136,7 @@ export function DassoCTECHLumberPanel() {
         </div>
       </section>
 
-      {/* Features Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-12 text-center">Key Features & Benefits</h2>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-            {features.map((feature, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg p-6 shadow-lg text-center"
-              >
-                <div className="text-4xl mb-4">{feature.icon}</div>
-                <h3 className="text-xl font-bold mb-3">{feature.title}</h3>
-                <p className="text-gray-600">{feature.description}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
+      
 
       {/* Gallery Section */}
       <section className="py-16 bg-white">
@@ -207,38 +185,7 @@ export function DassoCTECHLumberPanel() {
         </div>
       </section>
 
-      {/* Applications Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-12 text-center">Application Areas</h2>
-          
-          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-            {applications.map((app, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.2 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg p-6 shadow-lg"
-              >
-                <div className="flex items-center mb-4">
-                  <span className="text-3xl mr-3">{app.icon}</span>
-                  <h3 className="text-xl font-bold">{app.category}</h3>
-                </div>
-                <div className="space-y-2">
-                  {app.uses.map((use, useIndex) => (
-                    <div key={useIndex} className="flex items-center text-gray-600">
-                      <div className="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
-                      {use}
-                    </div>
-                  ))}
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
+      
 
       {/* Technical Specifications */}
       <section className="py-16 bg-white">
@@ -258,66 +205,7 @@ export function DassoCTECHLumberPanel() {
         </div>
       </section>
 
-      {/* Processing Advantages */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-10 text-center">Processing Advantages</h2>
-          
-          <div className="max-w-4xl mx-auto">
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {processingAdvantages.map((advantage, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  viewport={{ once: true }}
-                  className="flex items-center p-4 bg-white rounded-lg shadow-md"
-                >
-                  <div className="w-3 h-3 bg-blue-500 rounded-full mr-3"></div>
-                  <span className="text-gray-700 font-medium">{advantage}</span>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Sustainability Section */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-10 text-center">Sustainability Advantages</h2>
-          
-          <div className="max-w-5xl mx-auto">
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="text-center">
-                <div className="bg-green-100 rounded-full p-6 inline-flex mb-4">
-                  <span className="text-2xl">🌱</span>
-                </div>
-                <h3 className="text-xl font-semibold mb-3">Rapidly Renewable</h3>
-                <p className="text-gray-600">Bamboo grows 3-5 times faster than hardwood trees, reaching maturity in 3-5 years</p>
-              </div>
-              
-              <div className="text-center">
-                <div className="bg-blue-100 rounded-full p-6 inline-flex mb-4">
-                  <span className="text-2xl">🌍</span>
-                </div>
-                <h3 className="text-xl font-semibold mb-3">Carbon Negative</h3>
-                <p className="text-gray-600">Bamboo absorbs more CO2 than trees and our production process sequesters carbon</p>
-              </div>
-              
-              <div className="text-center">
-                <div className="bg-purple-100 rounded-full p-6 inline-flex mb-4">
-                  <span className="text-2xl">♻️</span>
-                </div>
-                <h3 className="text-xl font-semibold mb-3">Zero Waste</h3>
-                <p className="text-gray-600">Our manufacturing process utilizes 100% of the bamboo with zero waste production</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      
       {/* CTA Section */}
       <section className="py-16 bg-gray-900 text-white">
         <div className="container mx-auto px-4 text-center">

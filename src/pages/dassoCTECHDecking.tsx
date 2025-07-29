@@ -20,7 +20,7 @@ export function dassoCTECH() {
     "Low Maintenance",
     "Eco-Friendly",
     "Easy Installation",
-    "25-Year Warranty",
+    "Warranty",
   ];
 
   // Specifications data

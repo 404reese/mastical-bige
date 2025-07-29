@@ -102,7 +102,7 @@ export function DeckFlooring() {
       description: "Premium composite decking with superior durability and aesthetics",
       image: "/deck/elite-collection/summit-grey.jpg",
       link: "/deck-flooring/elite-collection",
-      features: ["25-Year Warranty", "Fade Resistant", "Stain Resistant", "Scratch Resistant"]
+      features: ["Warranty", "Fade Resistant", "Stain Resistant", "Scratch Resistant"]
     },
     {
       name: "Elite Essential",
@@ -183,7 +183,7 @@ export function DeckFlooring() {
                 className="text-center cursor-pointer group"
                 onClick={() => window.location.href = category.link}
               >
-                <div className="h-40 rounded-lg overflow-hidden bg-gray-200 mb-3 group-hover:shadow-lg transition-shadow duration-300">
+                <div className="h-60 rounded-lg overflow-hidden bg-gray-200 mb-3 group-hover:shadow-lg transition-shadow duration-300">
                   <img 
                     src={category.image} 
                     alt={category.name}

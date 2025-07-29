@@ -21,7 +21,7 @@ export function SylvanixDecking() {
       name: "Elite Collection",
       description: "Premium composite decking with superior durability and timeless aesthetics",
       image: "/deck/SYLVANIX-DECKING/elite-collection/mesa-brown.jpg",
-      features: ["25-Year Warranty", "Fade Resistant", "Stain Resistant", "Scratch Resistant"],
+      features: ["Warranty", "Fade Resistant", "Stain Resistant", "Scratch Resistant"],
       colors: ["Summit Grey", "Sand Dune", "Mesa Brown"]
     },
     {
@@ -48,7 +48,7 @@ export function SylvanixDecking() {
     {
       name: "Elements Decking",
       description: "Nature-inspired designs that blend seamlessly with outdoor environments",
-      image: "/deck/SYLVANIX-DECKING/elements-decking/brazilian-walnut.jpg",
+      image: "/deck-hero.jpg",
       features: ["Natural Aesthetics", "Eco-Friendly", "Durable Construction", "Low Maintenance"],
       colors: ["Earth Tone", "River Rock", "Forest Floor"]
     }
@@ -74,7 +74,7 @@ export function SylvanixDecking() {
     },
     {
       question: "How do I choose between the different SYLVANIX collections?",
-      answer: "Elite Collection offers the highest performance with 25-year warranty, Elite Essential provides excellent value with 15-year warranty, Skyline Series focuses on modern aesthetics, while Destinations and Elements offer unique design themes."
+      answer: "Elite Collection offers the highest performance with warranty, Elite Essential provides excellent value with 15-year warranty, Skyline Series focuses on modern aesthetics, while Destinations and Elements offer unique design themes."
     },
     {
       question: "Is SYLVANIX-DECKING environmentally friendly?",

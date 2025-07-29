@@ -73,7 +73,7 @@ export function ElementsDecking() {
       <section className="relative h-[80vh] bg-gray-900">
         <div className="absolute inset-0 overflow-hidden">
           <img 
-            src="/deck/SYLVANIX-DECKING/elements-decking/brazilian-walnut.jpg" 
+            src="/deck-hero.jpg" 
             alt="Elements Decking - Nature-inspired designs"
             className="w-full h-full object-cover opacity-60"
           />
@@ -116,7 +116,7 @@ export function ElementsDecking() {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Natural Elements Collection</h2>
           
-          <div className="grid lg:grid-cols-2 gap-12 max-w-7xl mx-auto">
+          <div className="grid lg:grid-cols-3 gap-12 max-w-7xl mx-auto">
             {elementsProducts.map((product, index) => (
               <motion.div
                 key={index}
@@ -136,7 +136,7 @@ export function ElementsDecking() {
                 
                 <div className="p-8">
                   <h3 className="text-2xl font-bold mb-4">{product.name}</h3>
-                  <p className="text-gray-600 mb-6 text-lg">{product.description}</p>
+                 
                 </div>
               </motion.div>
             ))}

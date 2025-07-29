@@ -15,71 +15,40 @@ export function EgoEnrichPlankDecking() {
     autoplaySpeed: 4000,
   };
 
-  // EGO Enrich Plank Decking subcategories/applications
-  const egoSubcategories = [
-    {
-      name: "Balcony Decking",
-      description: "Perfect for residential and commercial balcony spaces",
-      image: "/deck/EGO Enrich Plank Decking/Balcony.jpg",
-      features: ["Weather Resistant", "Slip Resistant", "Easy Installation", "Low Maintenance"],
-      applications: ["Residential Balconies", "Hotel Balconies", "Apartment Terraces"]
-    },
-    {
-      name: "Bathroom Decking",
-      description: "Moisture-resistant decking ideal for bathroom applications",
-      image: "/deck/EGO Enrich Plank Decking/Bathroom.jpg",
-      features: ["100% Waterproof", "Anti-Slip Surface", "Mold Resistant", "Easy to Clean"],
-      applications: ["Spa Bathrooms", "Pool Bathrooms", "Luxury Bathrooms"]
-    },
-    {
-      name: "Outdoor Steps",
-      description: "Durable and safe decking for outdoor staircases",
-      image: "/deck/EGO Enrich Plank Decking/Outdoor-Steps.jpg",
-      features: ["High Durability", "Non-Slip Surface", "Weather Resistant", "Easy Installation"],
-      applications: ["Garden Steps", "Patio Steps", "Commercial Entrances"]
-    },
-    {
-      name: "Pool Side Decking",
-      description: "Premium decking designed for pool areas and wet environments",
-      image: "/deck/EGO Enrich Plank Decking/Pool-Side.jpg",
-      features: ["Chlorine Resistant", "Non-Slip", "UV Protected", "Fast Drying"],
-      applications: ["Swimming Pools", "Spa Areas", "Water Features"]
-    },
-    {
-      name: "Terraces",
-      description: "Elegant decking solutions for terraces and outdoor living spaces",
-      image: "/deck/EGO Enrich Plank Decking/Terraces.jpg",
-      features: ["Elegant Design", "Weather Resistant", "Fade Resistant", "Low Maintenance"],
-      applications: ["Rooftop Terraces", "Garden Terraces", "Restaurant Terraces"]
-    },
-    {
-      name: "Outdoor Wall Cladding",
-      description: "Versatile cladding for exterior walls and architectural features",
-      image: "/deck/EGO Enrich Plank Decking/Outdoor-Wall-Cladding.jpg",
-      features: ["UV Resistant", "Insulation Properties", "Easy Installation", "Architectural Grade"],
-      applications: ["Exterior Walls", "Feature Walls", "Commercial Buildings"]
-    },
-    {
-      name: "Facade Applications",
-      description: "Premium facade solutions for modern architectural designs",
-      image: "/deck/EGO Enrich Plank Decking/FACADE.jpg",
-      features: ["Architectural Grade", "Weather Resistant", "Modern Design", "Durable Finish"],
-      applications: ["Building Facades", "Commercial Projects", "Residential Exteriors"]
-    },
-    {
-      name: "Ship Deck",
-      description: "Marine-grade decking for boats and maritime applications",
-      image: "/deck/EGO Enrich Plank Decking/Ship-Deck.jpg",
-      features: ["Marine Grade", "Salt Water Resistant", "Anti-Slip", "Durable Construction"],
-      applications: ["Yachts", "Boats", "Marine Platforms"]
-    },
-    {
-      name: "Outdoor Verandas",
-      description: "Perfect for covered outdoor living spaces and verandas",
-      image: "/deck/EGO Enrich Plank Decking/Outdoor-Varandas.jpg",
-      features: ["Comfortable Underfoot", "Weather Resistant", "Aesthetic Appeal", "Easy Maintenance"],
-      applications: ["Covered Patios", "Verandas", "Outdoor Living Rooms"]
-    }
+  // EGO Enrich Plank Decking applications
+  const egoApplications = [
+    { name: "Chocolate End Profile", image: "/deck/EGO Enrich Plank/Chocolate End Profile.jpg" },
+    { name: "Chocolate", image: "/deck/EGO Enrich Plank/Chocolate.jpg" },
+    { name: "IPE End Profile", image: "/deck/EGO Enrich Plank/IPE End Profile.jpg" },
+    { name: "IPE", image: "/deck/EGO Enrich Plank/IPE.jpg" },
+    { name: "Silver Grey End Profile", image: "/deck/EGO Enrich Plank/Silver Grey End Profile.jpg" },
+    { name: "Silver Grey", image: "/deck/EGO Enrich Plank/Silver Grey.jpg" },
+    { name: "Teak End Profile", image: "/deck/EGO Enrich Plank/Teak End Profile.jpg" },
+    { name: "Teak", image: "/deck/EGO Enrich Plank/Teak.jpg" },
+  ];
+
+  // HLH-002D Series Images
+  const hlhSeries = [
+    // CC Series
+    { name: "HLH-002D (CC)", image: "/deck/EGO Enrich Plank/HLH-002D（CC）.jpg" },
+    { name: "HLH-002D (CC) - View 2", image: "/deck/EGO Enrich Plank/HLH-002D（CC）2.jpg" },
+    { name: "HLH-002D (CC) - View 3", image: "/deck/EGO Enrich Plank/HLH-002D（CC）3.jpg" },
+    { name: "HLH-002D (CC) - View 4", image: "/deck/EGO Enrich Plank/HLH-002D（CC）4.jpg" },
+    // IPE Series
+    { name: "HLH-002D (IPE)", image: "/deck/EGO Enrich Plank/HLH-002D（IPE）.jpg" },
+    { name: "HLH-002D (IPE) - View 2", image: "/deck/EGO Enrich Plank/HLH-002D（IPE）2.jpg" },
+    { name: "HLH-002D (IPE) - View 3", image: "/deck/EGO Enrich Plank/HLH-002D（IPE）3.jpg" },
+    { name: "HLH-002D (IPE) - View 4", image: "/deck/EGO Enrich Plank/HLH-002D（IPE）4.jpg" },
+    // SI Series
+    { name: "HLH-002D (SI)", image: "/deck/EGO Enrich Plank/HLH-002D（SI）.jpg" },
+    { name: "HLH-002D (SI) - View 2", image: "/deck/EGO Enrich Plank/HLH-002D（SI）2.jpg" },
+    { name: "HLH-002D (SI) - View 3", image: "/deck/EGO Enrich Plank/HLH-002D（SI）3.jpg" },
+    { name: "HLH-002D (SI) - View 4", image: "/deck/EGO Enrich Plank/HLH-002D（SI）4.jpg" },
+    // TK Series
+    { name: "HLH-002D (TK)", image: "/deck/EGO Enrich Plank/HLH-002D（TK）.jpg" },
+    { name: "HLH-002D (TK) - View 2", image: "/deck/EGO Enrich Plank/HLH-002D（TK）2.jpg" },
+    { name: "HLH-002D (TK) - View 3", image: "/deck/EGO Enrich Plank/HLH-002D（TK）3.jpg" },
+    { name: "HLH-002D (TK) - View 4", image: "/deck/EGO Enrich Plank/HLH-002D（TK）4.jpg" },
   ];
 
   // Available colors/finishes
@@ -178,84 +147,49 @@ export function EgoEnrichPlankDecking() {
       {/* Applications Section */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Versatile Applications</h2>
+          <h2 className="text-3xl font-bold mb-10 text-center">Available Categories</h2>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-            {egoSubcategories.map((subcategory, index) => (
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-6xl mx-auto">
+            {egoApplications.map((application, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+                className="text-center"
               >
-                <div className="h-64 overflow-hidden">
-                  <img 
-                    src={subcategory.image} 
-                    alt={subcategory.name}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                  />
+                <div className="h-48 rounded-lg overflow-hidden bg-gray-200 mb-4 shadow-md hover:shadow-lg transition-shadow">
+                  <img src={application.image} alt={application.name} className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
                 </div>
-                
-                <div className="p-6">
-                  <h3 className="text-xl font-bold mb-3">{subcategory.name}</h3>
-                  <p className="text-gray-600 mb-4">{subcategory.description}</p>
-                  
-                  <div className="mb-4">
-                    <h4 className="text-sm font-semibold mb-2">Key Features:</h4>
-                    <div className="grid grid-cols-2 gap-1">
-                      {subcategory.features.map((feature, featureIndex) => (
-                        <div key={featureIndex} className="flex items-center text-xs text-gray-600">
-                          <span className="w-1.5 h-1.5 bg-gray-400 rounded-full mr-2"></span>
-                          {feature}
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                  
-                  <div>
-                    <h4 className="text-sm font-semibold mb-2">Applications:</h4>
-                    <div className="flex flex-wrap gap-1">
-                      {subcategory.applications.map((app, appIndex) => (
-                        <span key={appIndex} className="px-2 py-1 bg-gray-100 text-gray-700 rounded text-xs">
-                          {app}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                </div>
+                <h3 className="font-semibold text-sm md:text-base">{application.name}</h3>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Available Finishes Section */}
-      <section className="py-16 bg-white">
+      
+
+      {/* HLH-002D Series Gallery */}
+      <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Available Finishes</h2>
+          <h2 className="text-3xl font-bold mb-10 text-center">HLH-002D Series Gallery</h2>
           
-          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            {availableFinishes.map((finish, index) => (
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-6xl mx-auto">
+            {hlhSeries.map((item, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+                className="text-center"
               >
-                <div className="h-64 overflow-hidden">
-                  <img 
-                    src={finish.image} 
-                    alt={finish.name}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                  />
+                <div className="h-48 rounded-lg overflow-hidden bg-gray-200 mb-4 shadow-md hover:shadow-lg transition-shadow">
+                  <img src={item.image} alt={item.name} className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
                 </div>
-                <div className="p-6 text-center">
-                  <h3 className="text-xl font-bold">{finish.name}</h3>
-                </div>
+                <h3 className="font-semibold text-sm md:text-base">{item.name}</h3>
               </motion.div>
             ))}
           </div>
@@ -285,8 +219,8 @@ export function EgoEnrichPlankDecking() {
 
       {/* Features Section */}
       <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center">Why Choose EGO Enrich Plank?</h2>
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold mb-10">Features & Benefits</h2>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
             <motion.div
@@ -294,10 +228,9 @@ export function EgoEnrichPlankDecking() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
-              className="bg-gray-50 p-8 rounded-lg shadow-sm"
+              className="bg-gray-50 p-6 rounded-lg shadow-sm"
             >
-              <h3 className="text-xl font-semibold mb-3">Versatile Applications</h3>
-              <p className="text-gray-600">Suitable for indoor and outdoor use in residential and commercial settings</p>
+              <div className="text-xl font-semibold mb-2">Versatile Applications</div>
             </motion.div>
             
             <motion.div
@@ -305,10 +238,9 @@ export function EgoEnrichPlankDecking() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
               viewport={{ once: true }}
-              className="bg-gray-50 p-8 rounded-lg shadow-sm"
+              className="bg-gray-50 p-6 rounded-lg shadow-sm"
             >
-              <h3 className="text-xl font-semibold mb-3">Waterproof Performance</h3>
-              <p className="text-gray-600">100% waterproof construction perfect for wet environments</p>
+              <div className="text-xl font-semibold mb-2">Waterproof Performance</div>
             </motion.div>
             
             <motion.div
@@ -316,10 +248,9 @@ export function EgoEnrichPlankDecking() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
               viewport={{ once: true }}
-              className="bg-gray-50 p-8 rounded-lg shadow-sm"
+              className="bg-gray-50 p-6 rounded-lg shadow-sm"
             >
-              <h3 className="text-xl font-semibold mb-3">Anti-Slip Surface</h3>
-              <p className="text-gray-600">Textured surface provides excellent grip for safety in all conditions</p>
+              <div className="text-xl font-semibold mb-2">Anti-Slip Surface</div>
             </motion.div>
             
             <motion.div
@@ -327,10 +258,9 @@ export function EgoEnrichPlankDecking() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
               viewport={{ once: true }}
-              className="bg-gray-50 p-8 rounded-lg shadow-sm"
+              className="bg-gray-50 p-6 rounded-lg shadow-sm"
             >
-              <h3 className="text-xl font-semibold mb-3">Easy Installation</h3>
-              <p className="text-gray-600">Flexible installation options including clip systems and screw-fix methods</p>
+              <div className="text-xl font-semibold mb-2">Easy Installation</div>
             </motion.div>
             
             <motion.div
@@ -338,10 +268,9 @@ export function EgoEnrichPlankDecking() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.4 }}
               viewport={{ once: true }}
-              className="bg-gray-50 p-8 rounded-lg shadow-sm"
+              className="bg-gray-50 p-6 rounded-lg shadow-sm"
             >
-              <h3 className="text-xl font-semibold mb-3">Ultra Low Maintenance</h3>
-              <p className="text-gray-600">Requires minimal upkeep with simple cleaning and no staining or sealing</p>
+              <div className="text-xl font-semibold mb-2">Ultra Low Maintenance</div>
             </motion.div>
             
             <motion.div
@@ -349,32 +278,36 @@ export function EgoEnrichPlankDecking() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.5 }}
               viewport={{ once: true }}
-              className="bg-gray-50 p-8 rounded-lg shadow-sm"
+              className="bg-gray-50 p-6 rounded-lg shadow-sm"
             >
-              <h3 className="text-xl font-semibold mb-3">Durable Construction</h3>
-              <p className="text-gray-600">Long-lasting performance with 15-20 year structural warranty</p>
+              <div className="text-xl font-semibold mb-2">Durable Construction</div>
             </motion.div>
           </div>
         </div>
       </section>
 
       {/* Technical Specifications */}
-      {/* <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center">Technical Specifications</h2>
+          <h2 className="text-3xl font-bold mb-10 text-center">Technical Specifications</h2>
           
-          <div className="max-w-4xl mx-auto overflow-hidden rounded-lg border border-gray-200">
-            <div className="divide-y divide-gray-200">
-              {specifications.map((spec, index) => (
-                <div key={index} className="flex">
-                  <div className="bg-gray-50 py-4 px-6 font-medium w-1/3">{spec.name}</div>
-                  <div className="py-4 px-6 w-2/3">{spec.value}</div>
-                </div>
-              ))}
-            </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            {specifications.map((spec, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                className="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow text-center"
+              >
+                <h3 className="font-bold text-xl text-gray-900 mb-4 border-b border-gray-300 pb-2">{spec.name}</h3>
+                <p className="text-gray-600 leading-relaxed">{spec.value}</p>
+              </motion.div>
+            ))}
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* FAQ Section */}
       <section className="py-16 bg-white">

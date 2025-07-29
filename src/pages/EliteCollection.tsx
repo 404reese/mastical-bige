@@ -78,7 +78,7 @@ export function EliteCollection() {
               </p>
               
               <p className="mb-6 text-gray-700 text-lg leading-relaxed">
-                With a comprehensive 25-year warranty and superior resistance to fading, staining, and scratching, 
+                With a comprehensive warranty and superior resistance to fading, staining, and scratching, 
                 the Elite Collection is the ultimate choice for homeowners who demand nothing but the best for 
                 their outdoor living spaces.
               </p>
@@ -158,7 +158,7 @@ export function EliteCollection() {
               viewport={{ once: true }}
               className="bg-white p-6 rounded-lg shadow-sm"
             >
-              <h3 className="text-xl font-semibold mb-3">25-Year Warranty</h3>
+              <h3 className="text-xl font-semibold mb-3">Warranty</h3>
               <p className="text-gray-600">Comprehensive warranty covering structural integrity, staining, and fading</p>
             </motion.div>
             

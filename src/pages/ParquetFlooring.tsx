@@ -74,14 +74,29 @@ export function ParquetFlooring() {
 
   // Pattern types with images
   const patternTypes = [
-    { name: "HERRINGBONE", image: "/products/parquet1.png" },
-    { name: "CHEVRON", image: "/products/parquet2.png" },
-    { name: "BASKETWEAVE", image: "/products/parquet3.png" },
-    { name: "VERSAILLES", image: "/products/parquet4.png" },
-    { name: "LADDER", image: "/products/parquet5.png" },
-    { name: "BRICK", image: "/products/parquet6.png" },
-    { name: "SQUARE BASKET", image: "/products/parquet7.png" },
-    { name: "HEXAGON", image: "/products/parquet8.png" },
+    { name: "American Walnut Bristol Natural", image: "/parquet/American Walnut Bristol Natural 01.jpeg" },
+    { name: "Barletta Oak", image: "/parquet/BARLETTA OAK.jpeg" },
+    { name: "Chantilly Oak", image: "/parquet/chantilly oak.jpg" },
+    { name: "Chestnut Walnut", image: "/parquet/chesntnut walnut.jpg" },
+    { name: "Chocolate Oak", image: "/parquet/chocolate oak.jpg" },
+    { name: "Dusk Grey Oak", image: "/parquet/dusk grey aok.jpg" },
+    { name: "Earl Grey Oak", image: "/parquet/earl grey oak.jpg" },
+    { name: "Ginger Oak", image: "/parquet/ginger oak.jpg" },
+    { name: "La Roce Oak", image: "/parquet/LA ROCE OAK.jpeg" },
+    { name: "Marmo Light", image: "/parquet/marmo light.jpg" },
+    { name: "Oak Buckingham Zafari", image: "/parquet/Oak Buckingham Zafari.jpeg" },
+    { name: "Oak Champagne", image: "/parquet/oak champani.jpg" },
+    { name: "Oak Natural", image: "/parquet/oak natural.jpg" },
+    { name: "Oak Versailles Dior", image: "/parquet/Oak Versailles Dior 02.jpeg" },
+    { name: "Oak Versailles Natural", image: "/parquet/oak versailles natural.jpg" },
+    { name: "Oak Windsor Brown Grey", image: "/parquet/Oak Windsor Brown Grey01.jpeg" },
+    { name: "Rosso Vino Walnut", image: "/parquet/rosso wino walnut.jpg" },
+    { name: "Teak Pescara", image: "/parquet/TEAK PESCARA.jpeg" },
+    { name: "Tribeca Walnut", image: "/parquet/TRIBECA WALNUT.jpeg" },
+    { name: "Versailles Caramel", image: "/parquet/versailles caramel.jpg" },
+    { name: "Walnut Arizzio", image: "/parquet/WALNUT ARIZZIO.jpeg" },
+    { name: "Walnut Bloom", image: "/parquet/walnut bloom.jpg" },
+    { name: "Walnut Trieste", image: "/parquet/WALNUT TRIESTE.jpeg" },
   ];
 
   return (
@@ -162,7 +177,7 @@ export function ParquetFlooring() {
       </section> */}
 
       {/* Features Section */}
-      {/* <section className="py-16 bg-white">
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-10 text-center">Features & Benefits</h2>
           
@@ -201,27 +216,38 @@ export function ParquetFlooring() {
             </motion.div>
           </div>
         </div>
-      </section> */}
+      </section>
 
-      {/* Pattern Types Section */}
+      {/* Pattern Types Gallery Section */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-10 text-center">Available Pattern Types</h2>
           
-          <div className="max-w-5xl mx-auto overflow-hidden rounded-lg shadow-md">
-            <iframe
-              src="/parquet/parquet-floors.pdf"
-              width="100%"
-              height="600px"
-              className="border-0 w-full"
-              style={{ minHeight: '70vh' }}
-              title="Parquet Floor Pattern Types"
-              loading="lazy"
-            />
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+            {patternTypes.map((pattern, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                className="text-center"
+              >
+                <div className="h-52 rounded-lg overflow-hidden bg-gray-200 mb-4 shadow-md hover:shadow-lg transition-shadow duration-300">
+                  <img 
+                    src={pattern.image} 
+                    alt={pattern.name} 
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" 
+                  />
+                </div>
+                <h3 className="font-semibold text-lg text-gray-800">{pattern.name}</h3>
+              </motion.div>
+            ))}
           </div>
-          
         </div>
       </section>
+
+      
 
       {/* Technical Specifications */}
       <section className="py-16 bg-white">

@@ -117,7 +117,7 @@ export function DestinationsDecking() {
             Explore Our Destinations
           </h2>
 
-          <div className="grid lg:grid-cols-2 gap-12 max-w-7xl mx-auto">
+          <div className="grid lg:grid-cols-3 gap-12 max-w-7xl mx-auto">
             {destinationsProducts.map((product, index) => (
               <motion.div
                 key={index}
@@ -137,9 +137,7 @@ export function DestinationsDecking() {
 
                 <div className="p-8">
                   <h3 className="text-2xl font-bold mb-4">{product.name}</h3>
-                  <p className="text-gray-600 mb-6 text-lg">
-                    {product.description}
-                  </p>
+                  
                 </div>
               </motion.div>
             ))}

@@ -29,10 +29,6 @@ export function EGOEnrichWPCDecktile() {
     {
       name: "Redwood",
       image: "/deck/EGO Enrich-WPC Decktile/Redwood.png"
-    },
-    {
-      name: "Decking03",
-      image: "/deck/EGO Enrich-WPC Decktile/Decking-03.jpg"
     }
   ];
 
@@ -83,7 +79,7 @@ export function EGOEnrichWPCDecktile() {
               </p>
               
               <p className="mb-6 text-gray-700 text-lg leading-relaxed">
-                With a comprehensive 25-year warranty and superior resistance to fading, staining, and scratching, 
+                With a comprehensive warranty and superior resistance to fading, staining, and scratching, 
                 the Elite Collection is the ultimate choice for homeowners who demand nothing but the best for 
                 their outdoor living spaces.
               </p>
@@ -129,26 +125,7 @@ export function EGOEnrichWPCDecktile() {
         </div>
       </section>
 
-      {/* Gallery Section */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-10 text-center">Elite Collection Gallery</h2>
-          
-          <div className="max-w-4xl mx-auto">
-            <Slider {...settings}>
-              {eliteProducts.map((product, index) => (
-                <div key={index} className="h-[500px] rounded-lg overflow-hidden bg-gray-200">
-                  <img
-                    src={product.image}
-                    alt={product.name}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              ))}
-            </Slider>
-          </div>
-        </div>
-      </section>
+      
 
       {/* Features Section */}
       <section className="py-16 bg-gray-50">
@@ -163,7 +140,7 @@ export function EGOEnrichWPCDecktile() {
               viewport={{ once: true }}
               className="bg-white p-6 rounded-lg shadow-sm"
             >
-              <h3 className="text-xl font-semibold mb-3">25-Year Warranty</h3>
+              <h3 className="text-xl font-semibold mb-3">Warranty</h3>
               <p className="text-gray-600">Comprehensive warranty covering structural integrity, staining, and fading</p>
             </motion.div>
             

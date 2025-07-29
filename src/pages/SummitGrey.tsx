@@ -99,7 +99,7 @@ export function SummitGrey() {
                 </p>
                 <p className="text-gray-700 text-lg leading-relaxed mb-6">
                   The embossed wood grain texture provides authentic wood appearance while delivering superior 
-                  slip resistance and comfort. Protected by our comprehensive 25-year warranty, Summit Grey 
+                  slip resistance and comfort. Protected by our comprehensive warranty, Summit Grey 
                   ensures decades of beautiful, low-maintenance outdoor living.
                 </p>
                 <div className="bg-gray-50 p-6 rounded-lg">
@@ -264,7 +264,7 @@ export function SummitGrey() {
           <div className="max-w-4xl mx-auto">
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-white p-8 rounded-lg shadow-lg">
-                <h3 className="text-xl font-bold mb-4">25-Year Warranty</h3>
+                <h3 className="text-xl font-bold mb-4">Warranty</h3>
                 <ul className="space-y-2 text-gray-700">
                   <li>• Structural integrity coverage</li>
                   <li>• Fade resistance guarantee</li>

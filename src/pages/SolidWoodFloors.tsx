@@ -26,7 +26,6 @@ export function SolidWoodFloors() {
     { name: "Durability", value: "Durable and long-lasting" },
     { name: "Appearance", value: "Warm and inviting with natural color and grain variations" },
     { name: "Finish Options", value: "UV Oil, Hardwax Oil, Lacquered" },
-    { name: "Installation", value: "Tongue and Groove, Click-Lock" },
     { name: "Suitable for", value: "Living rooms, Bedrooms, Dining areas, Offices" },
     { name: "Maintenance", value: "Regular cleaning, Periodic refinishing" },
   ];
@@ -115,8 +114,8 @@ export function SolidWoodFloors() {
 
       {/* Features Section */}
       <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-10 text-center">Features & Benefits</h2>
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold mb-10">Features & Benefits</h2>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {solidWoodData?.features.map((feature, index) => (
@@ -164,10 +163,10 @@ export function SolidWoodFloors() {
           <div className="grid grid-cols-3 gap-8 max-w-5xl mx-auto">
             {woodSpecies.map((species, index) => (
               <div key={index} className="text-center">
-                <div className="h-40 rounded-lg overflow-hidden bg-gray-200 mb-3">
+                <div className="h-52 rounded-lg overflow-hidden bg-gray-200 mb-4">
                   <img src={species.image} alt={species.name} className="w-full h-full object-cover" />
                 </div>
-                <h3 className="font-semibold">{species.name}</h3>
+                <h3 className="font-semibold text-lg">{species.name}</h3>
               </div>
             ))}
           </div>
@@ -179,15 +178,20 @@ export function SolidWoodFloors() {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-10 text-center">Technical Specifications</h2>
           
-          <div className="max-w-3xl mx-auto overflow-hidden rounded-lg border border-gray-200">
-            <div className="divide-y divide-gray-200">
-              {specifications.map((spec, index) => (
-                <div key={index} className="flex">
-                  <div className="bg-gray-50 py-4 px-6 font-medium w-1/3">{spec.name}</div>
-                  <div className="py-4 px-6 w-2/3">{spec.value}</div>
-                </div>
-              ))}
-            </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            {specifications.map((spec, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                className="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow text-center"
+              >
+                <h3 className="font-bold text-xl text-gray-900 mb-4 border-b border-gray-300 pb-2">{spec.name}</h3>
+                <p className="text-gray-600 leading-relaxed">{spec.value}</p>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>

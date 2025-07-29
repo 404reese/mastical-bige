@@ -179,23 +179,7 @@ export function LaminateFlooring() {
                 </div>
                 <div className="p-6">
                   <h3 className="text-2xl font-bold mb-3">{category.name}</h3>
-                  <p className="text-gray-600 mb-4">{category.description}</p>
                   
-                  <div className="grid grid-cols-2 gap-2 mb-6">
-                    {category.features.map((feature, featureIndex) => (
-                      <div key={featureIndex} className="flex items-center text-sm text-gray-500">
-                        <div className="w-2 h-2 bg-blue-500 rounded-full mr-2"></div>
-                        {feature}
-                      </div>
-                    ))}
-                  </div>
-                  
-                  <button 
-                    onClick={() => window.location.href = category.link}
-                    className="w-full bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition font-medium"
-                  >
-                    Explore Collection
-                  </button>
                 </div>
               </motion.div>
             ))}
@@ -203,77 +187,9 @@ export function LaminateFlooring() {
         </div>
       </section>
 
-      {/* Features Section */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-12 text-center">Why Choose Laminate Flooring</h2>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-            {features.map((feature, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className="bg-gray-50 rounded-lg p-6 text-center"
-              >
-                <div className="text-4xl mb-4">{feature.icon}</div>
-                <h3 className="text-xl font-bold mb-3">{feature.title}</h3>
-                <p className="text-gray-600">{feature.description}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
+      
 
-      {/* Gallery Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-10 text-center">Laminate Gallery</h2>
-          
-          <div className="max-w-4xl mx-auto">
-            <Slider {...settings}>
-              <div className="h-[500px] rounded-lg overflow-hidden bg-gray-200">
-                <img
-                  src="/Laminate/MVR_0860 (Elite Atlanta Walnut 1801-2 ).JPG"
-                  alt="Elite Atlanta Walnut"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="h-[500px] rounded-lg overflow-hidden bg-gray-200">
-                <img
-                  src="/Laminate/MVR_0868 ( Elite Mexico Walnut 1801-5 ).JPG"
-                  alt="Elite Mexico Walnut"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="h-[500px] rounded-lg overflow-hidden bg-gray-200">
-                <img
-                  src="/Laminate/Elite Herringbone Prime Collection/Copy of orda cave revise 3.png"
-                  alt="Orda Cave Design"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="h-[500px] rounded-lg overflow-hidden bg-gray-200">
-                <img
-                  src="/Laminate/Enchant Premium Collection/Copy of MVR_1359 ( Santis Oak ).JPG"
-                  alt="Santis Oak"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="h-[500px] rounded-lg overflow-hidden bg-gray-200">
-                <img
-                  src="/Laminate/Enchant Rustic Collection/Copy of Black Forest.jpg"
-                  alt="Black Forest"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </Slider>
-          </div>
-        </div>
-      </section>
-
+      
       {/* Performance Benefits */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
@@ -342,40 +258,7 @@ export function LaminateFlooring() {
         </div>
       </section>
 
-      {/* Installation Guide */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-10 text-center">Installation Benefits</h2>
-          
-          <div className="max-w-5xl mx-auto">
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="text-center">
-                <div className="bg-blue-100 rounded-full p-6 inline-flex mb-4">
-                  <span className="text-2xl">🔧</span>
-                </div>
-                <h3 className="text-xl font-semibold mb-3">Easy Click System</h3>
-                <p className="text-gray-600">No glue or nails required - simply click planks together</p>
-              </div>
-              
-              <div className="text-center">
-                <div className="bg-green-100 rounded-full p-6 inline-flex mb-4">
-                  <span className="text-2xl">⚡</span>
-                </div>
-                <h3 className="text-xl font-semibold mb-3">Quick Installation</h3>
-                <p className="text-gray-600">Faster installation than traditional hardwood flooring</p>
-              </div>
-              
-              <div className="text-center">
-                <div className="bg-purple-100 rounded-full p-6 inline-flex mb-4">
-                  <span className="text-2xl">💡</span>
-                </div>
-                <h3 className="text-xl font-semibold mb-3">DIY Friendly</h3>
-                <p className="text-gray-600">Perfect for do-it-yourself projects and renovations</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      
 
       {/* CTA Section */}
       <section className="py-16 bg-gray-900 text-white">

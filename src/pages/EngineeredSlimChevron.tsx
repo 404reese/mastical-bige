@@ -39,7 +39,7 @@ export function EngineeredSlimChevron() {
       <section className="relative h-[60vh] bg-gray-900">
         <div className="absolute inset-0 overflow-hidden">
           <img 
-            src="/engg/engg1.jpg" 
+            src="/slim-chev.webp" 
             alt="Engineered Slim Chevron"
             className="w-full h-full object-cover opacity-60"
           />
