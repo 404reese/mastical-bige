@@ -199,16 +199,6 @@ export function EliteHerringbonePrimeCollection() {
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-3">{design.name}</h3>
-                  <p className="text-gray-600 mb-4">{design.description}</p>
-                  
-                  <div className="space-y-2">
-                    {design.characteristics.map((characteristic, charIndex) => (
-                      <div key={charIndex} className="flex items-center text-sm text-gray-500">
-                        <div className="w-2 h-2 bg-purple-500 rounded-full mr-2"></div>
-                        {characteristic}
-                      </div>
-                    ))}
-                  </div>
                 </div>
               </motion.div>
             ))}
@@ -231,7 +221,6 @@ export function EliteHerringbonePrimeCollection() {
                 viewport={{ once: true }}
                 className="bg-gray-50 rounded-lg p-6 text-center"
               >
-                <div className="text-4xl mb-4">{feature.icon}</div>
                 <h3 className="text-xl font-bold mb-3">{feature.title}</h3>
                 <p className="text-gray-600">{feature.description}</p>
               </motion.div>
@@ -240,55 +229,10 @@ export function EliteHerringbonePrimeCollection() {
         </div>
       </section>
 
-      {/* Gallery Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-10 text-center">Prime Collection Gallery</h2>
-          
-          <div className="max-w-4xl mx-auto">
-            <Slider {...settings}>
-              <div className="h-[500px] rounded-lg overflow-hidden bg-gray-200">
-                <img
-                  src="/Laminate/Elite Herringbone Prime Collection/Copy of dark star cave revise 3.png"
-                  alt="Dark Star Cave"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="h-[500px] rounded-lg overflow-hidden bg-gray-200">
-                <img
-                  src="/Laminate/Elite Herringbone Prime Collection/Copy of orda cave revise 3.png"
-                  alt="Orda Cave"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="h-[500px] rounded-lg overflow-hidden bg-gray-200">
-                <img
-                  src="/Laminate/Elite Herringbone Prime Collection/Copy of krubera cave.png"
-                  alt="Krubera Cave"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="h-[500px] rounded-lg overflow-hidden bg-gray-200">
-                <img
-                  src="/Laminate/Elite Herringbone Prime Collection/Copy of wind cave revise 2.png"
-                  alt="Wind Cave"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="h-[500px] rounded-lg overflow-hidden bg-gray-200">
-                <img
-                  src="/Laminate/Elite Herringbone Prime Collection/flooring0222 .jpg"
-                  alt="Prime Collection Detail"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </Slider>
-          </div>
-        </div>
-      </section>
+      
 
       {/* Prime Benefits */}
-      <section className="py-16 bg-white">
+      {/* <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-10 text-center">Prime Quality Benefits</h2>
           
@@ -310,10 +254,10 @@ export function EliteHerringbonePrimeCollection() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Cave Collection Advantages */}
-      <section className="py-16 bg-gray-50">
+      {/* <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-10 text-center">Cave Collection Advantages</h2>
           
@@ -335,7 +279,7 @@ export function EliteHerringbonePrimeCollection() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Technical Specifications */}
       <section className="py-16 bg-white">
@@ -355,41 +299,7 @@ export function EliteHerringbonePrimeCollection() {
         </div>
       </section>
 
-      {/* Applications Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-10 text-center">Perfect Applications</h2>
-          
-          <div className="max-w-5xl mx-auto">
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="text-center">
-                <div className="bg-purple-100 rounded-full p-6 inline-flex mb-4">
-                  <span className="text-2xl">🏛️</span>
-                </div>
-                <h3 className="text-xl font-semibold mb-3">Luxury Properties</h3>
-                <p className="text-gray-600">Exclusive homes requiring unique and sophisticated flooring</p>
-              </div>
-              
-              <div className="text-center">
-                <div className="bg-blue-100 rounded-full p-6 inline-flex mb-4">
-                  <span className="text-2xl">🎨</span>
-                </div>
-                <h3 className="text-xl font-semibold mb-3">Design Studios</h3>
-                <p className="text-gray-600">Creative spaces where flooring becomes part of the artistic vision</p>
-              </div>
-              
-              <div className="text-center">
-                <div className="bg-green-100 rounded-full p-6 inline-flex mb-4">
-                  <span className="text-2xl">🏢</span>
-                </div>
-                <h3 className="text-xl font-semibold mb-3">Premium Commercial</h3>
-                <p className="text-gray-600">Upscale commercial spaces requiring distinctive character</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      
       {/* CTA Section */}
       <section className="py-16 bg-gray-900 text-white">
         <div className="container mx-auto px-4 text-center">

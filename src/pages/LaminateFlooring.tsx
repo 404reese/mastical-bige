@@ -168,7 +168,8 @@ export function LaminateFlooring() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+                onClick={() => window.location.href = category.link}
               >
                 <div className="h-64 overflow-hidden">
                   <img 
@@ -179,6 +180,10 @@ export function LaminateFlooring() {
                 </div>
                 <div className="p-6">
                   <h3 className="text-2xl font-bold mb-3">{category.name}</h3>
+                  <p className="text-gray-600 mb-4">{category.description}</p>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    
+                  </div>
                   
                 </div>
               </motion.div>
