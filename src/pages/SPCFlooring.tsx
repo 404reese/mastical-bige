@@ -153,23 +153,7 @@ export function SPCFlooring() {
                   <h3 className="text-2xl font-bold mb-4">{category.name}</h3>
                   <p className="text-gray-600 mb-6 text-lg">{category.description}</p>
                   
-                  <div className="mb-6">
-                    <h4 className="text-lg font-semibold mb-3">Key Features:</h4>
-                    <div className="space-y-2">
-                      {category.features.map((feature, featureIndex) => (
-                        <div key={featureIndex} className="flex items-center text-sm text-gray-600">
-                          <div className="w-2 h-2 bg-blue-500 rounded-full mr-2"></div>
-                          {feature}
-                        </div>
-                      ))}
-                    </div>
-                  </div>
                   
-                  <div className="mt-6">
-                    <button className="w-full bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition text-lg font-semibold">
-                      Explore {category.name}
-                    </button>
-                  </div>
                 </div>
               </motion.div>
             ))}
@@ -178,7 +162,7 @@ export function SPCFlooring() {
       </section>
 
       {/* Gallery Section */}
-      <section className="py-16 bg-white">
+      {/* <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-10 text-center">SPC Flooring Gallery</h2>
           
@@ -222,7 +206,7 @@ export function SPCFlooring() {
             </Slider>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Technical Specifications */}
       <section className="py-16 bg-gray-50">
@@ -242,94 +226,7 @@ export function SPCFlooring() {
         </div>
       </section>
 
-      {/* Benefits Section */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-10 text-center">Why Choose SPC Flooring?</h2>
-          
-          <div className="max-w-5xl mx-auto">
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="text-center">
-                <div className="bg-blue-100 rounded-full p-6 inline-flex mb-4">
-                  <span className="text-2xl">💧</span>
-                </div>
-                <h3 className="text-xl font-semibold mb-3">100% Waterproof</h3>
-                <p className="text-gray-600">Perfect for kitchens, bathrooms, basements, and any moisture-prone area</p>
-              </div>
-              
-              <div className="text-center">
-                <div className="bg-green-100 rounded-full p-6 inline-flex mb-4">
-                  <span className="text-2xl">🛡️</span>
-                </div>
-                <h3 className="text-xl font-semibold mb-3">Ultra Durable</h3>
-                <p className="text-gray-600">Rigid core construction resists dents, scratches, and heavy traffic</p>
-              </div>
-              
-              <div className="text-center">
-                <div className="bg-purple-100 rounded-full p-6 inline-flex mb-4">
-                  <span className="text-2xl">🔧</span>
-                </div>
-                <h3 className="text-xl font-semibold mb-3">Easy Installation</h3>
-                <p className="text-gray-600">Click-lock system allows for quick DIY or professional installation</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Installation Process */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-10 text-center">Installation Process</h2>
-          
-          <div className="max-w-5xl mx-auto">
-            <div className="grid md:grid-cols-4 gap-6">
-              <div className="text-center">
-                <div className="bg-white rounded-full p-6 inline-flex mb-4">
-                  <span className="text-2xl font-bold text-gray-900">1</span>
-                </div>
-                <h3 className="text-lg font-semibold mb-2">Surface Preparation</h3>
-                <p className="text-gray-600 text-sm">Clean and level the subfloor for optimal installation</p>
-              </div>
-              
-              <div className="text-center">
-                <div className="bg-white rounded-full p-6 inline-flex mb-4">
-                  <span className="text-2xl font-bold text-gray-900">2</span>
-                </div>
-                <h3 className="text-lg font-semibold mb-2">Acclimation</h3>
-                <p className="text-gray-600 text-sm">Allow flooring to acclimate to room temperature</p>
-              </div>
-              
-              <div className="text-center">
-                <div className="bg-white rounded-full p-6 inline-flex mb-4">
-                  <span className="text-2xl font-bold text-gray-900">3</span>
-                </div>
-                <h3 className="text-lg font-semibold mb-2">Click & Lock</h3>
-                <p className="text-gray-600 text-sm">Install planks using the click-lock system</p>
-              </div>
-              
-              <div className="text-center">
-                <div className="bg-white rounded-full p-6 inline-flex mb-4">
-                  <span className="text-2xl font-bold text-gray-900">4</span>
-                </div>
-                <h3 className="text-lg font-semibold mb-2">Finishing</h3>
-                <p className="text-gray-600 text-sm">Install trim and transitions for a professional finish</p>
-              </div>
-            </div>
-            
-            <div className="mt-12 text-center">
-              <p className="mb-6 text-gray-700">Professional installation ensures optimal performance and warranty coverage.</p>
-              <button 
-                onClick={() => window.location.href = '/contact-us'} 
-                className="bg-gray-900 text-white px-8 py-3 rounded-lg hover:bg-gray-800 transition"
-              >
-                Schedule Installation Consultation
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      
       {/* FAQ Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">

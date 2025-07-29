@@ -176,16 +176,7 @@ export function EnchantRusticCollection() {
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-3">{design.name}</h3>
-                  <p className="text-gray-600 mb-4">{design.description}</p>
                   
-                  <div className="grid grid-cols-2 gap-2">
-                    {design.characteristics.map((characteristic, charIndex) => (
-                      <div key={charIndex} className="flex items-center text-sm text-gray-500">
-                        <div className="w-2 h-2 bg-green-600 rounded-full mr-2"></div>
-                        {characteristic}
-                      </div>
-                    ))}
-                  </div>
                 </div>
               </motion.div>
             ))}
@@ -208,101 +199,10 @@ export function EnchantRusticCollection() {
                 viewport={{ once: true }}
                 className="bg-gray-50 rounded-lg p-6 text-center"
               >
-                <div className="text-4xl mb-4">{feature.icon}</div>
                 <h3 className="text-xl font-bold mb-3">{feature.title}</h3>
                 <p className="text-gray-600">{feature.description}</p>
               </motion.div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Gallery Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-10 text-center">Rustic Collection Gallery</h2>
-          
-          <div className="max-w-4xl mx-auto">
-            <Slider {...settings}>
-              <div className="h-[500px] rounded-lg overflow-hidden bg-gray-200">
-                <img
-                  src="/Laminate/Enchant Rustic Collection/Copy of Amazon Forest.jpg"
-                  alt="Amazon Forest"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="h-[500px] rounded-lg overflow-hidden bg-gray-200">
-                <img
-                  src="/Laminate/Enchant Rustic Collection/Copy of Black Forest.jpg"
-                  alt="Black Forest"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="h-[500px] rounded-lg overflow-hidden bg-gray-200">
-                <img
-                  src="/Laminate/Enchant Rustic Collection/Copy of mau Forest.jpg"
-                  alt="Mau Forest"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="h-[500px] rounded-lg overflow-hidden bg-gray-200">
-                <img
-                  src="/Laminate/Enchant Rustic Collection/Copy of Moimbo Forest.jpg"
-                  alt="Moimbo Forest"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </Slider>
-          </div>
-        </div>
-      </section>
-
-      {/* Rustic Benefits */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-10 text-center">Rustic Style Benefits</h2>
-          
-          <div className="max-w-4xl mx-auto">
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {rusticBenefits.map((benefit, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  viewport={{ once: true }}
-                  className="flex items-center p-4 bg-gray-50 rounded-lg"
-                >
-                  <div className="w-3 h-3 bg-green-600 rounded-full mr-3"></div>
-                  <span className="text-gray-700 font-medium">{benefit}</span>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Forest Collection Advantages */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-10 text-center">Forest Collection Advantages</h2>
-          
-          <div className="max-w-4xl mx-auto">
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {forestAdvantages.map((advantage, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  viewport={{ once: true }}
-                  className="flex items-center p-4 bg-white rounded-lg shadow-md"
-                >
-                  <div className="w-3 h-3 bg-amber-600 rounded-full mr-3"></div>
-                  <span className="text-gray-700 font-medium">{advantage}</span>
-                </motion.div>
-              ))}
-            </div>
           </div>
         </div>
       </section>
@@ -325,76 +225,7 @@ export function EnchantRusticCollection() {
         </div>
       </section>
 
-      {/* Style Inspiration */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-10 text-center">Style Inspiration</h2>
-          
-          <div className="max-w-5xl mx-auto">
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="text-center">
-                <div className="bg-green-100 rounded-full p-6 inline-flex mb-4">
-                  <span className="text-2xl">🏡</span>
-                </div>
-                <h3 className="text-xl font-semibold mb-3">Farmhouse Style</h3>
-                <p className="text-gray-600">Perfect for modern farmhouse and country home aesthetics</p>
-              </div>
-              
-              <div className="text-center">
-                <div className="bg-amber-100 rounded-full p-6 inline-flex mb-4">
-                  <span className="text-2xl">🪵</span>
-                </div>
-                <h3 className="text-xl font-semibold mb-3">Rustic Cabin</h3>
-                <p className="text-gray-600">Ideal for cabin retreats and rustic vacation homes</p>
-              </div>
-              
-              <div className="text-center">
-                <div className="bg-brown-100 rounded-full p-6 inline-flex mb-4">
-                  <span className="text-2xl">🌾</span>
-                </div>
-                <h3 className="text-xl font-semibold mb-3">Country Cottage</h3>
-                <p className="text-gray-600">Beautiful for cottage styles and vintage-inspired interiors</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Applications Section */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-10 text-center">Perfect Applications</h2>
-          
-          <div className="max-w-5xl mx-auto">
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="text-center">
-                <div className="bg-green-100 rounded-full p-6 inline-flex mb-4">
-                  <span className="text-2xl">🏠</span>
-                </div>
-                <h3 className="text-xl font-semibold mb-3">Family Rooms</h3>
-                <p className="text-gray-600">Creates warm, welcoming spaces for family gatherings</p>
-              </div>
-              
-              <div className="text-center">
-                <div className="bg-amber-100 rounded-full p-6 inline-flex mb-4">
-                  <span className="text-2xl">🍽️</span>
-                </div>
-                <h3 className="text-xl font-semibold mb-3">Dining Areas</h3>
-                <p className="text-gray-600">Perfect backdrop for rustic dining and entertaining</p>
-              </div>
-              
-              <div className="text-center">
-                <div className="bg-brown-100 rounded-full p-6 inline-flex mb-4">
-                  <span className="text-2xl">🛏️</span>
-                </div>
-                <h3 className="text-xl font-semibold mb-3">Bedrooms</h3>
-                <p className="text-gray-600">Creates cozy, comfortable sleeping environments</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
+     
       {/* CTA Section */}
       <section className="py-16 bg-gray-900 text-white">
         <div className="container mx-auto px-4 text-center">

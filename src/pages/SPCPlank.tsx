@@ -163,17 +163,7 @@ export function SPCPlank() {
                 </div>
                 <div className="p-8">
                   <h3 className="text-2xl font-bold mb-4">{design.name}</h3>
-                  <p className="text-gray-600 mb-6 text-lg">{design.description}</p>
                   
-                  <div className="space-y-2">
-                    <h4 className="text-lg font-semibold mb-3">Characteristics:</h4>
-                    {design.characteristics.map((characteristic, charIndex) => (
-                      <div key={charIndex} className="flex items-center text-sm text-gray-600">
-                        <div className="w-2 h-2 bg-green-500 rounded-full mr-2"></div>
-                        {characteristic}
-                      </div>
-                    ))}
-                  </div>
                 </div>
               </motion.div>
             ))}
@@ -196,7 +186,6 @@ export function SPCPlank() {
                 viewport={{ once: true }}
                 className="bg-gray-50 rounded-lg p-6 text-center"
               >
-                <div className="text-4xl mb-4">{feature.icon}</div>
                 <h3 className="text-xl font-bold mb-3">{feature.title}</h3>
                 <p className="text-gray-600">{feature.description}</p>
               </motion.div>
@@ -205,52 +194,7 @@ export function SPCPlank() {
         </div>
       </section>
 
-      {/* Gallery Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-10 text-center">SPC Plank Gallery</h2>
-          
-          <div className="max-w-4xl mx-auto">
-            <Slider {...settings}>
-              <div className="h-[500px] rounded-lg overflow-hidden bg-gray-200">
-                <img
-                  src="/SPC/SPC Plank/3281_P2255.jpg"
-                  alt="SPC Plank Design 1"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="h-[500px] rounded-lg overflow-hidden bg-gray-200">
-                <img
-                  src="/SPC/SPC Plank/3292_P2266-check.jpg"
-                  alt="SPC Plank Design 2"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="h-[500px] rounded-lg overflow-hidden bg-gray-200">
-                <img
-                  src="/SPC/SPC Plank/3340_P3333.jpg"
-                  alt="SPC Plank Design 3"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="h-[500px] rounded-lg overflow-hidden bg-gray-200">
-                <img
-                  src="/SPC/SPC Plank/3353_P2244.jpg"
-                  alt="SPC Plank Design 4"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="h-[500px] rounded-lg overflow-hidden bg-gray-200">
-                <img
-                  src="/SPC/SPC Plank/3383_P2299.jpg"
-                  alt="SPC Plank Design 5"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </Slider>
-          </div>
-        </div>
-      </section>
+      
 
       {/* Technical Specifications */}
       <section className="py-16 bg-white">
@@ -270,66 +214,7 @@ export function SPCPlank() {
         </div>
       </section>
 
-      {/* Applications Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-10 text-center">Perfect Applications</h2>
-          
-          <div className="max-w-4xl mx-auto">
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {applications.map((application, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  viewport={{ once: true }}
-                  className="flex items-center p-4 bg-white rounded-lg shadow-md"
-                >
-                  <div className="w-3 h-3 bg-blue-500 rounded-full mr-3"></div>
-                  <span className="text-gray-700 font-medium">{application}</span>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Comparison Section */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-10 text-center">Why Choose SPC Plank Over Traditional Wood?</h2>
-          
-          <div className="max-w-5xl mx-auto">
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="text-center">
-                <div className="bg-blue-100 rounded-full p-6 inline-flex mb-4">
-                  <span className="text-2xl">💧</span>
-                </div>
-                <h3 className="text-xl font-semibold mb-3">Waterproof Performance</h3>
-                <p className="text-gray-600">Unlike hardwood, SPC plank is 100% waterproof and perfect for any room</p>
-              </div>
-              
-              <div className="text-center">
-                <div className="bg-green-100 rounded-full p-6 inline-flex mb-4">
-                  <span className="text-2xl">⚡</span>
-                </div>
-                <h3 className="text-xl font-semibold mb-3">Low Maintenance</h3>
-                <p className="text-gray-600">No refinishing, sealing, or special treatments required</p>
-              </div>
-              
-              <div className="text-center">
-                <div className="bg-purple-100 rounded-full p-6 inline-flex mb-4">
-                  <span className="text-2xl">💰</span>
-                </div>
-                <h3 className="text-xl font-semibold mb-3">Cost Effective</h3>
-                <p className="text-gray-600">Lower installation costs and no ongoing maintenance expenses</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      
       {/* CTA Section */}
       <section className="py-16 bg-gray-900 text-white">
         <div className="container mx-auto px-4 text-center">

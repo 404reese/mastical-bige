@@ -173,17 +173,7 @@ export function SPCTile() {
                 </div>
                 <div className="p-8">
                   <h3 className="text-2xl font-bold mb-4">{collection.name}</h3>
-                  <p className="text-gray-600 mb-6 text-lg">{collection.description}</p>
                   
-                  <div className="space-y-2">
-                    <h4 className="text-lg font-semibold mb-3">Characteristics:</h4>
-                    {collection.characteristics.map((characteristic, charIndex) => (
-                      <div key={charIndex} className="flex items-center text-sm text-gray-600">
-                        <div className="w-2 h-2 bg-orange-500 rounded-full mr-2"></div>
-                        {characteristic}
-                      </div>
-                    ))}
-                  </div>
                 </div>
               </motion.div>
             ))}
@@ -206,7 +196,7 @@ export function SPCTile() {
                 viewport={{ once: true }}
                 className="bg-gray-50 rounded-lg p-6 text-center"
               >
-                <div className="text-4xl mb-4">{feature.icon}</div>
+                
                 <h3 className="text-xl font-bold mb-3">{feature.title}</h3>
                 <p className="text-gray-600">{feature.description}</p>
               </motion.div>
@@ -216,7 +206,7 @@ export function SPCTile() {
       </section>
 
       {/* Gallery Section */}
-      <section className="py-16 bg-gray-50">
+      {/* <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-10 text-center">SPC Tile Gallery</h2>
           
@@ -253,10 +243,10 @@ export function SPCTile() {
             </Slider>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Benefits Section */}
-      <section className="py-16 bg-white">
+      {/* <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-10 text-center">Performance Benefits</h2>
           
@@ -278,7 +268,7 @@ export function SPCTile() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Technical Specifications */}
       <section className="py-16 bg-gray-50">
@@ -299,7 +289,7 @@ export function SPCTile() {
       </section>
 
       {/* Applications Section */}
-      <section className="py-16 bg-white">
+      {/* <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-10 text-center">Ideal Applications</h2>
           
@@ -321,10 +311,10 @@ export function SPCTile() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Comparison Section */}
-      <section className="py-16 bg-gray-50">
+      {/* <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-10 text-center">Why Choose SPC Tile Over Traditional Tile?</h2>
           
@@ -356,7 +346,7 @@ export function SPCTile() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="py-16 bg-gray-900 text-white">
