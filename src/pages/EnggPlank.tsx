@@ -29,7 +29,21 @@ export function EnggPlank() {
     { src: "/engg/engg-plank24.jpg", name: "Engg Plank 24" },
     { src: "/engg/engg-plank25.jpg", name: "Engg Plank 25" },
     { src: "/engg/engg-plank26.jpg", name: "Engg Plank 26" },
-    { src: "/engg/engg-plank27.jpg", name: "Engg Plank 27" }
+    { src: "/engg/engg-plank27.jpg", name: "Engg Plank 27" },
+    { src: "/engg/slim/slim1.webp", name: "Engg Slim 1" },
+    { src: "/engg/slim/slim2.png", name: "Engg Slim 2" },
+    { src: "/engg/slim/slim3.jpg", name: "Engg Slim 3" },
+    { src: "/engg/slim/slim4.jpg", name: "Engg Slim 4" },
+    { src: "/engg/slim/slim5.jpg", name: "Engg Slim 5" },
+    { src: "/engg/slim/slim6.jpg", name: "Engg Slim 6" },
+    { src: "/engg/slim/slim7.jpg", name: "Engg Slim 7" },
+    { src: "/engg/slim/slim8.jpg", name: "Engg Slim 8" },
+    { src: "/engg/slim/slim9.jpg", name: "Engg Slim 9" },
+    { src: "/engg/slim/slim10.jpg", name: "Engg Slim 10" },
+    { src: "/engg/slim/slim11.jpg", name: "Engg Slim 11" },
+    { src: "/engg/slim/slim12.jpg", name: "Engg Slim 12" },
+    { src: "/engg/slim/slim13.jpg", name: "Engg Slim 13" },
+    { src: "/engg/slim/slim14.jpg", name: "Engg Slim 14" },
   ];
 
   return (

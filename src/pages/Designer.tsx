@@ -1,16 +1,16 @@
 import { motion } from "framer-motion";
 
 export function Designer() {
-  // Gallery images for Designer
+  // Gallery images for Designer with names
   const galleryImages = [
-    "/engg/designer/designer1.jpg",
-    "/engg/designer/designer2.jpg",
-    "/engg/designer/designer3.jpg",
-    "/engg/designer/designer4.jpg",
-    "/engg/designer/designer5.jpg",
-    "/engg/designer/designer6.jpg",
-    "/engg/designer/designer7.jpg",
-    "/engg/designer/designer8.jpg"
+    { image: "/engg/designer/designer1.jpg", name: "Walnut Flower Marble" },
+    { image: "/engg/designer/designer2.jpg", name: "Walnut Flower Plain" },
+    { image: "/engg/designer/designer3.jpg", name: "Oak Braid" },
+    { image: "/engg/designer/designer4.jpg", name: "Walnut Leaf" },
+    { image: "/engg/designer/designer5.jpg", name: "Oak Fishscal" },
+    { image: "/engg/designer/designer6.jpg", name: "Oak Lotus" },
+    { image: "/engg/designer/designer7.jpg", name: "Walnut Arrow Brass" },
+    { image: "/engg/designer/designer8.jpg", name: "Walnut Flower Brass" }
   ];
 
   return (
@@ -40,20 +40,23 @@ export function Designer() {
           <h2 className="text-3xl font-bold mb-10 text-center">Gallery</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            {galleryImages.map((image, index) => (
+            {galleryImages.map((item, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="h-80 rounded-lg overflow-hidden bg-gray-200 shadow-md hover:shadow-lg transition-shadow duration-300"
+                className="text-center"
               >
-                <img
-                  src={image}
-                  alt={`Designer ${index + 1}`}
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                />
+                <div className="h-80 rounded-lg overflow-hidden bg-gray-200 shadow-md hover:shadow-lg transition-shadow duration-300 mb-4">
+                  <img
+                    src={item.image}
+                    alt={item.name}
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <h3 className="font-semibold text-lg">{item.name}</h3>
               </motion.div>
             ))}
           </div>

@@ -5,7 +5,7 @@ export function EngineeredSlimChevron() {
   const galleryImages = [
     {
       src: "/engg/engg1.jpg",
-      name: "Classic Oak Chevron"
+      name: "Oak Polar Chevron"
     },
     {
       src: "/engg/engineered-slim-chevron.jpg",

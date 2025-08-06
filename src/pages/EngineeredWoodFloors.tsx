@@ -57,14 +57,14 @@ export function EngineeredWoodFloors() {
 
   // Wood Species data for engineered floors
   const woodSpecies = [
-    { name: "Engineered Slim Chevron", image: "/engg/engg1.jpg", link: "/engineered-slim-chevron" },
-    { name: "Engg Plank", image: "/engg/engg2.jpg", link: "/engg-plank" },
+    { name: "Engineered Chevron", image: "/engg/engg6.jpg", link: "/engineered-slim-chevron" },
+    { name: "Engineered Plank", image: "/engg/engg2.jpg", link: "/engg-plank" },
     // { name: "Parquet Tiles", image: "/engg/engg3.jpg", link: "/parquet-tiles" },
-    { name: "Herringbone", image: "/engg/engg4.jpg", link: "/herringbone" },
+    { name: "Engineered Herringbone", image: "/engg/engg4.jpg", link: "/herringbone" },
     { name: "Designer", image: "/engg/engg5.jpg", link: "/designer" },
-    { name: "Chevron", image: "/engg/engg6.jpg", link: "/chevron" },
-    { name: "Engineered Slim", image: "/engg/engg7.jpg", link: "/engineered-slim" },
-    { name: "Engineered Herringbone", image: "/engg/engg8.png", link: "/engineered-herringbone" },
+    // { name: "Chevron", image: "/engg/engg6.jpg", link: "/chevron" },
+    // { name: "Engineered Slim", image: "/engg/engg7.jpg", link: "/engineered-slim" },
+    // { name: "Engineered Herringbone", image: "/engg/engg8.png", link: "/engineered-herringbone" },
     // { name: "Woodwalk", image: "/engg/engg8.png", link: "/woodwalk" },
     
   ];
