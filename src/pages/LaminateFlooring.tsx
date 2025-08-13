@@ -109,7 +109,7 @@ export function LaminateFlooring() {
       <section className="relative h-[70vh] bg-gray-900">
         <div className="absolute inset-0 overflow-hidden">
           <img 
-            src="/Laminate/Elite Herringbone Collection/Copy of MVR_0699 (Color  328 )-Mount Everest.JPG" 
+            src="/heros/LAMINATE FLOOR.png" 
             alt="Laminate Flooring"
             className="w-full h-full object-cover opacity-60"
           />

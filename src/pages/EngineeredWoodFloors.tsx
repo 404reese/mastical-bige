@@ -75,7 +75,7 @@ export function EngineeredWoodFloors() {
       <section className="relative h-[80vh] bg-gray-900">
         <div className="absolute inset-0 overflow-hidden">
           <img 
-            src="/engwf.avif" 
+            src="/heros/ENGINEERED WOOD FLOOR.png" 
             alt="Engineered Wood Flooring"
             className="w-full h-full object-cover opacity-60"
           />

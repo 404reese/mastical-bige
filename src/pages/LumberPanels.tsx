@@ -75,7 +75,7 @@ export function LumberPanels() {
       <section className="relative h-[80vh] bg-gray-900">
         <div className="absolute inset-0 overflow-hidden">
           <img 
-            src="/Lumber Panels/dassoCTECH Lumber & Panel/20191008093824403.jpg" 
+            src="/heros/Lumber & Panels.png" 
             alt="Premium Lumber Panels"
             className="w-full h-full object-cover opacity-60"
           />

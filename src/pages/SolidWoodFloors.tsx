@@ -76,7 +76,7 @@ export function SolidWoodFloors() {
       <section className="relative h-[80vh] bg-gray-900">
         <div className="absolute inset-0 overflow-hidden">
           <img 
-            src="/swf1.png" 
+            src="/heros/Solid Wood FLoor.png" 
             alt="Solid Wood Flooring"
             className="w-full h-full object-cover opacity-60"
           />

@@ -82,7 +82,7 @@ export function SPCFlooring() {
       <section className="relative h-[80vh] bg-gray-900">
         <div className="absolute inset-0 overflow-hidden">
           <img 
-            src="/SPC/SPC Plank/3225_P2288.jpg" 
+            src="/heros/SPC FLOOR.png" 
             alt="Premium SPC Flooring"
             className="w-full h-full object-cover opacity-60"
           />

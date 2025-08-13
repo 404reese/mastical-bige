@@ -27,7 +27,7 @@ export const Story = () => {
               viewport={{ once: true }}
               className="text-4xl font-serif"
             >
-              Our Story
+              About Us
             </motion.h2>
             <motion.p 
               initial={{ y: 30, opacity: 0 }}
@@ -36,9 +36,8 @@ export const Story = () => {
               viewport={{ once: true }}
               className="text-gray-600"
             >
-              For over two decades, The Big E has been crafting timeless pieces
-              for modern homes. Artistry, quality, and a touch of luxury - 
-              that's the Merland design philosophy. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, itaque animi. Similique.l Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, quod voluptatem? Rerum, ipsa sequi? Dolorum quia assumenda in optio vel labore blanditiis sed error quibusdam.
+              At The Big E Retail, we bring you the finest in wooden flooring  from premium hardwood and versatile engineered wood to eco-friendly sustainable options. Every plank is chosen for its beauty, strength, and timeless appeal, ensuring your space reflects the highest standards of design and durability. <br />
+              Our commitment goes beyond products  we deliver exceptional service, expert guidance, and flooring solutions that transform houses into homes, and spaces into experiences.
             </motion.p>
             <motion.div 
               initial={{ y: 30, opacity: 0 }}

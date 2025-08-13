@@ -105,7 +105,7 @@ export function ParquetFlooring() {
       <section className="relative h-[80vh] bg-gray-900">
         <div className="absolute inset-0 overflow-hidden">
           <img 
-            src="/parquet/parp-1.png" 
+            src="/heros/PARQUET FLOOR.png" 
             alt="Parquet Wood Flooring"
             className="w-full h-full object-cover opacity-60"
           />
