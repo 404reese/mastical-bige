@@ -1,18 +1,14 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const products = [{
-  title: '',
-  image: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-}, {
-  title: '',
-  image: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-}, {
-  title: '',
-  image: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-}];
-
 export function Sample() {
+  const videoSources = [
+    "/videos/video1.mp4",
+    "/videos/video2.mp4",
+    "/videos/video3.mp4",
+    "/videos/video4.mp4"
+  ];
+
   return <motion.section 
     id="sample"
     initial="initial"
@@ -46,20 +42,21 @@ export function Sample() {
           </motion.button>
         </motion.div>
         
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
-          {products.map((product, index) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {videoSources.map((src, idx) => (
             <motion.div 
               initial={{ y: 30, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.3 + (index * 0.1) }}
+              transition={{ duration: 0.5, delay: 0.3 + (idx * 0.1) }}
               viewport={{ once: true }}
-              key={product.title} 
-              className="group cursor-pointer"
+              key={src}
+              className="aspect-[9/16] rounded-lg overflow-hidden bg-black flex items-center justify-center"
             >
-              <div className="aspect-square overflow-hidden rounded-lg mb-2">
-                <img src={product.image} alt={product.title} className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
-              </div>
-              <h3 className="text-lg font-medium">{product.title}</h3>
+              <video
+                src={src}
+                controls
+                className="w-full h-full object-cover"
+              />
             </motion.div>
           ))}
         </div>

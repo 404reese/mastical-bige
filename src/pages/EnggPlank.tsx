@@ -59,7 +59,7 @@ export function EnggPlank() {
         </div>
         <div className="absolute inset-0 flex flex-col justify-center items-center text-center p-4">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Engg Plank
+            Engineered Plank
           </h1>
           <p className="text-xl text-white max-w-2xl">
             Classic plank design with engineered wood durability
