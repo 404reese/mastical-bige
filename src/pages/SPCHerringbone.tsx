@@ -53,42 +53,40 @@ export function SPCHerringbone() {
 
   // Design variations
   const herringboneDesigns = [
-    {
-      name: "Traditional Oak Herringbone",
+   {
+      name: "H1111 Herringbone",
       description: "Classic oak wood grain in traditional herringbone pattern",
-      image: "/SPC/SPC Herringbone/3395-H1111.jpg",
+      image: "/SPC/SPC Herringbone/Stupa Cat_ The Big E_SPC Flooring_page-0006.jpg",
       characteristics: ["Natural Oak Grain", "Traditional Pattern", "Warm Tones", "Classic Appeal"]
     },
     {
-      name: "Modern Grey Herringbone",
-      description: "Contemporary grey tones with sophisticated herringbone layout",
-      image: "/SPC/SPC Herringbone/3405-H1144.jpg",
-      characteristics: ["Contemporary Grey", "Modern Style", "Clean Lines", "Sophisticated Finish"]
+      name: "H1122 Herringbone",
+      description: "Classic oak wood grain in traditional herringbone pattern",
+      image: "/SPC/SPC Herringbone/Stupa Cat_ The Big E_SPC Flooring_page-0008.jpg",
+      characteristics: ["Natural Oak Grain", "Traditional Pattern", "Warm Tones", "Classic Appeal"]
     },
     {
-      name: "Rich Brown Herringbone",
-      description: "Deep brown wood tones in elegant herringbone configuration",
-      image: "/SPC/SPC Herringbone/3417-H1133.jpg",
-      characteristics: ["Rich Brown Tone", "Deep Color", "Luxury Appeal", "Premium Quality"]
+      name: "H1133 Herringbone",
+      description: "Classic oak wood grain in traditional herringbone pattern",
+      image: "/SPC/SPC Herringbone/Stupa Cat_ The Big E_SPC Flooring_page-0010.jpg",
+      characteristics: ["Natural Oak Grain", "Traditional Pattern", "Warm Tones", "Classic Appeal"]
     },
     {
-      name: "Light Timber Herringbone",
-      description: "Light wood tones with natural grain in herringbone pattern",
-      image: "/SPC/SPC Herringbone/3428-H1166.jpg",
-      characteristics: ["Light Timber", "Natural Grain", "Bright Appeal", "Versatile Design"]
+      name: "H1144 Herringbone",
+      description: "Classic oak wood grain in traditional herringbone pattern",
+      image: "/SPC/SPC Herringbone/Stupa Cat_ The Big E_SPC Flooring_page-0012.jpg",
+      characteristics: ["Natural Oak Grain", "Traditional Pattern", "Warm Tones", "Classic Appeal"]
+    },{
+      name: "H1155 Herringbone",
+      description: "Classic oak wood grain in traditional herringbone pattern",
+      image: "/SPC/SPC Herringbone/Stupa Cat_ The Big E_SPC Flooring_page-0014.jpg",
+      characteristics: ["Natural Oak Grain", "Traditional Pattern", "Warm Tones", "Classic Appeal"]
+    },{
+      name: "H1166 Herringbone",
+      description: "Classic oak wood grain in traditional herringbone pattern",
+      image: "/SPC/SPC Herringbone/Stupa Cat_ The Big E_SPC Flooring_page-0016.jpg",
+      characteristics: ["Natural Oak Grain", "Traditional Pattern", "Warm Tones", "Classic Appeal"]
     },
-    {
-      name: "Smoky Oak Herringbone",
-      description: "Smoky oak finish with distinctive herringbone arrangement",
-      image: "/SPC/SPC Herringbone/3440-H1155.jpg",
-      characteristics: ["Smoky Finish", "Oak Texture", "Distinctive Look", "Character Rich"]
-    },
-    {
-      name: "Honey Oak Herringbone",
-      description: "Warm honey oak tones in classic herringbone design",
-      image: "/SPC/SPC Herringbone/3455-H1122.jpg",
-      characteristics: ["Honey Tones", "Warm Appeal", "Natural Beauty", "Timeless Design"]
-    }
   ];
 
   // Installation benefits
