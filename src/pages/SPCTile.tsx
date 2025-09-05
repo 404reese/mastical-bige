@@ -54,29 +54,29 @@ export function SPCTile() {
   // Design collections
   const tileCollections = [
     {
-      name: "Natural Stone Series",
-      description: "Realistic stone textures with authentic mineral patterns",
-      image: "/SPC/SPC Tile/3178_T4411.jpg",
-      characteristics: ["Natural Stone Texture", "Realistic Patterns", "Earth Tones", "Authentic Look"]
-    },
-    {
-      name: "Modern Ceramic Collection",
-      description: "Contemporary ceramic-inspired designs for modern spaces",
-      image: "/SPC/SPC Tile/3192_T4444.jpg",
-      characteristics: ["Ceramic Appearance", "Clean Lines", "Modern Style", "Versatile Design"]
-    },
-    {
-      name: "Marble-Look Series",
-      description: "Luxurious marble patterns with elegant veining",
-      image: "/SPC/SPC Tile/3204_T4422i.jpg",
-      characteristics: ["Marble Veining", "Luxury Appeal", "Premium Quality", "Sophisticated Finish"]
-    },
-    {
-      name: "Travertine Collection",
+      name: "T4411",
       description: "Classic travertine patterns with natural fossil markings",
-      image: "/SPC/SPC Tile/T4433.jpg",
+      image: "/SPC/SPC Tile/Stupa Cat_ The Big E_SPC Flooring_page-0042.jpg",
       characteristics: ["Travertine Texture", "Natural Fossils", "Classic Appeal", "Timeless Design"]
-    }
+    },
+    {
+      name: "T4422",
+      description: "Classic travertine patterns with natural fossil markings",
+      image: "/SPC/SPC Tile/Stupa Cat_ The Big E_SPC Flooring_page-0044.jpg",
+      characteristics: ["Travertine Texture", "Natural Fossils", "Classic Appeal", "Timeless Design"]
+    },
+    {
+      name: "T4433",
+      description: "Classic travertine patterns with natural fossil markings",
+      image: "/SPC/SPC Tile/Stupa Cat_ The Big E_SPC Flooring_page-0046.jpg",
+      characteristics: ["Travertine Texture", "Natural Fossils", "Classic Appeal", "Timeless Design"]
+    },
+    {
+      name: "T4444",
+      description: "Classic travertine patterns with natural fossil markings",
+      image: "/SPC/SPC Tile/Stupa Cat_ The Big E_SPC Flooring_page-0048.jpg",
+      characteristics: ["Travertine Texture", "Natural Fossils", "Classic Appeal", "Timeless Design"]
+    },
   ];
 
   // Applications

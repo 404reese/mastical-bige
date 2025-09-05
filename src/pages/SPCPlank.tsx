@@ -54,35 +54,77 @@ export function SPCPlank() {
   // Available designs
   const designOptions = [
     {
-      name: "Classic Oak Series",
+      name: "P2211",
       description: "Timeless oak patterns with natural grain detail",
-      image: "/SPC/SPC Plank/3213_P2277.jpg",
+      image: "/SPC/SPC Plank/Stupa Cat_ The Big E_SPC Flooring_page-0018.jpg",
       characteristics: ["Natural Oak Grain", "Medium Brown Tone", "Classic Appeal", "Versatile Design"]
     },
     {
-      name: "P2228",
+      name: "P2222",
       description: "Timeless oak patterns with natural grain detail",
-      image: "/SPC/SPC Plank/P2288.png",
+      image: "/SPC/SPC Plank/Stupa Cat_ The Big E_SPC Flooring_page-0020.jpg",
       characteristics: ["Natural Oak Grain", "Medium Brown Tone", "Classic Appeal", "Versatile Design"]
     },
     {
-      name: "Modern Collection",
-      description: "Contemporary wood looks for modern interior design",
-      image: "/SPC/SPC Plank/3223_P2233.jpg",
-      characteristics: ["Contemporary Style", "Clean Lines", "Modern Appeal", "Sophisticated Finish"]
+      name: "P2233",
+      description: "Timeless oak patterns with natural grain detail",
+      image: "/SPC/SPC Plank/Stupa Cat_ The Big E_SPC Flooring_page-0022.jpg",
+      characteristics: ["Natural Oak Grain", "Medium Brown Tone", "Classic Appeal", "Versatile Design"]
     },
     {
-      name: "Rustic Series",
-      description: "Weathered and distressed wood appearances",
-      image: "/SPC/SPC Plank/3225_P2288.jpg",
-      characteristics: ["Rustic Character", "Distressed Look", "Vintage Appeal", "Unique Texture"]
+      name: "P2244",
+      description: "Timeless oak patterns with natural grain detail",
+      image: "/SPC/SPC Plank/Stupa Cat_ The Big E_SPC Flooring_page-0024.jpg",
+      characteristics: ["Natural Oak Grain", "Medium Brown Tone", "Classic Appeal", "Versatile Design"]
     },
     {
-      name: "Premium Collection",
-      description: "High-end wood species recreations with premium detailing",
-      image: "/SPC/SPC Plank/3251_P2222.jpg",
-      characteristics: ["Premium Quality", "Rich Details", "Luxury Appeal", "Architectural Grade"]
-    }
+      name: "P2255",
+      description: "Timeless oak patterns with natural grain detail",
+      image: "/SPC/SPC Plank/Stupa Cat_ The Big E_SPC Flooring_page-0026.jpg",
+      characteristics: ["Natural Oak Grain", "Medium Brown Tone", "Classic Appeal", "Versatile Design"]
+    },
+    {
+      name: "P2266",
+      description: "Timeless oak patterns with natural grain detail",
+      image: "/SPC/SPC Plank/Stupa Cat_ The Big E_SPC Flooring_page-0028.jpg",
+      characteristics: ["Natural Oak Grain", "Medium Brown Tone", "Classic Appeal", "Versatile Design"]
+    },
+    {
+      name: "P2277",
+      description: "Timeless oak patterns with natural grain detail",
+      image: "/SPC/SPC Plank/Stupa Cat_ The Big E_SPC Flooring_page-0030.jpg",
+      characteristics: ["Natural Oak Grain", "Medium Brown Tone", "Classic Appeal", "Versatile Design"]
+    },
+    {
+      name: "P2288",
+      description: "Timeless oak patterns with natural grain detail",
+      image: "/SPC/SPC Plank/Stupa Cat_ The Big E_SPC Flooring_page-0032.jpg",
+      characteristics: ["Natural Oak Grain", "Medium Brown Tone", "Classic Appeal", "Versatile Design"]
+    },
+    {
+      name: "P2299",
+      description: "Timeless oak patterns with natural grain detail",
+      image: "/SPC/SPC Plank/Stupa Cat_ The Big E_SPC Flooring_page-0034.jpg",
+      characteristics: ["Natural Oak Grain", "Medium Brown Tone", "Classic Appeal", "Versatile Design"]
+    },
+    {
+      name: "P3311",
+      description: "Timeless oak patterns with natural grain detail",
+      image: "/SPC/SPC Plank/Stupa Cat_ The Big E_SPC Flooring_page-0036.jpg",
+      characteristics: ["Natural Oak Grain", "Medium Brown Tone", "Classic Appeal", "Versatile Design"]
+    },
+    {
+      name: "P3322",
+      description: "Timeless oak patterns with natural grain detail",
+      image: "/SPC/SPC Plank/Stupa Cat_ The Big E_SPC Flooring_page-0038.jpg",
+      characteristics: ["Natural Oak Grain", "Medium Brown Tone", "Classic Appeal", "Versatile Design"]
+    },
+    {
+      name: "P3333",
+      description: "Timeless oak patterns with natural grain detail",
+      image: "/SPC/SPC Plank/Stupa Cat_ The Big E_SPC Flooring_page-0040.jpg",
+      characteristics: ["Natural Oak Grain", "Medium Brown Tone", "Classic Appeal", "Versatile Design"]
+    },
   ];
 
   // Applications
