@@ -14,7 +14,7 @@ module.exports = {content: [
   	extend: {
   		fontFamily: {
   			sans: [
-  				'Hanken Grotesk',
+  				'Montserrat',
   				'sans-serif'
   			],
   			serif: [

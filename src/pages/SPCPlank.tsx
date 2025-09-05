@@ -60,6 +60,12 @@ export function SPCPlank() {
       characteristics: ["Natural Oak Grain", "Medium Brown Tone", "Classic Appeal", "Versatile Design"]
     },
     {
+      name: "P2228",
+      description: "Timeless oak patterns with natural grain detail",
+      image: "/SPC/SPC Plank/P2288.png",
+      characteristics: ["Natural Oak Grain", "Medium Brown Tone", "Classic Appeal", "Versatile Design"]
+    },
+    {
       name: "Modern Collection",
       description: "Contemporary wood looks for modern interior design",
       image: "/SPC/SPC Plank/3223_P2233.jpg",
