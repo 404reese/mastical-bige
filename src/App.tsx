@@ -56,6 +56,8 @@ import EliteHerringboneCollection from './pages/EliteHerringboneCollection';
 import EliteHerringbonePrimeCollection from './pages/EliteHerringbonePrimeCollection';
 import EnchantPremiumCollection from './pages/EnchantPremiumCollection';
 import EnchantRusticCollection from './pages/EnchantRusticCollection';
+import Fervini from './pages/Fervini';
+import Hywood from './pages/Hywood.tsx';
 
 const Home = () => <>
     <Hero />
@@ -128,6 +130,10 @@ export function App() {
           <Route path="/laminate-flooring/elite-herringbone-prime-collection" element={<EliteHerringbonePrimeCollection />} />
           <Route path="/laminate-flooring/enchant-premium-collection" element={<EnchantPremiumCollection />} />
           <Route path="/laminate-flooring/enchant-rustic-collection" element={<EnchantRusticCollection />} />
+          
+          {/* Additional Routes */}
+          <Route path="/hywood" element={<Hywood />} />
+          <Route path="/fervini" element={<Fervini />} />
         </Routes>
       </div>
     </Router>;

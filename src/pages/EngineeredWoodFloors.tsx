@@ -61,7 +61,9 @@ export function EngineeredWoodFloors() {
     { name: "Engineered Plank", image: "/engg/engg2.jpg", link: "/engg-plank" },
     // { name: "Parquet Tiles", image: "/engg/engg3.jpg", link: "/parquet-tiles" },
     { name: "Engineered Herringbone", image: "/engg/engg4.jpg", link: "/herringbone" },
-    { name: "Designer", image: "/engg/engg5.jpg", link: "/designer" },
+    { name: "Engineered Hywood", image: "/engg/engg4.jpg", link: "/hywood" },
+    { name: "Engineered Fervini", image: "/engg/engg4.jpg", link: "/fervini" },
+    // { name: "Designer", image: "/engg/engg5.jpg", link: "/designer" },
     // { name: "Chevron", image: "/engg/engg6.jpg", link: "/chevron" },
     // { name: "Engineered Slim", image: "/engg/engg7.jpg", link: "/engineered-slim" },
     // { name: "Engineered Herringbone", image: "/engg/engg8.png", link: "/engineered-herringbone" },
@@ -163,7 +165,7 @@ export function EngineeredWoodFloors() {
       {/* Wood Species Section */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-10 text-center">Available Wood Species</h2>
+          <h2 className="text-3xl font-bold mb-10 text-center">Our Collection</h2>
           
           <div className="grid grid-cols-3 gap-8 max-w-5xl mx-auto">
             {woodSpecies.map((species, index) => (

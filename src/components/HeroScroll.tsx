@@ -8,7 +8,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 
 export const HeroScroll = () => {
   const collections = [
-    { image: '/a1.png' }, { image: '/a2.png' }, { image: '/a3.png' },
+    { image: '/f1.jpg' }, { image: '/a2.png' }, { image: '/f2.jpg' },
     { image: '/a4.png' }, { image: '/a5.png' }, { image: '/a6.jpg' },
   ];
 

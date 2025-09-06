@@ -1,8 +1,9 @@
 import { motion } from "framer-motion";
 
 export function EnggPlank() {
-  // Gallery images for Engg Plank
-  const galleryImages = [
+  
+  // Wood Species data
+  const woodSpecies = [
     { src: "/engg/engg-plank1.jpg", name: "Ash Grey" },
     { src: "/engg/engg-plank2.jpg", name: "Burma Teak" },
     { src: "/engg/engg-plank3.jpg", name: "Oak Barn Dark Grey" },
@@ -30,30 +31,18 @@ export function EnggPlank() {
     { src: "/engg/engg-plank25.jpg", name: "Ash Coffee" },
     { src: "/engg/engg-plank26.jpg", name: "Ash B1" },
     { src: "/engg/engg-plank27.jpg", name: "Ash Light Clean" },
-    // { src: "/engg/slim/slim1.webp", name: "Engg Slim 1" },
-    // { src: "/engg/slim/slim2.png", name: "Engg Slim 2" },
-    // { src: "/engg/slim/slim3.jpg", name: "Engg Slim 3" },
-    // { src: "/engg/slim/slim4.jpg", name: "Engg Slim 4" },
-    // { src: "/engg/slim/slim5.jpg", name: "Engg Slim 5" },
-    // { src: "/engg/slim/slim6.jpg", name: "Engg Slim 6" },
-    // { src: "/engg/slim/slim7.jpg", name: "Engg Slim 7" },
-    // { src: "/engg/slim/slim8.jpg", name: "Engg Slim 8" },
-    // { src: "/engg/slim/slim9.jpg", name: "Engg Slim 9" },
-    // { src: "/engg/slim/slim10.jpg", name: "Engg Slim 10" },
-    // { src: "/engg/slim/slim11.jpg", name: "Engg Slim 11" },
-    // { src: "/engg/slim/slim12.jpg", name: "Engg Slim 12" },
-    // { src: "/engg/slim/slim13.jpg", name: "Engg Slim 13" },
-    // { src: "/engg/slim/slim14.jpg", name: "Engg Slim 14" },
   ];
+
+  
 
   return (
     <div className="">
-      {/* Header Section */}
-      <section className="relative h-[60vh] bg-gray-900">
+      {/* Hero Section */}
+      <section className="relative h-[80vh] bg-gray-900">
         <div className="absolute inset-0 overflow-hidden">
           <img 
-            src="/engg/engg2.jpg" 
-            alt="Engg Plank"
+            src="/slim-chev.webp" 
+            alt="SoEngineered Slim Chevron"
             className="w-full h-full object-cover opacity-60"
           />
         </div>
@@ -67,35 +56,60 @@ export function EnggPlank() {
         </div>
       </section>
 
-      {/* Image Gallery */}
+      {/* Introduction Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-10 text-center">Gallery</h2>
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6 text-center">The Epitome of Natural Elegance</h2>
+            
+            <div className="prose prose-lg mx-auto">
+              <p className="mb-4 text-gray-700">
+                Engineered Plank wood flooring represents the ultimate expression of timeless elegance and modern engineering. Each plank is meticulously crafted with a premium hardwood veneer atop a stable multi-layer plywood core, delivering the authentic beauty of solid wood with enhanced dimensional stability.
+              </p>
+              
+              <p className="mb-4 text-gray-700">
+                Our Engineered Plank flooring is designed to evoke the classic, clean lines of traditional hardwood flooring, with a durable and long-lasting construction that's perfect for high-traffic areas. The click-lock installation system ensures a seamless fit, while the UV-cured polyurethane finish provides lasting protection against daily wear.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      
+
+      {/* Wood Species Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-10 text-center">Our Collection</h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            {galleryImages.map((image, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300"
-              >
-                <div className="h-80 bg-gray-200 overflow-hidden">
-                  <img
-                    src={image.src}
-                    alt={image.name}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                  />
+          <div className="grid grid-cols-3 gap-8 max-w-5xl mx-auto">
+            {woodSpecies.map((species, index) => (
+              <div key={index} className="text-center">
+                <div className="h-52 rounded-lg overflow-hidden bg-gray-200 mb-4">
+                  <img src={species.src} alt={species.name} className="w-full h-full object-cover" />
                 </div>
-                <div className="p-4">
-                  <h3 className="text-lg font-semibold text-gray-800 text-center">
-                    {image.name}
-                  </h3>
-                </div>
-              </motion.div>
+                <h3 className="font-semibold text-lg">{species.name}</h3>
+              </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      
+
+      {/* CTA Section */}
+      <section className="py-16 bg-gray-900 text-white">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold mb-6">Ready to Transform Your Space?</h2>
+          <p className="text-xl mb-8 max-w-2xl mx-auto">
+            Contact us today to explore our premium solid wood flooring options and get a personalized consultation.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <button onClick={() => window.location.href = '/contact-us'} className="bg-white text-gray-900 px-8 py-3 rounded-lg hover:bg-gray-100 transition">
+              Request a Quote
+            </button>
+            
           </div>
         </div>
       </section>

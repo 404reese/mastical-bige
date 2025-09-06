@@ -77,7 +77,7 @@ export function Herringbone() {
             {woodSpecies.map((species, index) => (
               <div key={index} className="text-center">
                 <div className="h-52 rounded-lg overflow-hidden bg-gray-200 mb-4">
-                  <img src={species.image} alt={species.name} className="w-full h-full object-cover" />
+                  <img src={species.src} alt={species.name} className="w-full h-full object-cover" />
                 </div>
                 <h3 className="font-semibold text-lg">{species.name}</h3>
               </div>

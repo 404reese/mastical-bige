@@ -5,30 +5,30 @@ export const Collections = () => {
   const collections = [{
     title: 'RUSTIC',
     description: 'Our most characterful grade, filled with rich grains, charming knots and natural colour variations.',
-    image: './a1.png'
+    image: './c1.jpg'
   }, {
     title: 'CLASSIC',
     description: 'The perfect balance between modern sophistication and rustic charm. A true classic.',
-    image: './a2.png'
+    image: './c2.jpg'
   }, {
     title: 'PRISTINE',
     description: 'Our cleanest grade with a smaller number of knots and minimal sapwood for a contemporary edge.',
-    image: '/a3.png'
+    image: '/c3.jpg'
   },
   {
     title: 'HERITAGE',
     description: 'A handcrafted surface texture and bevelled edges emulate a naturally aged wood floor.',
-    image: './a4.png'
+    image: './c4.jpg'
   },
   {
     title: 'NATURAL',
     description: 'A mix of light and dark tones creates a natural appearance that works well with interior designs.',
-    image: './a5.png'
+    image: './c5.jpg'
   },
   {
     title: 'VINTAGE',
     description: 'This grade features a subtle surface texture and a mix of light and dark tones for a classic look.',
-    image: './a6.jpg'
+    image: './c6.jpg'
   }];
   return <motion.section 
     initial="initial"

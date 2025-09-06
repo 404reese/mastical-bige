@@ -97,6 +97,14 @@ export function ParquetFlooring() {
     { name: "Walnut Arizzio", image: "/parquet/WALNUT ARIZZIO.jpeg" },
     { name: "Walnut Bloom", image: "/parquet/walnut bloom.jpg" },
     { name: "Walnut Trieste", image: "/parquet/WALNUT TRIESTE.jpeg" },
+    { image: "/engg/designer/designer1.jpg", name: "Walnut Flower Marble" },
+    { image: "/engg/designer/designer2.jpg", name: "Walnut Flower Plain" },
+    { image: "/engg/designer/designer3.jpg", name: "Oak Braid" },
+    { image: "/engg/designer/designer4.jpg", name: "Walnut Leaf" },
+    { image: "/engg/designer/designer5.jpg", name: "Oak Fishscal" },
+    { image: "/engg/designer/designer6.jpg", name: "Oak Lotus" },
+    { image: "/engg/designer/designer7.jpg", name: "Walnut Arrow Brass" },
+    { image: "/engg/designer/designer8.jpg", name: "Walnut Flower Brass" }
   ];
 
   return (

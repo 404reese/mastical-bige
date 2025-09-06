@@ -1,22 +1,11 @@
 import { motion } from "framer-motion";
 
-export function Herringbone() {
+export function Hywood() {
   
   // Wood Species data
   const woodSpecies = [
-    { image: "/engg/herringbone/herringbone1.jpeg", name: "Classic Herringbone Oak" },
-    { image: "/engg/herringbone/herringbone2.jpeg", name: "Rocky Reef" },
-    { image: "/engg/herringbone/herringbone3.jpeg", name: "Oak Summer" },
-    { image: "/engg/herringbone/herringbone4.jpeg", name: "Natural Oak Herringbone" },
-    { image: "/engg/herringbone/herringbone5.jpeg", name: "Chevron Pattern" },
-    { image: "/engg/herringbone/herringbone6.jpeg", name: "Wide Plank Herringbone" },
-    { image: "/engg/herringbone/herringbone7.jpeg", name: "Vanilla" },
-    { image: "/engg/enggh/enggh1.png", name: "Premium Herringbone Style" },
-    { image: "/engg/enggh/enggh2.png", name: "Contemporary Herringbone" },
-    { image: "/engg/enggh/enggh3.jpg", name: "Oak Stain Walnut Scapolite" },
-    { image: "/engg/enggh/enggh4.jpg", name: "Oak Pyrite" },
-    { image: "/engg/enggh/enggh5.jpg", name: "Walnut Axinite" },
-    { image: "/engg/enggh/enggh6.jpg", name: "Teak Aragonite" },
+    { src: "/engg/engg-plank1.jpg", name: "Ash Grey" },
+    
   ];
 
   
@@ -24,20 +13,20 @@ export function Herringbone() {
   return (
     <div className="">
       {/* Hero Section */}
-      <section className="relative h-[60vh] bg-gray-900">
+      <section className="relative h-[80vh] bg-gray-900">
         <div className="absolute inset-0 overflow-hidden">
           <img 
-            src="/engg/engg4.jpg" 
-            alt="Herringbone"
+            src="/slim-chev.webp" 
+            alt="SoEngineered Slim Chevron"
             className="w-full h-full object-cover opacity-60"
           />
         </div>
         <div className="absolute inset-0 flex flex-col justify-center items-center text-center p-4">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Herringbone
+            Engineered Hywood
           </h1>
           <p className="text-xl text-white max-w-2xl">
-            Classic herringbone pattern with engineered wood stability
+            Experience the unparalleled beauty and durability of our Engineered Hywood flooring, crafted with the finest hardwoods and advanced engineering techniques.
           </p>
         </div>
       </section>
@@ -46,19 +35,15 @@ export function Herringbone() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6 text-center">The Epitome of Natural Elegance</h2>
+            <h2 className="text-3xl font-bold mb-6 text-center">The Ultimate in Performance and Style</h2>
             
             <div className="prose prose-lg mx-auto">
               <p className="mb-4 text-gray-700">
-                Engineered Herringbone wood flooring represents the perfect marriage of timeless elegance and modern engineering. Each plank is meticulously crafted with a premium hardwood veneer atop a stable multi-layer plywood core, delivering the authentic beauty of solid wood with enhanced dimensional stability.
+                Engineered Hywood flooring combines the best of both worlds: the stunning beauty of exotic hardwoods and the exceptional durability of high-performance engineering. Each plank is crafted with a premium hardwood veneer atop a highly stable and moisture-resistant core, delivering unmatched performance in high-traffic areas.
               </p>
               
               <p className="mb-4 text-gray-700">
-                The classic herringbone pattern is created by cutting the wood planks at precise angles and then fitting them together to create a continuous, flowing zigzag design. This creates an optical illusion that makes rooms appear larger while adding sophisticated visual movement to your space.
-              </p>
-              
-              <p className="mb-4 text-gray-700">
-                With its premium engineered wood construction, our Engineered Herringbone flooring is durable and long-lasting, making it an excellent choice for high-traffic areas. The click-lock installation system ensures a seamless fit, while the UV-cured polyurethane finish provides lasting protection against daily wear.
+                Our Engineered Hywood flooring is designed to provide long-lasting beauty and peace of mind. The advanced engineering process ensures a product that's both stable and resistant to shrinkage, while the UV-cured polyurethane finish provides lasting protection against daily wear. The result is a floor that's both visually stunning and engineered to last.
               </p>
             </div>
           </div>
@@ -77,7 +62,7 @@ export function Herringbone() {
             {woodSpecies.map((species, index) => (
               <div key={index} className="text-center">
                 <div className="h-52 rounded-lg overflow-hidden bg-gray-200 mb-4">
-                  <img src={species.image} alt={species.name} className="w-full h-full object-cover" />
+                  <img src={species.src} alt={species.name} className="w-full h-full object-cover" />
                 </div>
                 <h3 className="font-semibold text-lg">{species.name}</h3>
               </div>
@@ -107,4 +92,4 @@ export function Herringbone() {
   );
 }
 
-export default Herringbone;
+export default Hywood;

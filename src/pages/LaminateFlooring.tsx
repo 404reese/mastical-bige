@@ -221,7 +221,7 @@ export function LaminateFlooring() {
       </section>
 
       {/* Applications Section */}
-      <section className="py-16 bg-gray-50">
+      {/* <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-10 text-center">Perfect Applications</h2>
           
@@ -243,7 +243,7 @@ export function LaminateFlooring() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Technical Specifications */}
       <section className="py-16 bg-white">
