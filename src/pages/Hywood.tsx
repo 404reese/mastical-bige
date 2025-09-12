@@ -4,8 +4,16 @@ export function Hywood() {
   
   // Wood Species data
   const woodSpecies = [
-    { src: "/engg/engg-plank1.jpg", name: "Ash Grey" },
-    
+    { src: "/engg/hywood/HW Walnuss Prescott.jpg", name: "Walnuss Prescott" },    
+    { src: "/engg/hywood/HW Oak Val Cama.jpg", name: "Oak Val Cama" },
+    { src: "/engg/hywood/HW Oak Reivo.jpg", name: "Oak Reivo" },
+    { src: "/engg/hywood/HW Oak Sumava.jpg", name: "Oak Sumava" },
+    { src: "/engg/hywood/HW Oak Ordesa.jpg", name: "Oak Ordesa" },
+    { src: "/engg/hywood/HW Oak Joshua Tree.jpg", name: "Oak Joshua Tree" },
+    { src: "/engg/hywood/HW Oak Yosemite.jpg", name: "Oak Yosemite" },
+    { src: "/engg/hywood/HW Oak Mojawe.jpg", name: "Oak Mojawe" },
+    { src: "/engg/hywood/HW Tyresta.jpg", name: "Oak Tyresta" },
+    { src: "/engg/hywood/HW Oulanka.jpg", name: "Oak Oulanka" },
   ];
 
   
