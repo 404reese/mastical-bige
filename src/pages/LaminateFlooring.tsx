@@ -18,33 +18,33 @@ export function LaminateFlooring() {
   // Main laminate categories
   const laminateMainCategories = [
     {
-      name: "Elite Herringbone Collection",
+      name: "Herringbone Collection",
       description: "Premium herringbone laminate with mountain-inspired designs",
       image: "/Laminate/Elite Herringbone Collection/Copy of MVR_0699 (Color  328 )-Mount Everest.JPG",
       link: "/laminate-flooring/elite-herringbone-collection",
       features: ["Herringbone Pattern", "Premium Quality", "Mountain Series", "AC5 Rating"]
     },
     {
-      name: "Elite Herringbone Prime Collection", 
+      name: "Chevron Collection", 
       description: "Luxury herringbone collection with cave-inspired natural textures",
       image: "/Laminate/Elite Herringbone Prime Collection/Copy of dark star cave revise 3.png",
-      link: "/laminate-flooring/elite-herringbone-prime-collection",
+      link: "/laminate-flooring/chevron-collection",
       features: ["Prime Quality", "Cave Series", "Natural Textures", "Luxury Finish"]
     },
-    {
-      name: "Enchant Premium Collection",
-      description: "Premium oak finishes with sophisticated wood grain textures",
-      image: "/Laminate/Enchant Premium Collection/Copy of MVR_1337 ( Caramel Oak ).JPG",
-      link: "/laminate-flooring/enchant-premium-collection",
-      features: ["Premium Oak", "Rich Textures", "Natural Grain", "High Durability"]
-    },
-    {
-      name: "Enchant Rustic Collection",
-      description: "Rustic forest-inspired designs with authentic weathered appearance",
-      image: "/Laminate/Enchant Rustic Collection/Copy of Amazon Forest.jpg",
-      link: "/laminate-flooring/enchant-rustic-collection",
-      features: ["Rustic Finish", "Forest Series", "Weathered Look", "Authentic Texture"]
-    }
+    // {
+    //   name: "Enchant Premium Collection",
+    //   description: "Premium oak finishes with sophisticated wood grain textures",
+    //   image: "/Laminate/Enchant Premium Collection/Copy of MVR_1337 ( Caramel Oak ).JPG",
+    //   link: "/laminate-flooring/enchant-premium-collection",
+    //   features: ["Premium Oak", "Rich Textures", "Natural Grain", "High Durability"]
+    // },
+    // {
+    //   name: "Enchant Rustic Collection",
+    //   description: "Rustic forest-inspired designs with authentic weathered appearance",
+    //   image: "/Laminate/Enchant Rustic Collection/Copy of Amazon Forest.jpg",
+    //   link: "/laminate-flooring/enchant-rustic-collection",
+    //   features: ["Rustic Finish", "Forest Series", "Weathered Look", "Authentic Texture"]
+    // }
   ];
 
   // Technical specifications
