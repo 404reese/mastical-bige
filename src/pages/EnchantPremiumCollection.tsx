@@ -76,7 +76,71 @@ export function EnchantPremiumCollection() {
       description: "Traditional oak design with timeless appeal and classic beauty",
       image: "/Laminate/Enchant Premium Collection/Copy of 3475.jpg",
       characteristics: ["Traditional Style", "Timeless Appeal", "Classic Beauty", "Heritage Look"]
-    }
+    },
+        {
+      name: "Desert Oak",
+      image: "/Laminate/Enchant Premium Collection/DESERT OAK.jpeg",
+    },
+    {
+      name: "Forest Oak",
+      image: "/Laminate/Enchant Premium Collection/FOREST OAK.jpeg",
+    },
+    {
+      name: "Hazelnut",
+      image: "/Laminate/Enchant Premium Collection/HEZELNUT.jpeg",
+    },
+    {
+      name: "Oak Granit",
+      image: "/Laminate/Enchant Premium Collection/OAK GRANIT.jpeg",
+    },
+    {
+      name: "Silver Oak",
+      image: "/Laminate/Enchant Premium Collection/SILVER OAK.jpeg",
+    },
+    {
+      name: "Ashwood",
+      image: "/Laminate/Enchant Premium Collection/ASHWOOD.jpeg",
+    },
+    {
+      name: "Charcoal Oak",
+      image: "/Laminate/Enchant Premium Collection/CHARCOAL OAK.jpeg",
+    },
+    {
+      name: "Dove Grey",
+      image: "/Laminate/Enchant Premium Collection/DOVE GREY.jpeg",
+    },
+    {
+      name: "Expresso Walnut",
+      image: "/Laminate/Enchant Premium Collection/EXPRESSO WALNUT.jpeg",
+    },
+    {
+      name: "Fernch Oak",
+      image: "/Laminate/Enchant Premium Collection/FRENCH OAK.jpeg",
+    },
+    {
+      name: "Light Walnut",
+      image: "/Laminate/Enchant Premium Collection/LIGHT WALNUT.jpeg",
+    },
+    {
+      name: "Moonlight Oak",
+      image: "/Laminate/Enchant Premium Collection/MOONLIGHT OAK.jpeg",
+    },
+    {
+      name: "Natural Oak",
+      image: "/Laminate/Enchant Premium Collection/NATURAL OAK.jpeg",
+    },
+    {
+      name: "Newcastle Brown",
+      image: "/Laminate/Enchant Premium Collection/NEWCASTLE BROWN.jpeg",
+    },
+    {
+      name: "Sandstone Oak",
+      image: "/Laminate/Enchant Premium Collection/SANDSTONE OAK.jpeg",
+    },
+    {
+      name: "TEAK",
+      image: "/Laminate/Enchant Premium Collection/TEAK.jpeg",
+    },
   ];
 
   // Premium benefits

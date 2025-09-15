@@ -112,7 +112,27 @@ export function EliteHerringboneCollection() {
       description: "Pure white oak with subtle textures inspired by the white mountain",
       image: "/Laminate/Elite Herringbone Collection/Copy of MVR_0849 (Color M026-47-Mount Blanc.JPG",
       characteristics: ["Pure White", "Subtle Texture", "Alpine Pure", "Classic Elegance"]
-    }
+    },
+        {
+      name: "Amber Teak",
+      image: "/Laminate/Elite Herringbone Collection/AMBER TEAK.jpeg",
+    },
+    {
+      name: "Ashwood",
+      image: "/Laminate/Elite Herringbone Collection/ASHWOOD.jpeg",
+    },
+    {
+      name: "Expresso Walnut",
+      image: "/Laminate/Elite Herringbone Collection/EXPRESSO WALNUT.jpeg",
+    },
+    {
+      name: "Oak Creme",
+      image: "/Laminate/Elite Herringbone Collection/OAK CREME.jpeg",
+    },
+    {
+      name: "Oak Fume",
+      image: "/Laminate/Elite Herringbone Collection/OAK FUME.jpeg",
+    },
   ];
 
   // Installation benefits
