@@ -1,9 +1,11 @@
+import React from "react";
 import { motion } from "framer-motion";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import { products } from "@/data/productData";
 
 export function SPCPlank() {
+  // Find the solid wood product data
+  const solidWoodData = products.find(product => product.id === 'solid-wood');
+
   // Slider settings
   const settings = {
     dots: true,
@@ -15,44 +17,45 @@ export function SPCPlank() {
     autoplaySpeed: 4000,
   };
 
-  // Technical specifications
+  // Additional technical specifications
   const specifications = [
-    { name: "Material", value: "Stone Plastic Composite Core" },
-    { name: "Thickness", value: "4mm to 6mm" },
-    { name: "Width", value: "180mm to 230mm" },
-    { name: "Length", value: "1200mm to 1800mm" },
-    { name: "Wear Layer", value: "0.3mm to 0.7mm" },
-    { name: "Installation", value: "Click Lock System" },
-    { name: "Water Resistance", value: "100% Waterproof" },
-    { name: "Warranty", value: "25 Years Residential" },
+    { name: "Thickness", value: "18mm" },
+    { name: "Width", value: "120mm - 125mm (varies by wood species)" },
+    { name: "Length", value: "400mm - 1200mm" },
+    { name: "Material", value: "100% natural solid wood" },
+    { name: "Durability", value: "Durable and long-lasting" },
+    { name: "Appearance", value: "Warm and inviting with natural color and grain variations" },
+    { name: "Finish Options", value: "UV Oil, Hardwax Oil, Lacquered" },
+    { name: "Suitable for", value: "Living rooms, Bedrooms, Dining areas, Offices" },
+    { name: "Maintenance", value: "Regular cleaning, Periodic refinishing" },
   ];
 
-  // Key features
-  const features = [
+  // FAQ items
+  const faqs = [
     {
-      title: "Authentic Wood Look",
-      description: "Realistic wood grain textures and natural color variations that rival genuine hardwood",
-      icon: "🌳"
+      question: "How long does solid wood flooring last?",
+      answer: "With proper care and maintenance, solid wood flooring can last for generations, often 30-100 years or more. Its longevity is one of the main advantages over other flooring types."
     },
     {
-      title: "Waterproof Core",
-      description: "100% waterproof SPC core prevents moisture damage and warping",
-      icon: "💧"
+      question: "Can solid wood floors be refinished?",
+      answer: "Yes, one of the primary benefits of solid wood floors is that they can be sanded and refinished multiple times throughout their lifespan, allowing you to repair damage or change the color as your style preferences evolve."
     },
     {
-      title: "Scratch Resistant",
-      description: "Advanced wear layer protects against scratches, scuffs, and daily wear",
-      icon: "🛡️"
+      question: "Are solid wood floors suitable for kitchens?",
+      answer: "While solid wood can be used in kitchens, special precautions need to be taken due to potential moisture exposure. Proper sealing and prompt cleanup of spills are essential. Some homeowners prefer engineered wood in kitchens for its better moisture stability."
     },
     {
-      title: "Easy Installation",
-      description: "Click-lock system enables fast and secure installation over most subfloors",
-      icon: "🔧"
+      question: "How do I maintain solid wood flooring?",
+      answer: "Regular maintenance includes sweeping or vacuuming to remove dirt and debris, cleaning with a wood floor cleaner, and avoiding excessive water exposure. Periodic reapplication of finish may be necessary depending on wear and tear."
+    },
+    {
+      question: "What wood species work best for flooring?",
+      answer: "Popular choices include oak (known for durability and beautiful grain), walnut (rich, dark color), maple (light color and smooth grain), and cherry (reddish tones that deepen with age). The best choice depends on your aesthetic preferences and lifestyle needs."
     }
   ];
 
-  // Available designs
-  const designOptions = [
+  // Wood Species data
+  const woodSpecies = [
     {
       name: "P2211",
       description: "Timeless oak patterns with natural grain detail",
@@ -127,33 +130,23 @@ export function SPCPlank() {
     },
   ];
 
-  // Applications
-  const applications = [
-    "Living Rooms & Family Rooms",
-    "Kitchens & Dining Areas",
-    "Bedrooms & Hallways",
-    "Bathrooms & Laundry Rooms",
-    "Basements & Below Grade",
-    "Commercial Spaces"
-  ];
-
   return (
     <div className="">
       {/* Hero Section */}
-      <section className="relative h-[70vh] bg-gray-900">
+      <section className="relative h-[80vh] bg-gray-900">
         <div className="absolute inset-0 overflow-hidden">
           <img 
-            src="/SPC/SPC Plank/3258_P3311.jpg" 
-            alt="SPC Plank Flooring"
+            src="/heros/Solid Wood FLoor.png" 
+            alt="Solid Wood Flooring"
             className="w-full h-full object-cover opacity-60"
           />
         </div>
         <div className="absolute inset-0 flex flex-col justify-center items-center text-center p-4">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            SPC Plank Flooring
+            SPC Plank
           </h1>
-          <p className="text-xl md:text-2xl text-white max-w-3xl">
-            Realistic wood-look planks with superior durability and waterproof performance
+          <p className="text-xl text-white max-w-2xl">
+            Timeless beauty and exceptional durability for your premium spaces
           </p>
         </div>
       </section>
@@ -161,82 +154,39 @@ export function SPCPlank() {
       {/* Introduction Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-8 text-center">The Beauty of Wood, The Performance of SPC</h2>
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6 text-center">The Epitome of Natural Elegance</h2>
             
             <div className="prose prose-lg mx-auto">
-              <p className="mb-6 text-gray-700 text-lg leading-relaxed">
-                SPC Plank flooring delivers the authentic beauty of natural hardwood with the advanced performance 
-                of stone plastic composite technology. Our realistic wood-grain textures and natural color variations 
-                create stunning floors that are indistinguishable from genuine hardwood.
-              </p>
+              {solidWoodData?.descriptionParagraphs.map((paragraph: string, index: number) => (
+                <p key={index} className="mb-4 text-gray-700">{paragraph}</p>
+              ))}
               
-              <p className="mb-6 text-gray-700 text-lg leading-relaxed">
-                Unlike traditional hardwood, SPC Plank is 100% waterproof, making it perfect for kitchens, bathrooms, 
-                basements, and any area where moisture is a concern. The rigid core construction provides exceptional 
-                stability and resistance to dents, scratches, and heavy foot traffic.
-              </p>
-              
-              <p className="mb-6 text-gray-700 text-lg leading-relaxed">
-                With easy click-lock installation and minimal maintenance requirements, SPC Plank offers the perfect 
-                solution for homeowners who want the look of hardwood without the limitations and ongoing maintenance 
-                of natural wood flooring.
+              <p className="mb-4 text-gray-700">
+                SPC Plank Flooring is made from a single piece of timber and is the most traditional type of wood flooring. 
+                Each plank showcases the natural beauty of the wood species, with unique grain patterns and 
+                color variations that add character to your space.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Design Options Section */}
+      
+
+      {/* Wood Species Section */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Design Collections</h2>
+          <h2 className="text-3xl font-bold mb-10 text-center">Our Collection</h2>
           
-          <div className="grid lg:grid-cols-2 gap-12 max-w-7xl mx-auto">
-            {designOptions.map((design, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.2 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
-              >
-                <div className="h-64 overflow-hidden">
-                  <img 
-                    src={design.image} 
-                    alt={design.name}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                  />
+          <div className="grid grid-cols-3 gap-8 max-w-5xl mx-auto">
+            {woodSpecies.map((species, index) => (
+              <div key={index} className="text-center">
+                <div className="h-52 rounded-lg overflow-hidden bg-gray-200 mb-4">
+                  <img src={species.image} alt={species.name} className="w-full h-full object-cover" />
                 </div>
-                <div className="p-8">
-                  <h3 className="text-2xl font-bold mb-4">{design.name}</h3>
-                  
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Features Section */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-12 text-center">Key Features & Benefits</h2>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-            {features.map((feature, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className="bg-gray-50 rounded-lg p-6 text-center"
-              >
-                <h3 className="text-xl font-bold mb-3">{feature.title}</h3>
-                <p className="text-gray-600">{feature.description}</p>
-              </motion.div>
+                <h3 className="font-semibold text-lg">{species.name}</h3>
+              </div>
             ))}
           </div>
         </div>
@@ -244,45 +194,18 @@ export function SPCPlank() {
 
       
 
-      {/* Technical Specifications */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-10 text-center">Technical Specifications</h2>
-          
-          <div className="max-w-4xl mx-auto overflow-hidden rounded-lg border border-gray-200">
-            <div className="divide-y divide-gray-200">
-              {specifications.map((spec, index) => (
-                <div key={index} className="flex">
-                  <div className="bg-gray-50 py-4 px-6 font-medium w-1/3">{spec.name}</div>
-                  <div className="py-4 px-6 w-2/3">{spec.value}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      
       {/* CTA Section */}
       <section className="py-16 bg-gray-900 text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-6">Experience the Beauty of SPC Plank</h2>
+          <h2 className="text-3xl font-bold mb-6">Ready to Transform Your Space?</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Contact us today to explore our SPC Plank collection and discover the perfect wood-look flooring for your space.
+            Contact us today to explore our premium solid wood flooring options and get a personalized consultation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button 
-              onClick={() => window.location.href = '/contact-us'} 
-              className="bg-white text-gray-900 px-8 py-3 rounded-lg hover:bg-gray-100 transition"
-            >
-              Get Free Quote
+            <button onClick={() => window.location.href = '/contact-us'} className="bg-white text-gray-900 px-8 py-3 rounded-lg hover:bg-gray-100 transition">
+              Request a Quote
             </button>
-            <button 
-              onClick={() => window.location.href = '/spc-flooring'} 
-              className="border border-white px-8 py-3 rounded-lg hover:bg-white hover:text-gray-900 transition"
-            >
-              Back to SPC Flooring
-            </button>
+            
           </div>
         </div>
       </section>

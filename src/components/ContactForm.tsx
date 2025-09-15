@@ -7,6 +7,9 @@ export function ContactForm() {
     message: '',
   });
 
+  const [submitting, setSubmitting] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData(prevState => ({
@@ -15,67 +18,92 @@ export function ContactForm() {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // Handle form submission logic here (e.g., send data to an API)
-    console.log('Form submitted:', formData);
-    alert('Thank you for your message!'); // Placeholder feedback
-    // Reset form after submission
-    setFormData({ name: '', email: '', message: '' });
+    setSubmitting(true);
+    try {
+      // Placeholder async simulation
+      await new Promise(r => setTimeout(r, 900));
+      console.log('Form submitted:', formData);
+      setSubmitted(true);
+      setFormData({ name: '', email: '', message: '' });
+      setTimeout(() => setSubmitted(false), 4000);
+    } catch (err) {
+      console.error(err);
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-6">
-      <div>
-        <label htmlFor="name" className="block text-sm font-medium text-gray-700">
-          Name
-        </label>
-        <input
-          type="text"
-          name="name"
-          id="name"
-          required
-          value={formData.name}
-          onChange={handleChange}
-          className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-        />
+    <form onSubmit={handleSubmit} className="space-y-7 text-[13px] font-hanken relative z-10">
+      <div className="grid gap-6 md:grid-cols-2">
+        <div className="space-y-1.5 md:col-span-1">
+          <label htmlFor="name" className="block font-medium text-[#fed3b1]/90 tracking-wide uppercase text-[11px]">Name</label>
+          <div className="relative group">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              required
+              value={formData.name}
+              onChange={handleChange}
+              className="peer mt-1 w-full px-4 py-3 rounded-lg bg-[#151d29]/70 border border-white/5 focus:border-[#fed3b1]/40 text-neutral-100 placeholder-neutral-500/60 focus:outline-none focus:ring-2 focus:ring-[#fed3b1]/30 transition shadow-[0_0_0_1px_rgba(255,255,255,0.04)]"
+              placeholder="Your full name"
+            />
+            <div className="pointer-events-none absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 transition duration-500 bg-[radial-gradient(circle_at_30%_15%,rgba(254,211,177,0.12),transparent_70%)]" />
+          </div>
+        </div>
+        <div className="space-y-1.5 md:col-span-1">
+          <label htmlFor="email" className="block font-medium text-[#fed3b1]/90 tracking-wide uppercase text-[11px]">Email</label>
+          <div className="relative group">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              value={formData.email}
+              onChange={handleChange}
+              className="peer mt-1 w-full px-4 py-3 rounded-lg bg-[#151d29]/70 border border-white/5 focus:border-[#fed3b1]/40 text-neutral-100 placeholder-neutral-500/60 focus:outline-none focus:ring-2 focus:ring-[#fed3b1]/30 transition shadow-[0_0_0_1px_rgba(255,255,255,0.04)]"
+              placeholder="you@example.com"
+            />
+            <div className="pointer-events-none absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 transition duration-500 bg-[radial-gradient(circle_at_30%_15%,rgba(254,211,177,0.12),transparent_70%)]" />
+          </div>
+        </div>
       </div>
-      <div>
-        <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-          Email
-        </label>
-        <input
-          type="email"
-          name="email"
-          id="email"
-          required
-          value={formData.email}
-          onChange={handleChange}
-          className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-        />
+      <div className="space-y-1.5">
+        <label htmlFor="message" className="block font-medium text-[#fed3b1]/90 tracking-wide uppercase text-[11px]">Message</label>
+        <div className="relative group">
+          <textarea
+            name="message"
+            id="message"
+            required
+            rows={5}
+            value={formData.message}
+            onChange={handleChange}
+            placeholder="How can we help you?"
+            className="peer mt-1 w-full px-4 py-3 rounded-lg bg-[#151d29]/70 border border-white/5 focus:border-[#fed3b1]/40 text-neutral-100 placeholder-neutral-500/60 focus:outline-none focus:ring-2 focus:ring-[#fed3b1]/30 transition resize-none shadow-[0_0_0_1px_rgba(255,255,255,0.04)]"
+          />
+          <div className="pointer-events-none absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 transition duration-500 bg-[radial-gradient(circle_at_25%_20%,rgba(254,211,177,0.12),transparent_70%)]" />
+        </div>
       </div>
-      <div>
-        <label htmlFor="message" className="block text-sm font-medium text-gray-700">
-          Message
-        </label>
-        <textarea
-          name="message"
-          id="message"
-          required
-          rows={4}
-          value={formData.message}
-          onChange={handleChange}
-          className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-        />
-      </div>
-      <div>
+      <div className="pt-2">
         <button
           type="submit"
-          className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+          disabled={submitting}
+          className="w-full relative overflow-hidden group rounded-lg font-medium tracking-wide px-6 py-3.5 text-[13px] transition focus:outline-none focus:ring-2 focus:ring-[#fed3b1]/40 disabled:cursor-not-allowed disabled:opacity-70"
         >
-          Send Message
+          <span className="absolute inset-0 rounded-lg bg-gradient-to-r from-[#fed3b1] via-[#e4b590] to-[#c48b5b] opacity-90 group-hover:opacity-100 transition" />
+          <span className="absolute inset-0 rounded-lg ring-1 ring-inset ring-white/10" />
+          <span className="absolute -inset-px rounded-lg bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.4),transparent_60%)] opacity-0 group-hover:opacity-20 mix-blend-overlay transition duration-700" />
+          <span className="relative flex items-center justify-center gap-2 text-[#2a1a11] font-semibold">
+            {submitting ? 'Sending...' : submitted ? 'Sent ✓' : 'Send Message'}
+          </span>
         </button>
       </div>
+      <p className="text-[11px] text-neutral-500 text-center">
+        We respect your privacy. Your information is safe.
+      </p>
     </form>
   );
 }

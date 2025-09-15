@@ -10,8 +10,9 @@ export const ProdHero = () => {
           loop
           muted
           playsInline
+          preload="auto"
         >
-          <source src="prodvid.mp4" type="video/mp4" />
+          <source src="/prod-hero.mov" type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-black/40" />
       </div>
