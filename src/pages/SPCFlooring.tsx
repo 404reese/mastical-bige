@@ -56,21 +56,21 @@ export function SPCFlooring() {
     {
       name: "SPC Plank",
       description: "Realistic wood-look planks with superior durability and waterproof performance",
-      image: "/SPC/SPC Plank/3213_P2277.jpg",
+      image: "/SPC/SPC Plank/Stupa Cat_ The Big E_SPC Flooring_page-0032.jpg",
       link: "/spc-flooring/spc-plank",
       features: ["Wood-look Design", "Waterproof Core", "Click Lock Installation", "Scratch Resistant"]
     },
     {
       name: "SPC Tile",
       description: "Stone and ceramic-look tiles with authentic textures and easy maintenance",
-      image: "/SPC/SPC Tile/3178_T4411.jpg",
+      image: "/SPC/SPC Tile/Stupa Cat_ The Big E_SPC Flooring_page-0044.jpg",
       link: "/spc-flooring/spc-tile",
       features: ["Stone-look Design", "Easy Maintenance", "Slip Resistant", "Commercial Grade"]
     },
     {
       name: "SPC Herringbone",
       description: "Classic herringbone patterns combining traditional design with modern technology",
-      image: "/SPC/SPC Herringbone/3395-H1111.jpg",
+      image: "/SPC/SPC Herringbone/Stupa Cat_ The Big E_SPC Flooring_page-0008.jpg",
       link: "/spc-flooring/spc-herringbone",
       features: ["Classic Pattern", "Designer Appeal", "Premium Quality", "Architectural Grade"]
     }

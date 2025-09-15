@@ -111,7 +111,7 @@ export function ProductSections() {
               
                 <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
                   <img
-                    src="/engg/engg1.jpg"
+                    src="/pr2.png"
                     alt="Engineered wood floor view 1"
                     className="w-full h-full object-cover"
                     loading="lazy"
@@ -328,7 +328,7 @@ export function ProductSections() {
               viewport={{ once: true, amount: 0.3 }}
             >
                 <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
-                  <img src="/Laminate/MVR_0860 (Elite Atlanta Walnut 1801-2 ).JPG" alt="Laminate floor example 1" className="w-full h-full object-cover" loading="lazy" />
+                  <img src="/pr6.png" alt="Laminate floor example 1" className="w-full h-full object-cover" loading="lazy" />
                 </div>
                 
              
@@ -407,7 +407,7 @@ export function ProductSections() {
             >
               
                 <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
-                  <img src="/SPC/SPC Herringbone/3395-H1111.jpg" alt="SPC floor example 1" className="w-full h-full object-cover" loading="lazy" />
+                  <img src="/pr8.png" alt="SPC floor example 1" className="w-full h-full object-cover" loading="lazy" />
                 </div>
                 
             </motion.div>
@@ -427,7 +427,7 @@ export function ProductSections() {
               viewport={{ once: true, amount: 0.3 }}
             >
                 <div className="h-[400px] rounded-lg overflow-hidden bg-gray-200">
-                  <img src="/Laminate/MVR_0860 (Elite Atlanta Walnut 1801-2 ).JPG" alt="Laminate floor example 1" className="w-full h-full object-cover" loading="lazy" />
+                  <img src="/pr4.png" alt="Laminate floor example 1" className="w-full h-full object-cover" loading="lazy" />
                 </div>
                 
              

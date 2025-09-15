@@ -221,7 +221,7 @@ export function EnchantPremiumCollection() {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Premium Oak Designs</h2>
           
-          <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-3 gap-8 max-w-5xl mx-auto">
             {oakDesigns.map((design, index) => (
               <motion.div
                 key={index}
@@ -229,19 +229,16 @@ export function EnchantPremiumCollection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+                className="text-center"
               >
-                <div className="h-64 overflow-hidden">
+                <div className="h-52 rounded-lg overflow-hidden bg-gray-200 mb-4">
                   <img 
                     src={design.image} 
                     alt={design.name}
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                   />
                 </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold mb-3">{design.name}</h3>
-                  
-                </div>
+                <h3 className="font-semibold text-lg">{design.name}</h3>
               </motion.div>
             ))}
           </div>

@@ -18,7 +18,7 @@ export const Hero = () => {
         <div className="max-w-3xl px-4">
           <div className="flex justify-center mb-4">
             <motion.img
-              className='h-32 w-auto'
+              className='h-36 w-auto'
               src="logo.png"
               alt=""
               initial={{ opacity: 0, y: 50 }}
