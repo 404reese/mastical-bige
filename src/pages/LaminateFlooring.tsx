@@ -20,7 +20,7 @@ export function LaminateFlooring() {
     {
       name: "Herringbone Collection",
       description: "Premium herringbone laminate with mountain-inspired designs",
-      image: "/Laminate/Elite Herringbone Collection/Copy of MVR_0699 (Color  328 )-Mount Everest.JPG",
+      image: "/Laminate/Elite Herringbone Collection/EXPRESSO WALNUT.jpeg",
       link: "/laminate-flooring/elite-herringbone-collection",
       features: ["Herringbone Pattern", "Premium Quality", "Mountain Series", "AC5 Rating"]
     },
@@ -32,7 +32,7 @@ export function LaminateFlooring() {
     //   features: ["Prime Quality", "Cave Series", "Natural Textures", "Luxury Finish"]
     // },
     {
-      name: "Enchant Premium Collection",
+      name: "Chevron Collection",
       description: "Premium oak finishes with sophisticated wood grain textures",
       image: "/Laminate/Enchant Premium Collection/Copy of MVR_1337 ( Caramel Oak ).JPG",
       link: "/laminate-flooring/enchant-premium-collection",

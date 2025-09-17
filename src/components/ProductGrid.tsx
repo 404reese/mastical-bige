@@ -13,27 +13,27 @@ const products = [{
 }, {
   title: 'Parquet Wooden Flooring',
   image: '/pr3.png',
-  link: '/products/customized-wooden-flooring'
+  link: '/parquet-flooring'
 }, {
   title: 'Deck Flooring',
   image: '/pr4.png',
-  link: '/products/deck-flooring'
+  link: '/deck-flooring'
 }, {
   title: 'Indoor and Outdoor Wall Cladding & Soffit',
   image: '/pr5.png',
-  link: '/products/wall-cladding-soffit'
+  link: '/wall-cladding-soffit'
 }, {
   title: 'Lumbers & Panels',
   image: '/pr6.png',
-  link: '/products/lumbers-panels'
+  link: '/lumbers-panels'
 }, {
   title: 'Laminate Wood Floors',
   image: '/pr7.png',
-  link: '/products/laminate-wood-floors'
+  link: '/laminate-flooring'
 }, {
   title: 'SPC Wood Floors',
   image: '/pr8.png',
-  link: '/products/spc-wood-floors'
+  link: '/spc-wood-floors'
 }];
 
 export function ProductGrid() {

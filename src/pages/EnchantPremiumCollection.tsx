@@ -71,12 +71,12 @@ export function EnchantPremiumCollection() {
       image: "/Laminate/Enchant Premium Collection/Copy of MVR_1359 ( Santis Oak ).JPG",
       characteristics: ["Light Natural", "Subtle Variations", "Elegant Look", "Versatile Style"]
     },
-    {
-      name: "Premium Classic Oak",
-      description: "Traditional oak design with timeless appeal and classic beauty",
-      image: "/Laminate/Enchant Premium Collection/Copy of 3475.jpg",
-      characteristics: ["Traditional Style", "Timeless Appeal", "Classic Beauty", "Heritage Look"]
-    },
+    // {
+    //   name: "Premium Classic Oak",
+    //   description: "Traditional oak design with timeless appeal and classic beauty",
+    //   image: "/Laminate/Enchant Premium Collection/Copy of 3475.jpg",
+    //   characteristics: ["Traditional Style", "Timeless Appeal", "Classic Beauty", "Heritage Look"]
+    // },
         {
       name: "Desert Oak",
       image: "/Laminate/Enchant Premium Collection/DESERT OAK.jpeg",

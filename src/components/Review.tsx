@@ -1,22 +1,22 @@
 import React from 'react';
 
 const reviews = [{
-  name: 'Sarah Johnson',
+  name: 'Riya Mehra',
   rating: 5,
   text: 'Exceptional quality and service! The wooden flooring transformed our home completely.',
   image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330'
 }, {
-  name: 'Michael Chen',
+  name: 'Kunal Jain',
   rating: 5,
   text: 'Professional installation team and outstanding customer service. Highly recommended!',
   image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d'
 }, {
-  name: 'Emma Williams',
+  name: 'Nisha Patel',
   rating: 5,
   text: 'Beautiful craftsmanship and attention to detail. Couldn\'t be happier with the results.',
   image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80'
 }, {
-  name: 'David Miller',
+  name: 'Rajesh Kumar',
   rating: 5,
   text: 'Great experience from start to finish. The team was knowledgeable and professional.',
   image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e'

@@ -54,66 +54,46 @@ export function EliteHerringboneCollection() {
   // Mountain series designs
   const mountainDesigns = [
     {
-      name: "Mount Everest",
-      description: "Majestic grey-brown tones inspired by the world's highest peak",
-      image: "/Laminate/Elite Herringbone Collection/Copy of MVR_0699 (Color  328 )-Mount Everest.JPG",
-      characteristics: ["Cool Grey Tones", "Natural Grain", "Premium Finish", "High Contrast"]
+      name:"Monte Rosa",
+      image : "/Laminate/Elite Herringbone Collection/monte rosa.webp",
     },
     {
-      name: "Mount Whitney",
-      description: "Light oak with subtle grain patterns reflecting California's highest summit",
-      image: "/Laminate/Elite Herringbone Collection/Copy of MVR_0703 (Color  NO37-3B Click )-Mount Whitney.JPG",
-      characteristics: ["Light Oak", "Subtle Grain", "Clean Lines", "Modern Appeal"]
+      name:"Monte Austen",
+      image : "/Laminate/Elite Herringbone Collection/mount austen.webp",
     },
     {
-      name: "Mount Bianco",
-      description: "Pure and elegant white oak inspired by the pristine Alpine peak",
-      image: "/Laminate/Elite Herringbone Collection/Copy of MVR_0707 (Color 90004-6B)-Mount Bianco.JPG",
-      characteristics: ["White Oak", "Pure Tones", "Alpine Fresh", "Minimalist Style"]
+      name:"Monte Bianco",
+      image : "/Laminate/Elite Herringbone Collection/Mount Bianco.webp",
     },
     {
-      name: "Mount Elbrus",
-      description: "Rich brown oak with deep character inspired by Europe's highest mountain",
-      image: "/Laminate/Elite Herringbone Collection/Copy of MVR_0712 (Color -19009 )Mount Elbrus.JPG",
-      characteristics: ["Rich Brown", "Deep Character", "European Style", "Classic Beauty"]
+      name:"Monte Blanc",
+      image : "/Laminate/Elite Herringbone Collection/Mount Blanc.webp",
     },
     {
-      name: "Mount Logan",
-      description: "Sophisticated grey oak reflecting Canada's majestic mountain ranges",
-      image: "/Laminate/Elite Herringbone Collection/Copy of MVR_0722 (Color- 12911 )-Mount Logan.JPG",
-      characteristics: ["Grey Oak", "Canadian Style", "Sophisticated Look", "Natural Beauty"]
+      name:"Monte Elbrus",
+      image : "/Laminate/Elite Herringbone Collection/Mount Elbrus.webp",
     },
     {
-      name: "Mount Fuji",
-      description: "Serene and balanced tones inspired by Japan's iconic sacred mountain",
-      image: "/Laminate/Elite Herringbone Collection/Copy of MVR_0827 (M018-4)-Mount Fuji.JPG",
-      characteristics: ["Serene Tones", "Balanced Color", "Japanese Aesthetic", "Sacred Beauty"]
+      name:"Monte Everest",
+      image : "/Laminate/Elite Herringbone Collection/Mount Blanc.webp",
     },
     {
-      name: "Mount Austen",
-      description: "Warm oak tones with natural variations inspired by Antarctic peaks",
-      image: "/Laminate/Elite Herringbone Collection/Copy of MVR_0833 (Color- 7707 )-Mount Austen.JPG",
-      characteristics: ["Warm Oak", "Natural Variation", "Antarctic Inspiration", "Unique Character"]
+      name:"Monte Fuji",
+      image : "/Laminate/Elite Herringbone Collection/Mount Fuji.webp",
     },
     {
-      name: "Monte Rosa",
-      description: "Elegant pink-tinged oak inspired by the Alpine rose-colored mountain",
-      image: "/Laminate/Elite Herringbone Collection/Copy of MVR_0836 (color- 12332)-Monte Rosa.JPG",
-      characteristics: ["Pink Tinge", "Alpine Rose", "Elegant Color", "Romantic Appeal"]
+      name:"Monte Logan",
+      image : "/Laminate/Elite Herringbone Collection/Mount Logan.webp",
     },
     {
-      name: "Mount Makalu",
-      description: "Bold and dramatic oak patterns inspired by the Himalayan giant",
-      image: "/Laminate/Elite Herringbone Collection/Copy of MVR_0840 ( COLOR - 12207 )Mount Makalu.JPG",
-      characteristics: ["Bold Patterns", "Dramatic Style", "Himalayan Power", "Strong Character"]
+      name:"Monte Makalu",
+      image : "/Laminate/Elite Herringbone Collection/Mount Makalu.webp",
     },
     {
-      name: "Mount Blanc",
-      description: "Pure white oak with subtle textures inspired by the white mountain",
-      image: "/Laminate/Elite Herringbone Collection/Copy of MVR_0849 (Color M026-47-Mount Blanc.JPG",
-      characteristics: ["Pure White", "Subtle Texture", "Alpine Pure", "Classic Elegance"]
+      name:"Monte Whitney",
+      image : "/Laminate/Elite Herringbone Collection/Mount Whitney.webp",
     },
-        {
+    {
       name: "Amber Teak",
       image: "/Laminate/Elite Herringbone Collection/AMBER TEAK.jpeg",
     },
